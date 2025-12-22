@@ -371,6 +371,11 @@
     "title": "Dịch Vụ Nổi Bật",
     "description": "Trải nghiệm quy trình quản lý dịch vụ chuyên nghiệp tại Thiên Lộc – nơi mỗi chi tiết được giám sát chặt chẽ, đảm bảo tiến độ, chất lượng và sự hài lòng tuyệt đối cho khách hàng.",
     "viewAll": "Xem tất cả dịch vụ",
+    "card": {
+      "available": "Có sẵn",
+      "serviceLabel": "Dịch vụ",
+      "professional": "Chuyên nghiệp"
+    },
     "admin": {
       "title": "Quản lý dịch vụ",
       "subtitle": "Quản lý các dịch vụ cung cấp",
@@ -470,7 +475,7 @@
     "listTitle": "Danh sách liên hệ",
     "totalContacts": "Tổng số: {{count}} liên hệ",
     "name": "Họ tên",
-    "title": "Tiêu đề",
+    "subject": "Tiêu đề",
     "email": "Email",
     "phone": "Số điện thoại",
     "address": "Địa chỉ",
@@ -521,8 +526,8 @@
       "description": "Vui lòng điền vào form dưới đây và để lại tin nhắn, góp ý giúp chúng tôi phục vụ bạn được tốt hơn.",
       "name": "Họ tên",
       "namePlaceholder": "Nhập họ tên của bạn",
-      "title": "Tiêu đề",
-      "titlePlaceholder": "Nhập tiêu đề",
+      "subject": "Tiêu đề",
+      "subjectPlaceholder": "Nhập tiêu đề",
       "phone": "Điện thoại",
       "phonePlaceholder": "+(84-24) 3566.8888",
       "email": "Email",

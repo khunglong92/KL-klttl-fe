@@ -44,27 +44,65 @@ const isMinioKey = (value: string): boolean => {
  */
 export const getKeyFromUrl = (url: string): string => {
   if (!url) return "";
-  if (isMinioKey(url)) return url;
 
+  // 1. Try to decode the URL first, in case it was encoded
+  let processedUrl = url;
   try {
-    const urlObj = new URL(url);
-
-    // Legacy URL: /uploads/key
-    if (url.includes("/uploads/")) {
-      const match = url.match(/\/uploads\/(.+)$/);
-      if (match) return match[1] || "";
-    }
-
-    // MinIO URL: /bucket/key
-    // Remove the first segment (bucket name)
-    const parts = urlObj.pathname.split("/").filter(Boolean);
-    if (parts.length >= 2) {
-      return parts.slice(1).join("/");
-    }
-    return urlObj.pathname.substring(1); // Fallback: remove leading slash
+    processedUrl = decodeURIComponent(url);
   } catch {
-    return url;
+    // If decoding fails, continue with original
   }
+
+  // 2. Priority: Match known entity patterns FIRST
+  // This is the most robust way because it ignores bucket/host differences
+  const patterns = [
+    /(products\/.+)/,
+    /(projects\/.+)/,
+    /(services\/.+)/,
+    /(posts\/.+)/,
+    /(users\/.+)/,
+    /(avatars\/.+)/,
+    /(banners\/.+)/,
+    /(categories\/.+)/,
+    /(quotes\/.+)/,
+    /(general\/.+)/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = processedUrl.match(pattern);
+    if (match && match[1]) {
+      // Remove any query parameters if present in the match
+      return match[1]?.split("?")?.[0] || "";
+    }
+  }
+
+  // 3. Try generic URL parsing logic
+  if (processedUrl.startsWith("http")) {
+    try {
+      const urlObj = new URL(processedUrl);
+      const parts = urlObj.pathname.split("/").filter(Boolean);
+
+      // MinIO path usually: /bucket/key
+      // If we have >= 2 parts, assume first part is bucket and rest is key
+      // Example: /bucket/products/1/image.jpg -> products/1/image.jpg
+      if (parts.length >= 2) {
+        return parts.slice(1).join("/");
+      }
+
+      // If only 1 part, it might be just the key (unlikely for MinIO but possible for other setups)
+      return urlObj.pathname.substring(1);
+    } catch {
+      // URL parsing failed, fall through to regex
+    }
+  }
+
+  // 4. Fallback to original logic: if it's not a URL, it might be the key itself
+  // Also blindly strip leading slash if present
+  if (processedUrl.startsWith("/")) {
+    return processedUrl.substring(1);
+  }
+
+  return processedUrl;
 };
 
 export const uploadService = {
@@ -202,15 +240,7 @@ export const uploadService = {
    * Delete image by public_id (key)
    */
   async deleteImage(public_id: string): Promise<void> {
-    // Extract key from full URL if needed
-    let key = public_id;
-    if (!isMinioKey(public_id)) {
-      // Extract path after /uploads/
-      const match = public_id.match(/\/uploads\/(.+)$/);
-      if (match && match[1]) {
-        key = match[1];
-      }
-    }
+    const key = getKeyFromUrl(public_id);
     return apiClient.delete(`/uploads/image/${key}`);
   },
 

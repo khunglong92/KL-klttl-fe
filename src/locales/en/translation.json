@@ -360,7 +360,15 @@
       "construction": "Construction",
       "constructionDescription": "Supply metal structures for construction projects",
       "transportation": "Transportation",
-      "transportationDescription": "Production of metal parts for transportation vehicles"
+      "transportationDescription": "Production of metal parts for transportation vehicles",
+      "title": "Featured Services",
+      "description": "Experience professional service management at Thien Loc – where every detail is closely monitored, ensuring progress, quality and absolute customer satisfaction.",
+      "viewAll": "View all services",
+      "card": {
+        "available": "Available",
+        "serviceLabel": "Service",
+        "professional": "Professional"
+      }
     }
   },
   "footer": {
@@ -532,9 +540,9 @@
     "listTitle": "Contact List",
     "totalContacts": "Total: {{count}} contacts",
     "name": "Name",
-    "title": "Subject",
+    "subject": "Subject",
     "email": "Email",
-    "phone": "Phone",
+    "phoneNumber": "Phone",
     "address": "Address",
     "content": "Message",
     "status": "Status",
@@ -583,9 +591,9 @@
       "description": "Please fill out the form below and leave a message to help us serve you better.",
       "name": "Full Name",
       "namePlaceholder": "Enter your full name",
-      "title": "Subject",
-      "titlePlaceholder": "Enter subject",
-      "phone": "Phone",
+      "subject": "Subject",
+      "subjectPlaceholder": "Enter subject",
+      "phoneNumber": "Phone",
       "phonePlaceholder": "+(84-24) 3566.8888",
       "email": "Email",
       "emailPlaceholder": "example@email.com",

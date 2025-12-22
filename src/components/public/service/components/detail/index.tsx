@@ -24,7 +24,7 @@ import {
 import { useTheme } from "@/hooks/useTheme";
 
 export default function ServiceDetailComponent() {
-  const { id } = useParams({ from: "/services/$id" });
+  const { slug } = useParams({ from: "/services/$slug" });
   const { t } = useTranslation();
   const [service, setService] = useState<CompanyService | null>(null);
   const [loading, setLoading] = useState(true);
@@ -32,9 +32,9 @@ export default function ServiceDetailComponent() {
   const { theme } = useTheme();
 
   useEffect(() => {
-    if (!id) {
+    if (!slug) {
       setLoading(false);
-      setError(new Error("Service ID is missing."));
+      setError(new Error("Service slug is missing."));
       return;
     }
 
@@ -42,7 +42,7 @@ export default function ServiceDetailComponent() {
       try {
         setLoading(true);
         setError(null);
-        const response = await servicesService.findOne(id);
+        const response = await servicesService.findOne(slug);
         setService(response);
       } catch (err) {
         const fetchError =
@@ -57,7 +57,7 @@ export default function ServiceDetailComponent() {
     };
     window.scrollTo(0, 0);
     fetchService();
-  }, [id, t]);
+  }, [slug, t]);
 
   if (loading) {
     return (

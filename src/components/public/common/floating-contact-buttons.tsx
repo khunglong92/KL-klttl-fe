@@ -6,8 +6,8 @@ import phoneImage from "@/images/contacts/phone.svg";
 
 // Lấy số điện thoại từ biến môi trường, có fallback
 const ZALO_PHONE_NUMBER =
-  import.meta.env['VITE_ZALO_PHONE_NUMBER'] || "0987654321";
-const PHONE_NUMBER = import.meta.env['VITE_PHONE_NUMBER'] || "0967853383";
+  import.meta.env["VITE_ZALO_PHONE_NUMBER"] || "0967853833";
+const PHONE_NUMBER = import.meta.env["VITE_PHONE_NUMBER"] || "0967853833";
 
 export function FloatingContactButtons() {
   return (
