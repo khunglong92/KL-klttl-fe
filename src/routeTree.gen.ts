@@ -42,6 +42,7 @@ import { Route as AdminLayoutProductsRouteImport } from './routes/admin/_layout/
 import { Route as AdminLayoutDashboardRouteImport } from './routes/admin/_layout/dashboard'
 import { Route as AdminLayoutContactUsRouteImport } from './routes/admin/_layout/contact-us'
 import { Route as AdminLayoutContactRouteImport } from './routes/admin/_layout/contact'
+import { Route as AdminLayoutCompanyIntrosRouteImport } from './routes/admin/_layout/company-intros'
 import { Route as AdminLayoutCategoriesRouteImport } from './routes/admin/_layout/categories'
 
 const ServicesRouteImport = createFileRoute('/services')()
@@ -240,6 +241,12 @@ const AdminLayoutContactRoute = AdminLayoutContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => AdminLayoutRoute,
 } as any)
+const AdminLayoutCompanyIntrosRoute =
+  AdminLayoutCompanyIntrosRouteImport.update({
+    id: '/company-intros',
+    path: '/company-intros',
+    getParentRoute: () => AdminLayoutRoute,
+  } as any)
 const AdminLayoutCategoriesRoute = AdminLayoutCategoriesRouteImport.update({
   id: '/categories',
   path: '/categories',
@@ -270,6 +277,7 @@ export interface FileRoutesByFullPath {
   '/quote/': typeof QuoteIndexRoute
   '/services/': typeof ServicesIndexRoute
   '/admin/categories': typeof AdminLayoutCategoriesRoute
+  '/admin/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/contact': typeof AdminLayoutContactRoute
   '/admin/contact-us': typeof AdminLayoutContactUsRoute
   '/admin/dashboard': typeof AdminLayoutDashboardRoute
@@ -297,6 +305,7 @@ export interface FileRoutesByTo {
   '/services/$slug': typeof ServicesSlugRoute
   '/services': typeof ServicesIndexRoute
   '/admin/categories': typeof AdminLayoutCategoriesRoute
+  '/admin/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/contact': typeof AdminLayoutContactRoute
   '/admin/contact-us': typeof AdminLayoutContactUsRoute
   '/admin/dashboard': typeof AdminLayoutDashboardRoute
@@ -340,6 +349,7 @@ export interface FileRoutesById {
   '/quote/': typeof QuoteIndexRoute
   '/services/': typeof ServicesIndexRoute
   '/admin/_layout/categories': typeof AdminLayoutCategoriesRoute
+  '/admin/_layout/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/_layout/contact': typeof AdminLayoutContactRoute
   '/admin/_layout/contact-us': typeof AdminLayoutContactUsRoute
   '/admin/_layout/dashboard': typeof AdminLayoutDashboardRoute
@@ -376,6 +386,7 @@ export interface FileRouteTypes {
     | '/quote/'
     | '/services/'
     | '/admin/categories'
+    | '/admin/company-intros'
     | '/admin/contact'
     | '/admin/contact-us'
     | '/admin/dashboard'
@@ -403,6 +414,7 @@ export interface FileRouteTypes {
     | '/services/$slug'
     | '/services'
     | '/admin/categories'
+    | '/admin/company-intros'
     | '/admin/contact'
     | '/admin/contact-us'
     | '/admin/dashboard'
@@ -445,6 +457,7 @@ export interface FileRouteTypes {
     | '/quote/'
     | '/services/'
     | '/admin/_layout/categories'
+    | '/admin/_layout/company-intros'
     | '/admin/_layout/contact'
     | '/admin/_layout/contact-us'
     | '/admin/_layout/dashboard'
@@ -746,6 +759,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminLayoutContactRouteImport
       parentRoute: typeof AdminLayoutRoute
     }
+    '/admin/_layout/company-intros': {
+      id: '/admin/_layout/company-intros'
+      path: '/company-intros'
+      fullPath: '/admin/company-intros'
+      preLoaderRoute: typeof AdminLayoutCompanyIntrosRouteImport
+      parentRoute: typeof AdminLayoutRoute
+    }
     '/admin/_layout/categories': {
       id: '/admin/_layout/categories'
       path: '/categories'
@@ -758,6 +778,7 @@ declare module '@tanstack/react-router' {
 
 interface AdminLayoutRouteChildren {
   AdminLayoutCategoriesRoute: typeof AdminLayoutCategoriesRoute
+  AdminLayoutCompanyIntrosRoute: typeof AdminLayoutCompanyIntrosRoute
   AdminLayoutContactRoute: typeof AdminLayoutContactRoute
   AdminLayoutContactUsRoute: typeof AdminLayoutContactUsRoute
   AdminLayoutDashboardRoute: typeof AdminLayoutDashboardRoute
@@ -771,6 +792,7 @@ interface AdminLayoutRouteChildren {
 
 const AdminLayoutRouteChildren: AdminLayoutRouteChildren = {
   AdminLayoutCategoriesRoute: AdminLayoutCategoriesRoute,
+  AdminLayoutCompanyIntrosRoute: AdminLayoutCompanyIntrosRoute,
   AdminLayoutContactRoute: AdminLayoutContactRoute,
   AdminLayoutContactUsRoute: AdminLayoutContactUsRoute,
   AdminLayoutDashboardRoute: AdminLayoutDashboardRoute,

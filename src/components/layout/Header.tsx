@@ -3,11 +3,10 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import companyLogo from "@/images/common/company-logo.png";
 
-import { Link, useLocation, useNavigate } from "@tanstack/react-router";
-import { AppThumbnailImage } from "@/components/public/common/app-thumbnail-image";
+import { Link, useLocation } from "@tanstack/react-router";
 import UserSetting from "./user-setting";
+import CompanyLogoHeader from "./company-logo-header";
 
 export function Header({
   theme,
@@ -19,7 +18,6 @@ export function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate();
   const [activeHash, setActiveHash] = useState("#home");
 
   // Update active hash when URL changes
@@ -68,34 +66,13 @@ export function Header({
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`sticky top-0 z-50 w-full border-b backdrop-blur shadow-sm ${theme === "light" ? "bg-white/70" : "bg-black/50"}`}
+      className={`sticky top-0 z-50 w-full border-b backdrop-blur shadow-sm ${theme === "light" ? "bg-[#2980B9]" : "bg-black/50"}`}
     >
+      <CompanyLogoHeader />
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-1 sm:gap-2 cursor-pointer"
-            onClick={() => navigate({ to: "/" })}
-          >
-            <div className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-xl flex items-center justify-center">
-              <AppThumbnailImage
-                src={companyLogo}
-                alt="Company Logo"
-                width={80}
-                height={80}
-              />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-xs sm:text-sm md:text-base font-semibold text-foreground">
-                THIÊN LỘC
-              </span>
-              <span className="text-[10px] sm:text-xs text-muted-foreground hidden sm:block">
-                SX & GIA CÔNG KIM LOẠI TẤM
-              </span>
-            </div>
-          </motion.div>
-
+        <div
+          className={`flex h-16 items-center justify-center w-full ${theme === "light" ? "bg-[#2980B9]" : "bg-black/50"}`}
+        >
           {/* Right side content */}
           <div className="flex items-center justify-end gap-1 sm:gap-2 md:gap-4">
             {/* Desktop Navigation */}
@@ -121,7 +98,7 @@ export function Header({
                       }`}
                     >
                       <motion.span
-                        className="relative block"
+                        className="relative block uppercase font-bold text-white text-lg"
                         whileHover={{ y: -1 }}
                         transition={{
                           type: "spring",
@@ -138,7 +115,7 @@ export function Header({
             </nav>
 
             {/* Actions */}
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 text-white font-bold text-xl">
               {/* Language Toggle */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -155,7 +132,7 @@ export function Header({
                   }
                 >
                   <div className="flex items-center gap-0.5 sm:gap-1">
-                    <Languages className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                    <Languages className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
                     <AnimatePresence mode="wait">
                       <motion.span
                         key={i18n.language}

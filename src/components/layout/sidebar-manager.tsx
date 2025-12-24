@@ -10,6 +10,7 @@ import {
   Mail,
   Contact,
   FileText,
+  ImageIcon,
 } from "lucide-react";
 import { cn } from "@/components/ui/utils";
 import { useTranslation } from "react-i18next";
@@ -36,6 +37,13 @@ export function AdminSidebar() {
       name: t("admin.sidebar.dashboard"),
       icon: LayoutDashboard,
       color: "from-blue-500 to-cyan-500",
+    },
+    {
+      id: "company-intros",
+      route: "/admin/company-intros",
+      name: t("admin.sidebar.companyIntros"),
+      icon: ImageIcon,
+      color: "from-orange-500 to-orange-700",
     },
     {
       id: "products",
@@ -116,7 +124,7 @@ export function AdminSidebar() {
     >
       <button
         onClick={() => setIsCollapsed(!isCollapsed)}
-        className={`absolute rounded-full ${theme === "dark" ? "bg-white/10" : "bg-black/60"} backdrop-blur-sm hover:bg-opacity-50 cursor-pointer top-2 -right-12 shadow-2xl duration-1000 transition-all shadow-indigo-300 z-10 h-10 w-10 bg-card text-card-foreground flex items-center justify-center hover:bg-accent transition-colors`}
+        className={`absolute rounded-full ${theme === "dark" ? "bg-white/10" : "bg-black/60"} backdrop-blur-sm hover:bg-opacity-50 cursor-pointer top-2 -right-12 shadow-2xl duration-1000 shadow-indigo-300 z-10 h-10 w-10 bg-card text-card-foreground flex items-center justify-center hover:bg-accent transition-colors`}
       >
         <ChevronLeft
           className={cn(

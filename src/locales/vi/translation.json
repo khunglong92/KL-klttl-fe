@@ -11,7 +11,11 @@
     "introduction": "Giới thiệu",
     "services": "Dịch vụ",
     "quote": "Báo giá",
-    "project": "Dự án"
+    "project": "Dự án",
+    "emailContact": "EMAIL LIÊN HỆ",
+    "phoneContact": "SỐ ĐIỆN THOẠI LIÊN HỆ",
+    "companyName": "THIÊN LỘC",
+    "companyDescription": "SX & GIA CÔNG KIM LOẠI TẤM"
   },
   "login": {
     "success": "Thành công",
@@ -340,11 +344,65 @@
       "contactUsManager": "Quản lý thông tin liên hệ",
       "quotes": "Quản lý báo giá",
       "users": "Quản lý người dùng",
-      "statistics": "Thống kê"
+      "statistics": "Thống kê",
+      "companyIntros": "Hình ảnh giới thiệu"
     },
     "dashboard": {
       "title": "Tổng quan",
       "recentActivities": "Hoạt động gần đây"
+    },
+    "companyIntros": {
+      "title": "Quản lý hình ảnh giới thiệu",
+      "subtitle": "Quản lý các hình ảnh hiển thị trên slider trang chủ",
+      "addImage": "Thêm hình ảnh",
+      "createTitle": "Thêm hình ảnh mới",
+      "editTitle": "Chỉnh sửa hình ảnh",
+      "createSubtitle": "Thêm hình ảnh mới vào slider trang chủ",
+      "editSubtitle": "Cập nhật thông tin hình ảnh",
+      "backToList": "Quay lại danh sách",
+      "table": {
+        "title": "Danh sách hình ảnh giới thiệu",
+        "totalImages": "Tổng: {{count}} hình ảnh",
+        "columns": {
+          "image": "Hình ảnh",
+          "description": "Mô tả",
+          "order": "Thứ tự",
+          "status": "Trạng thái",
+          "createdAt": "Ngày tạo",
+          "updatedAt": "Cập nhật",
+          "actions": "Thao tác"
+        },
+        "noData": "Chưa có hình ảnh nào"
+      },
+      "form": {
+        "imageLabel": "Hình ảnh *",
+        "uploadButton": "Tải ảnh lên",
+        "uploading": "Đang tải...",
+        "urlPlaceholder": "https://example.com/image.jpg",
+        "urlHint": "Hoặc nhập URL trực tiếp",
+        "descriptionLabel": "Mô tả",
+        "descriptionPlaceholder": "Mô tả hình ảnh (tùy chọn)",
+        "orderLabel": "Thứ tự hiển thị",
+        "orderDescription": "Số nhỏ hơn sẽ hiển thị trước",
+        "activeLabel": "Kích hoạt hiển thị",
+        "activeDescription": "Bật để hiển thị trên trang chủ",
+        "cancel": "Hủy",
+        "save": "Thêm mới",
+        "update": "Cập nhật"
+      },
+      "toast": {
+        "createSuccess": "Thêm mới thành công",
+        "updateSuccess": "Cập nhật thành công",
+        "deleteSuccess": "Đã xóa thành công!",
+        "toggleActiveOn": "Đã kích hoạt",
+        "toggleActiveOff": "Đã ẩn",
+        "urlRequired": "URL hình ảnh là bắt buộc",
+        "uploadSuccess": "Tải ảnh lên thành công",
+        "uploadError": "Tải ảnh thất bại",
+        "imageOnly": "Chỉ chấp nhận file hình ảnh",
+        "fileTooLarge": "File không được vượt quá 5MB",
+        "error": "Có lỗi xảy ra"
+      }
     }
   },
   "categories": {
@@ -497,7 +555,7 @@
     "showing": "Hiển thị {{from}} - {{to}} trong tổng số {{total}}"
   },
   "contact": {
-    "title": "LIÊN HỆ",
+    "title": "Liên Hệ",
     "subtitle": "Liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất",
     "rating": "(39 bình chọn)",
     "info": {
@@ -550,7 +608,7 @@
     "viewProducts": "Xem Sản Phẩm",
     "viewServices": "Xem Dịch Vụ",
     "services": "Dịch Vụ",
-    "sectionTitle": "Về Thiên Lộc",
+    "sectionTitle": "Về Chúng Tôi",
     "paragraph1": "CÔNG TY TNHH SẢN XUẤT VÀ GIA CÔNG KIM LOẠI TẤM THIÊN LỘC là đơn vị hàng đầu trong lĩnh vực sản xuất và gia công kim loại tấm tại Việt Nam.",
     "paragraph2": "Với hơn 10 năm kinh nghiệm cùng đội ngũ kỹ thuật viên tay nghề cao, chúng tôi cam kết mang đến sản phẩm chất lượng, chính xác và bền vững, đáp ứng tiêu chuẩn khắt khe của các ngành công nghiệp.",
     "paragraph3": "Từ cắt, dập, chấn, hàn, sơn tĩnh điện cho đến lắp ráp hoàn thiện, mỗi sản phẩm của Thiên Lộc đều được gia công tỉ mỉ trên dây chuyền hiện đại, đảm bảo độ chính xác cao và tính thẩm mỹ vượt trội.",

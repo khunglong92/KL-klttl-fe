@@ -67,45 +67,45 @@ export function FeaturedServices() {
   }
 
   return (
-    <section id="featured-services" className="py-16 md:py-24">
+    <section
+      id="featured-services"
+      className="py-16 md:py-24 bg-white dark:bg-navy-950"
+    >
       <div className="container mx-auto px-4">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h2 className="mb-4">{t("services.title")}</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            {t("services.description")}
-          </p>
-        </motion.div>
+        <div className="text-center mb-16 flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-accent-red tracking-widest uppercase mb-2">
+            Dịch vụ của chúng tôi
+          </h2>
+          <div className="flex flex-col items-center">
+            <div className="w-12 h-[2px] bg-accent-red mb-1 opacity-20" />
+            <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-accent-red" />
+          </div>
+        </div>
 
         {/* Scroll Container */}
-        <div className="relative px-12 md:px-16">
-          {/* Scroll Buttons - Outside carousel */}
-          <Button
-            variant="outline"
-            size="icon"
+        <div className="relative group">
+          {/* Scroll Buttons */}
+          <button
             onClick={scrollLeft}
-            className="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 z-10 bg-background/95 backdrop-blur-md shadow-xl rounded-full h-12 w-12 border-2 border-white/20 hover:bg-background hover:scale-110 transition-all duration-300"
+            className="absolute -left-6 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white dark:bg-navy-800 text-accent-red shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-100 dark:border-navy-700 active:scale-95"
+            aria-label="Previous services"
           >
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
+            <ChevronLeft className="w-6 h-6 stroke-2" />
+          </button>
+
+          <button
             onClick={scrollRight}
-            className="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 z-10 bg-background/95 backdrop-blur-md shadow-xl rounded-full h-12 w-12 border-2 border-white/20 hover:bg-background hover:scale-110 transition-all duration-300"
+            className="absolute -right-6 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white dark:bg-navy-800 text-accent-red shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-100 dark:border-navy-700 active:scale-95"
+            aria-label="Next services"
           >
-            <ChevronRight className="h-6 w-6" />
-          </Button>
+            <ChevronRight className="w-6 h-6 stroke-2" />
+          </button>
 
           {/* Services Horizontal Scroll */}
           <div
             ref={scrollContainerRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
+            className="flex gap-6 md:gap-8 overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",
@@ -116,16 +116,14 @@ export function FeaturedServices() {
                 key={service.id}
                 service={service}
                 index={index}
-                className="w-[280px] max-w-[280px] h-[300px] m-h-[300px]"
+                className="w-full min-w-[300px] md:min-w-[calc(33.333%-22px)] max-w-[400px]"
               />
             ))}
 
             {/* Loading indicator */}
             {isFetchingNextPage && (
               <div className="shrink-0 w-[240px] flex items-center justify-center">
-                <div className="text-muted-foreground text-sm">
-                  Đang tải thêm...
-                </div>
+                <div className="w-8 h-8 border-4 border-accent-red border-t-transparent rounded-full animate-spin" />
               </div>
             )}
           </div>

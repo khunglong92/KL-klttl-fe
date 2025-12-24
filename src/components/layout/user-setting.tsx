@@ -2,15 +2,14 @@ import { Menu, Group, Text, Avatar, rem, UnstyledButton } from "@mantine/core";
 import { IconSettings, IconLogout } from "@tabler/icons-react";
 import { useAuthStore } from "@/stores/authStore";
 import { useNavigate } from "@tanstack/react-router";
-import AppButton from "../atoms/app-button";
-import { useTheme } from "@/hooks/useTheme";
+// import { useTheme } from "@/hooks/useTheme";
 import { useTranslation } from "react-i18next";
 import { UserRole } from "@/stores/types";
 
 export default function UserSetting() {
   const { t } = useTranslation();
   const { user, logout } = useAuthStore();
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -33,14 +32,14 @@ export default function UserSetting() {
 
   return (
     <>
-      {!user && (
+      {/* {!user && (
         <AppButton
           label={t("admin.login.login")}
           size="sm"
           variant={theme === "dark" ? "outline" : "default"}
           to="/auth/login"
         />
-      )}
+      )} */}
 
       {user && (
         <Menu shadow="md" width={200} position="bottom-end">
@@ -48,21 +47,19 @@ export default function UserSetting() {
             <UnstyledButton>
               <Group>
                 <Avatar
-                  className="ring-1 ring-amber-50"
+                  className="ring-1 hover:ring-2 ring-amber-50"
                   src={user?.avtUrl}
-                  color="blue"
+                  color="gray"
                   radius="xl"
                 >
                   {getInitials(user?.name)}
                 </Avatar>
 
-                <div className="hidden lg:block flex-1">
-                  <Text size="sm" fw={500}>
+                <div className="hidden lg:block flex-1 text-white">
+                  <Text size="sm" fw={800}>
                     {user.name}
                   </Text>
-                  <Text c="dimmed" size="xs">
-                    {user.role}
-                  </Text>
+                  <Text size="xs">{user.role}</Text>
                 </div>
               </Group>
             </UnstyledButton>

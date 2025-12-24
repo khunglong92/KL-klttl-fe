@@ -11,7 +11,11 @@
     "introduction": "Introduction",
     "services": "Services",
     "quote": "Quote",
-    "project": "Project"
+    "project": "Project",
+    "emailContact": "EMAIL CONTACT",
+    "phoneContact": "PHONE CONTACT",
+    "companyName": "THIEN LOC",
+    "companyDescription": "Manufacture & Metal Processing"
   },
   "login": {
     "success": "Login successful!",
@@ -415,11 +419,65 @@
       "contact": "Contacts",
       "contactUsManager": "Contact Us Manager",
       "users": "Users",
-      "statistics": "Statistics"
+      "statistics": "Statistics",
+      "companyIntros": "Intro Images"
     },
     "dashboard": {
       "title": "Overview",
       "recentActivities": "Recent Activities"
+    },
+    "companyIntros": {
+      "title": "Manage Intro Images",
+      "subtitle": "Manage images displayed on homepage slider",
+      "addImage": "Add Image",
+      "createTitle": "Add New Image",
+      "editTitle": "Edit Image",
+      "createSubtitle": "Add new image to homepage slider",
+      "editSubtitle": "Update image information",
+      "backToList": "Back to list",
+      "table": {
+        "title": "Intro Images List",
+        "totalImages": "Total: {{count}} images",
+        "columns": {
+          "image": "Image",
+          "description": "Description",
+          "order": "Order",
+          "status": "Status",
+          "createdAt": "Created At",
+          "updatedAt": "Updated At",
+          "actions": "Actions"
+        },
+        "noData": "No images yet"
+      },
+      "form": {
+        "imageLabel": "Image *",
+        "uploadButton": "Upload Image",
+        "uploading": "Uploading...",
+        "urlPlaceholder": "https://example.com/image.jpg",
+        "urlHint": "Or enter URL directly",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "Image description (optional)",
+        "orderLabel": "Display Order",
+        "orderDescription": "Smaller number shows first",
+        "activeLabel": "Enable Display",
+        "activeDescription": "Turn on to show on homepage",
+        "cancel": "Cancel",
+        "save": "Add New",
+        "update": "Update"
+      },
+      "toast": {
+        "createSuccess": "Created successfully",
+        "updateSuccess": "Updated successfully",
+        "deleteSuccess": "Deleted successfully!",
+        "toggleActiveOn": "Activated",
+        "toggleActiveOff": "Hidden",
+        "urlRequired": "Image URL is required",
+        "uploadSuccess": "Image uploaded successfully",
+        "uploadError": "Image upload failed",
+        "imageOnly": "Only image files are accepted",
+        "fileTooLarge": "File must not exceed 5MB",
+        "error": "An error occurred"
+      }
     }
   },
   "categories": {

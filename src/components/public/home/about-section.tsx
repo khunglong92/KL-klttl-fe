@@ -4,39 +4,44 @@ import { AppThumbnailImage } from "@/components/public/common/app-thumbnail-imag
 
 import { useTranslation } from "react-i18next";
 import introAboutImage from "@/images/common/intro-about.jpg";
+import { useTheme } from "@/hooks/useTheme";
+import { ThemeVariant } from "@/services/api/servicesService";
 
 export function AboutSection() {
   const { t } = useTranslation();
-
+  const { theme } = useTheme();
   const stats = [
     {
       icon: Package,
       value: "500+",
       labelKey: "about.stats.products",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-navy-500 to-navy-700",
     },
     {
       icon: Users,
       value: "1,000+",
       labelKey: "about.stats.customers",
-      color: "from-amber-500 to-orange-600",
+      color: "from-accent-red-500 to-accent-red-700",
     },
     {
       icon: Star,
       value: "4.9/5",
       labelKey: "about.stats.rating",
-      color: "from-yellow-400 to-amber-500",
+      color: "from-amber-500 to-orange-600",
     },
     {
       icon: Award,
       value: "10+",
       labelKey: "about.stats.experience",
-      color: "from-purple-500 to-pink-600",
+      color: "from-navy-600 to-navy-800",
     },
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-muted/30">
+    <section
+      id="about"
+      className="py-16 md:py-24 bg-linear-to-b from-navy-50/50 to-white dark:from-navy-900/20 dark:to-background"
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Image */}
@@ -178,24 +183,29 @@ export function AboutSection() {
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, type: "spring" }}
-              className="absolute -bottom-6 -right-6 w-32 h-32 bg-linear-to-br from-amber-500 to-orange-600 rounded-full opacity-20 blur-2xl"
+              className="absolute -bottom-6 -right-6 w-32 h-32 bg-linear-to-br from-accent-red to-navy-600 rounded-full opacity-20 blur-2xl"
             />
           </motion.div>
 
           {/* Content */}
-          <div className="space-y-6">
+          <div className="space-y-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="space-y-4"
+              transition={{ duration: 0.8 }}
+              className={`space-y-6 ${theme === ThemeVariant.DARK ? "text-white" : "text-black"}`}
             >
-              <h2 className="mb-6 text-3xl md:text-4xl font-bold">
-                {t("about.sectionTitle")}
-              </h2>
-              <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
+              <div className="relative">
+                <h2
+                  className={`text-xl md:text-2xl lg:text-4xl leading-tight tracking-tight drop-shadow-sm`}
+                >
+                  {t("about.sectionTitle")}
+                </h2>
+              </div>
+
+              <div className=" space-y-5 text-shadow-2xs">
+                <p className=" leading-relaxed text-lg md:text-xl font-bold">
                   {t("about.paragraph1")}
                 </p>
                 <p className="text-muted-foreground leading-relaxed text-base md:text-lg">

@@ -5,6 +5,7 @@ import { FeaturedProducts } from "@/components/public/home/featured-products";
 import { FeaturedServices } from "@/components/public/home/featured-services";
 import { LocationMap } from "@/components/public/home/location-map";
 import { ProjectsSection } from "@/components/public/home/projects-section";
+import { PartnersSection } from "@/components/public/home/partners-section";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutSection />
         <FeaturedProducts />
         <FeaturedServices />
+        <PartnersSection />
         <LocationMap />
         <ProjectsSection isVisible={showProjects} />
       </main>
