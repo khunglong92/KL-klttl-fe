@@ -39,6 +39,11 @@ export const QUERY_KEYS = {
     admin: ["companyIntros", "admin"] as const,
     byId: (id: string) => ["companyIntro", id] as const,
   },
+  projects: {
+    root: "projects" as const,
+    byId: (id: string) => ["project", id] as const,
+    featured: ["projects", "featured"] as const,
+  },
 } as const;
 
 export type QueryKey = ReadonlyArray<unknown>;

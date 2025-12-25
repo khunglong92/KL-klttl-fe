@@ -26,7 +26,10 @@ import { Route as ProjectsLayoutRouteImport } from './routes/projects/_layout'
 import { Route as ProjectsSlugRouteImport } from './routes/projects/$slug'
 import { Route as ProductsLayoutRouteImport } from './routes/products/_layout'
 import { Route as ProductsIdRouteImport } from './routes/products/$id'
-import { Route as IntroductionLayoutRouteImport } from './routes/introduction/_layout'
+import { Route as IntroductionPrivacyPolicyRouteImport } from './routes/introduction/privacy-policy'
+import { Route as IntroductionPartnersRouteImport } from './routes/introduction/partners'
+import { Route as IntroductionFacilitiesRouteImport } from './routes/introduction/facilities'
+import { Route as IntroductionCompanyProfileRouteImport } from './routes/introduction/company-profile'
 import { Route as ContactLayoutRouteImport } from './routes/contact/_layout'
 import { Route as AuthRegisterRouteImport } from './routes/auth/register'
 import { Route as AuthLoginRouteImport } from './routes/auth/login'
@@ -49,7 +52,6 @@ const ServicesRouteImport = createFileRoute('/services')()
 const QuoteRouteImport = createFileRoute('/quote')()
 const ProjectsRouteImport = createFileRoute('/projects')()
 const ProductsRouteImport = createFileRoute('/products')()
-const IntroductionRouteImport = createFileRoute('/introduction')()
 const ContactRouteImport = createFileRoute('/contact')()
 const AuthRouteImport = createFileRoute('/auth')()
 const AdminRouteImport = createFileRoute('/admin')()
@@ -72,11 +74,6 @@ const ProjectsRoute = ProjectsRouteImport.update({
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IntroductionRoute = IntroductionRouteImport.update({
-  id: '/introduction',
-  path: '/introduction',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -120,9 +117,9 @@ const ProductsIndexRoute = ProductsIndexRouteImport.update({
   getParentRoute: () => ProductsRoute,
 } as any)
 const IntroductionIndexRoute = IntroductionIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => IntroductionRoute,
+  id: '/introduction/',
+  path: '/introduction/',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const ContactIndexRoute = ContactIndexRouteImport.update({
   id: '/',
@@ -165,10 +162,28 @@ const ProductsIdRoute = ProductsIdRouteImport.update({
   path: '/products/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IntroductionLayoutRoute = IntroductionLayoutRouteImport.update({
-  id: '/_layout',
-  getParentRoute: () => IntroductionRoute,
+const IntroductionPrivacyPolicyRoute =
+  IntroductionPrivacyPolicyRouteImport.update({
+    id: '/introduction/privacy-policy',
+    path: '/introduction/privacy-policy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const IntroductionPartnersRoute = IntroductionPartnersRouteImport.update({
+  id: '/introduction/partners',
+  path: '/introduction/partners',
+  getParentRoute: () => rootRouteImport,
 } as any)
+const IntroductionFacilitiesRoute = IntroductionFacilitiesRouteImport.update({
+  id: '/introduction/facilities',
+  path: '/introduction/facilities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IntroductionCompanyProfileRoute =
+  IntroductionCompanyProfileRouteImport.update({
+    id: '/introduction/company-profile',
+    path: '/introduction/company-profile',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ContactLayoutRoute = ContactLayoutRouteImport.update({
   id: '/_layout',
   getParentRoute: () => ContactRoute,
@@ -261,7 +276,10 @@ export interface FileRoutesByFullPath {
   '/auth/login': typeof AuthLoginRoute
   '/auth/register': typeof AuthRegisterRoute
   '/contact': typeof ContactLayoutRoute
-  '/introduction': typeof IntroductionLayoutRoute
+  '/introduction/company-profile': typeof IntroductionCompanyProfileRoute
+  '/introduction/facilities': typeof IntroductionFacilitiesRoute
+  '/introduction/partners': typeof IntroductionPartnersRoute
+  '/introduction/privacy-policy': typeof IntroductionPrivacyPolicyRoute
   '/products/$id': typeof ProductsIdRoute
   '/products': typeof ProductsLayoutRoute
   '/projects/$slug': typeof ProjectsSlugRoute
@@ -271,7 +289,7 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesLayoutRoute
   '/admin/': typeof AdminIndexRoute
   '/contact/': typeof ContactIndexRoute
-  '/introduction/': typeof IntroductionIndexRoute
+  '/introduction': typeof IntroductionIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/projects/': typeof ProjectsIndexRoute
   '/quote/': typeof QuoteIndexRoute
@@ -296,7 +314,10 @@ export interface FileRoutesByTo {
   '/auth/login': typeof AuthLoginRoute
   '/auth/register': typeof AuthRegisterRoute
   '/contact': typeof ContactIndexRoute
-  '/introduction': typeof IntroductionIndexRoute
+  '/introduction/company-profile': typeof IntroductionCompanyProfileRoute
+  '/introduction/facilities': typeof IntroductionFacilitiesRoute
+  '/introduction/partners': typeof IntroductionPartnersRoute
+  '/introduction/privacy-policy': typeof IntroductionPrivacyPolicyRoute
   '/products/$id': typeof ProductsIdRoute
   '/products': typeof ProductsIndexRoute
   '/projects/$slug': typeof ProjectsSlugRoute
@@ -304,6 +325,7 @@ export interface FileRoutesByTo {
   '/quote': typeof QuoteIndexRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services': typeof ServicesIndexRoute
+  '/introduction': typeof IntroductionIndexRoute
   '/admin/categories': typeof AdminLayoutCategoriesRoute
   '/admin/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/contact': typeof AdminLayoutContactRoute
@@ -328,8 +350,10 @@ export interface FileRoutesById {
   '/auth/register': typeof AuthRegisterRoute
   '/contact': typeof ContactRouteWithChildren
   '/contact/_layout': typeof ContactLayoutRoute
-  '/introduction': typeof IntroductionRouteWithChildren
-  '/introduction/_layout': typeof IntroductionLayoutRoute
+  '/introduction/company-profile': typeof IntroductionCompanyProfileRoute
+  '/introduction/facilities': typeof IntroductionFacilitiesRoute
+  '/introduction/partners': typeof IntroductionPartnersRoute
+  '/introduction/privacy-policy': typeof IntroductionPrivacyPolicyRoute
   '/products/$id': typeof ProductsIdRoute
   '/products': typeof ProductsRouteWithChildren
   '/products/_layout': typeof ProductsLayoutRoute
@@ -370,7 +394,10 @@ export interface FileRouteTypes {
     | '/auth/login'
     | '/auth/register'
     | '/contact'
-    | '/introduction'
+    | '/introduction/company-profile'
+    | '/introduction/facilities'
+    | '/introduction/partners'
+    | '/introduction/privacy-policy'
     | '/products/$id'
     | '/products'
     | '/projects/$slug'
@@ -380,7 +407,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/admin/'
     | '/contact/'
-    | '/introduction/'
+    | '/introduction'
     | '/products/'
     | '/projects/'
     | '/quote/'
@@ -405,7 +432,10 @@ export interface FileRouteTypes {
     | '/auth/login'
     | '/auth/register'
     | '/contact'
-    | '/introduction'
+    | '/introduction/company-profile'
+    | '/introduction/facilities'
+    | '/introduction/partners'
+    | '/introduction/privacy-policy'
     | '/products/$id'
     | '/products'
     | '/projects/$slug'
@@ -413,6 +443,7 @@ export interface FileRouteTypes {
     | '/quote'
     | '/services/$slug'
     | '/services'
+    | '/introduction'
     | '/admin/categories'
     | '/admin/company-intros'
     | '/admin/contact'
@@ -436,8 +467,10 @@ export interface FileRouteTypes {
     | '/auth/register'
     | '/contact'
     | '/contact/_layout'
-    | '/introduction'
-    | '/introduction/_layout'
+    | '/introduction/company-profile'
+    | '/introduction/facilities'
+    | '/introduction/partners'
+    | '/introduction/privacy-policy'
     | '/products/$id'
     | '/products'
     | '/products/_layout'
@@ -474,7 +507,10 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRouteWithChildren
   AuthRoute: typeof AuthRouteWithChildren
   ContactRoute: typeof ContactRouteWithChildren
-  IntroductionRoute: typeof IntroductionRouteWithChildren
+  IntroductionCompanyProfileRoute: typeof IntroductionCompanyProfileRoute
+  IntroductionFacilitiesRoute: typeof IntroductionFacilitiesRoute
+  IntroductionPartnersRoute: typeof IntroductionPartnersRoute
+  IntroductionPrivacyPolicyRoute: typeof IntroductionPrivacyPolicyRoute
   ProductsIdRoute: typeof ProductsIdRoute
   ProductsRoute: typeof ProductsRouteWithChildren
   ProjectsSlugRoute: typeof ProjectsSlugRoute
@@ -482,6 +518,7 @@ export interface RootRouteChildren {
   QuoteRoute: typeof QuoteRouteWithChildren
   ServicesSlugRoute: typeof ServicesSlugRoute
   ServicesRoute: typeof ServicesRouteWithChildren
+  IntroductionIndexRoute: typeof IntroductionIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -512,13 +549,6 @@ declare module '@tanstack/react-router' {
       path: '/products'
       fullPath: '/products'
       preLoaderRoute: typeof ProductsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/introduction': {
-      id: '/introduction'
-      path: '/introduction'
-      fullPath: '/introduction'
-      preLoaderRoute: typeof IntroductionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -579,10 +609,10 @@ declare module '@tanstack/react-router' {
     }
     '/introduction/': {
       id: '/introduction/'
-      path: '/'
-      fullPath: '/introduction/'
+      path: '/introduction'
+      fullPath: '/introduction'
       preLoaderRoute: typeof IntroductionIndexRouteImport
-      parentRoute: typeof IntroductionRoute
+      parentRoute: typeof rootRouteImport
     }
     '/contact/': {
       id: '/contact/'
@@ -647,12 +677,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/introduction/_layout': {
-      id: '/introduction/_layout'
-      path: '/introduction'
-      fullPath: '/introduction'
-      preLoaderRoute: typeof IntroductionLayoutRouteImport
-      parentRoute: typeof IntroductionRoute
+    '/introduction/privacy-policy': {
+      id: '/introduction/privacy-policy'
+      path: '/introduction/privacy-policy'
+      fullPath: '/introduction/privacy-policy'
+      preLoaderRoute: typeof IntroductionPrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/introduction/partners': {
+      id: '/introduction/partners'
+      path: '/introduction/partners'
+      fullPath: '/introduction/partners'
+      preLoaderRoute: typeof IntroductionPartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/introduction/facilities': {
+      id: '/introduction/facilities'
+      path: '/introduction/facilities'
+      fullPath: '/introduction/facilities'
+      preLoaderRoute: typeof IntroductionFacilitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/introduction/company-profile': {
+      id: '/introduction/company-profile'
+      path: '/introduction/company-profile'
+      fullPath: '/introduction/company-profile'
+      preLoaderRoute: typeof IntroductionCompanyProfileRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/contact/_layout': {
       id: '/contact/_layout'
@@ -849,20 +900,6 @@ const ContactRouteChildren: ContactRouteChildren = {
 const ContactRouteWithChildren =
   ContactRoute._addFileChildren(ContactRouteChildren)
 
-interface IntroductionRouteChildren {
-  IntroductionLayoutRoute: typeof IntroductionLayoutRoute
-  IntroductionIndexRoute: typeof IntroductionIndexRoute
-}
-
-const IntroductionRouteChildren: IntroductionRouteChildren = {
-  IntroductionLayoutRoute: IntroductionLayoutRoute,
-  IntroductionIndexRoute: IntroductionIndexRoute,
-}
-
-const IntroductionRouteWithChildren = IntroductionRoute._addFileChildren(
-  IntroductionRouteChildren,
-)
-
 interface ProductsRouteChildren {
   ProductsLayoutRoute: typeof ProductsLayoutRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
@@ -922,7 +959,10 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRouteWithChildren,
   AuthRoute: AuthRouteWithChildren,
   ContactRoute: ContactRouteWithChildren,
-  IntroductionRoute: IntroductionRouteWithChildren,
+  IntroductionCompanyProfileRoute: IntroductionCompanyProfileRoute,
+  IntroductionFacilitiesRoute: IntroductionFacilitiesRoute,
+  IntroductionPartnersRoute: IntroductionPartnersRoute,
+  IntroductionPrivacyPolicyRoute: IntroductionPrivacyPolicyRoute,
   ProductsIdRoute: ProductsIdRoute,
   ProductsRoute: ProductsRouteWithChildren,
   ProjectsSlugRoute: ProjectsSlugRoute,
@@ -930,6 +970,7 @@ const rootRouteChildren: RootRouteChildren = {
   QuoteRoute: QuoteRouteWithChildren,
   ServicesSlugRoute: ServicesSlugRoute,
   ServicesRoute: ServicesRouteWithChildren,
+  IntroductionIndexRoute: IntroductionIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

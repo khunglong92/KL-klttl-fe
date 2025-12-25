@@ -1,7 +1,15 @@
 {
   "common": {
     "viewDetails": "Xem chi tiết",
-    "close": "Đóng"
+    "close": "Đóng",
+    "all": "Tất cả"
+  },
+  "sidebar": {
+    "featured_services": "Dịch vụ nổi bật",
+    "online_support": "Hỗ trợ trực tuyến",
+    "product_categories": "Danh mục sản phẩm",
+    "hotline": "Hotline 24/7",
+    "service_hours": "Phục vụ 24/7 (Cả ngày lễ)"
   },
   "nav": {
     "home": "Trang chủ",
@@ -10,6 +18,11 @@
     "contact": "Liên hệ",
     "introduction": "Giới thiệu",
     "services": "Dịch vụ",
+    "introduction_general": "GIỚI THIỆU CHUNG",
+    "introduction_profile": "HỒ SƠ NĂNG LỰC",
+    "introduction_facilities": "CƠ SỞ VẬT CHẤT",
+    "introduction_partners": "ĐỐI TÁC",
+    "introduction_privacy": "CHÍNH SÁCH BẢO MẬT",
     "quote": "Báo giá",
     "project": "Dự án",
     "emailContact": "EMAIL LIÊN HỆ",
@@ -103,6 +116,136 @@
       "addressFallback": "TP. Hồ Chí Minh",
       "cta": "Gọi ngay",
       "footer": "© 2024 Tất cả quyền được bảo lưu"
+    }
+  },
+  "introduction_pages": {
+    "general": {
+      "hero-title": "TRANG GIỚI THIỆU",
+      "title": "GIỚI THIỆU CHUNG",
+      "content": "Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc được thành lập vào tháng 1 năm 2026, hoạt động trong lĩnh vực sản xuất, gia công và cung ứng các sản phẩm kim loại tấm phục vụ cho nhiều ngành nghề khác nhau. Công ty chuyên gia công kim loại tấm theo yêu cầu với các hạng mục như cắt laser, cắt CNC, chấn gấp, đột dập, hàn, lắp ráp và hoàn thiện bề mặt sản phẩm. Bên cạnh đó, Thiên Lộc còn hoạt động trong các lĩnh vực thiết kế – chế tạo chi tiết cơ khí, sản xuất khung vỏ kim loại, tủ điện, thang máng cáp, lan can – hàng rào kim loại, kết cấu thép nhẹ và các sản phẩm cơ khí phụ trợ cho công nghiệp và xây dựng.\n\nVới định hướng lấy chất lượng, tiến độ và uy tín làm giá trị cốt lõi, công ty không ngừng đầu tư hệ thống máy móc hiện đại, cải tiến quy trình sản xuất và nâng cao tay nghề đội ngũ kỹ thuật. Trụ sở và xưởng sản xuất của công ty đặt tại thôn Võng La, xã Thiên Lộc, thuận tiện cho việc sản xuất, vận chuyển và hợp tác với đối tác trong và ngoài khu vực. Thiên Lộc hướng tới mục tiêu trở thành đơn vị gia công kim loại tấm đáng tin cậy, đồng hành lâu dài cùng khách hàng và đối tác trên con đường phát triển bền vững"
+    },
+    "profile": {
+      "title": "HỒ SƠ NĂNG LỰC",
+      "subtitle": "CÔNG TY SẢN XUẤT VÀ GIA CÔNG KIM LOẠI TẤM THIÊN LỘC",
+      "sections": {
+        "info": {
+          "title": "1. Thông tin chung",
+          "items": [
+            "Tên công ty: Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc",
+            "Thời gian thành lập: Tháng 01 năm 2026",
+            "Địa chỉ: Thôn Võng La, xã Thiên Lộc",
+            "Lĩnh vực hoạt động: Sản xuất và gia công kim loại tấm"
+          ]
+        },
+        "fields": {
+          "title": "2. Lĩnh vực hoạt động chính",
+          "description": "Thiên Lộc hoạt động chuyên sâu trong lĩnh vực sản xuất và gia công kim loại tấm, bao gồm:",
+          "items": [
+            "Gia công kim loại tấm theo yêu cầu",
+            "Cắt laser, cắt CNC kim loại",
+            "Chấn gấp, đột dập kim loại tấm",
+            "Hàn, lắp ráp và hoàn thiện sản phẩm",
+            "Thiết kế và chế tạo chi tiết cơ khí",
+            "Sản xuất khung vỏ kim loại, tủ điện, thang máng cáp",
+            "Gia công lan can, hàng rào, kết cấu thép nhẹ và các sản phẩm cơ khí phụ trợ cho công nghiệp và xây dựng"
+          ]
+        },
+        "capacity": {
+          "title": "3. Năng lực sản xuất",
+          "content": "Công ty sở hữu hệ thống máy móc, thiết bị gia công kim loại tấm hiện đại, đáp ứng tốt các yêu cầu kỹ thuật và tiến độ của khách hàng. Đội ngũ kỹ thuật và công nhân có tay nghề, giàu kinh nghiệm thực tế, sẵn sàng tư vấn và triển khai các giải pháp gia công phù hợp với từng nhu cầu cụ thể."
+        },
+        "quality": {
+          "title": "4. Cam kết chất lượng",
+          "content": "Thiên Lộc luôn đặt chất lượng sản phẩm – tiến độ giao hàng – uy tín hợp tác lên hàng đầu. Mỗi sản phẩm trước khi bàn giao đều được kiểm tra kỹ lưỡng, đảm bảo đúng bản vẽ, đúng yêu cầu kỹ thuật và đạt tính thẩm mỹ cao."
+        },
+        "development": {
+          "title": "5. Định hướng phát triển",
+          "content": "Với mục tiêu phát triển bền vững, Thiên Lộc không ngừng đầu tư nâng cấp máy móc, cải tiến quy trình sản xuất và nâng cao chất lượng dịch vụ, hướng tới trở thành đơn vị gia công kim loại tấm uy tín, là đối tác tin cậy của khách hàng trong và ngoài khu vực."
+        }
+      }
+    },
+    "facilities": {
+      "title": "CƠ SỞ VẬT CHẤT",
+      "intro": "Công ty TNHH Sản Xuất & GIA CÔNG KIM LOẠI TẤM luôn chú trọng đầu tư và hoàn thiện hệ thống cơ sở vật chất nhằm xây dựng môi trường làm việc chuyên nghiệp, hiện đại, tạo điều kiện để đội ngũ cán bộ, công nhân viên phát huy tối đa năng lực và tinh thần làm việc nhiệt huyết. Thành Tiến không chỉ là nơi hội tụ nhân lực chất lượng cao mà còn là môi trường để mỗi cá nhân được phát triển, cống hiến và đồng hành lâu dài cùng doanh nghiệp.",
+      "section_a": {
+        "title": "A. Xưởng sản xuất",
+        "p1": "Hiện nay, Thành Tiến sở hữu hệ thống nhà xưởng quy mô lớn, được bố trí khoa học, đáp ứng đầy đủ các yêu cầu sản xuất và gia công theo tiêu chuẩn chất lượng cao.",
+        "p2": "Các khu vực sản xuất được bố trí riêng biệt cho từng công đoạn, từ tiếp nhận nguyên vật liệu, gia công, lắp ráp đến hoàn thiện sản phẩm. Mỗi công đoạn đều được hỗ trợ bởi hệ thống máy móc, thiết bị và phương tiện phụ trợ hiện đại, giúp tối ưu hiệu suất và đảm bảo độ chính xác cao.",
+        "p3": "Bên cạnh đó, các bộ phận chuyên môn tiến hành kiểm tra, giám sát chặt chẽ sau từng công đoạn sản xuất, nhằm đảm bảo sản phẩm khi xuất xưởng luôn đạt chất lượng tốt nhất theo yêu cầu của khách hàng. Hệ thống vệ sinh công nghiệp, an toàn lao động và phòng cháy chữa cháy được trang bị đầy đủ, tuân thủ nghiêm ngặt các quy định hiện hành, góp phần bảo vệ sức khỏe và sự an toàn cho người lao động."
+      },
+      "section_b": {
+        "title": "B. Văn phòng làm việc",
+        "content": "Hệ thống văn phòng của Thành Tiến được xây dựng khang trang với tổng diện tích trên 700m² mặt sàn, được trang bị đầy đủ các thiết bị, phụ kiện văn phòng và thiết bị kỹ thuật phục vụ chuyên môn. Không gian làm việc được bố trí khoa học, hiện đại, đáp ứng tốt nhu cầu làm việc của các phòng ban và tạo môi trường làm việc chuyên nghiệp, hiệu quả.",
+        "address_label": "Địa chỉ văn phòng giao dịch:",
+        "address_value": "Nhà văn hoá mới, thôn Võng La, xã Thiên Lộc , TP Hà nội"
+      },
+      "section_c": {
+        "title": "C. Thông tin liên hệ",
+        "phone_label": "Số điện thoại:",
+        "email_label": "Email:"
+      }
+    },
+    "partners": {
+      "title": "ĐỐI TÁC",
+      "intro": "Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc luôn coi trọng việc xây dựng và phát triển mối quan hệ hợp tác bền vững với các đối tác, nhà cung cấp và khách hàng trên tinh thần uy tín – minh bạch – cùng phát triển.",
+      "fields": "Công ty hiện đang hợp tác với nhiều đối tác trong các lĩnh vực cơ khí, xây dựng, công nghiệp phụ trợ và sản xuất thiết bị, góp phần tạo nên chuỗi cung ứng ổn định và hiệu quả.",
+      "collaboration": "Thông qua quá trình hợp tác, Thiên Lộc không ngừng nâng cao năng lực sản xuất, cải tiến chất lượng sản phẩm và tối ưu giải pháp kỹ thuật nhằm đáp ứng tốt hơn các yêu cầu ngày càng cao của đối tác.",
+      "motto": "Với phương châm hợp tác lâu dài, tôn trọng cam kết và lợi ích hài hòa, Thiên Lộc hướng tới trở thành đối tác tin cậy, đồng hành cùng khách hàng và đối tác trong các dự án hiện tại và tương lai."
+    },
+    "privacy": {
+      "title": "CHÍNH SÁCH BẢO MẬT",
+      "p1": "Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc cam kết bảo mật tuyệt đối mọi thông tin cá nhân của khách hàng và đối tác khi truy cập, liên hệ và hợp tác thông qua website. Chính sách bảo mật này được xây dựng nhằm thể hiện rõ trách nhiệm của Thiên Lộc trong việc tôn trọng quyền riêng tư và bảo vệ dữ liệu cá nhân của khách hàng.",
+      "p2": "Mọi thông tin thu thập được chỉ được sử dụng cho mục đích nội bộ, phục vụ hoạt động tư vấn, báo giá và thực hiện dịch vụ. Chúng tôi không mua bán, trao đổi hoặc chia sẻ thông tin cá nhân của khách hàng cho bất kỳ bên thứ ba nào khi chưa có sự đồng ý của khách hàng, trừ các trường hợp được quy định bởi pháp luật.",
+      "collection": {
+        "title": "THU THẬP THÔNG TIN CÁ NHÂN",
+        "intro": "Thiên Lộc thu thập các thông tin định danh cá nhân khi khách hàng chủ động cung cấp, bao gồm nhưng không giới hạn ở: họ tên, số điện thoại, địa chỉ email, địa chỉ liên hệ và các thông tin liên quan đến nhu cầu dịch vụ.",
+        "extra": "Ngoài ra, trong quá trình khách hàng truy cập website, chúng tôi có thể thu thập một số thông tin kỹ thuật như:",
+        "list": [
+          "Loại trình duyệt sử dụng",
+          "Thời gian và thời điểm truy cập",
+          "Các trang đã truy cập trên website",
+          "Nguồn truy cập vào website"
+        ],
+        "footer": "Những thông tin này được thu thập nhằm mục đích nâng cao trải nghiệm người dùng, cải thiện chất lượng dịch vụ và quản lý, vận hành website hiệu quả hơn."
+      },
+      "usage": {
+        "title": "MỤC ĐÍCH SỬ DỤNG THÔNG TIN",
+        "intro": "Thông tin cá nhân của khách hàng được Thiên Lộc sử dụng cho các mục đích sau:",
+        "list": [
+          "Liên hệ tư vấn, giải đáp yêu cầu của khách hàng",
+          "Cung cấp báo giá, thông tin dịch vụ và hỗ trợ kỹ thuật",
+          "Thực hiện hợp đồng, đơn hàng và các nghĩa vụ liên quan",
+          "Cải thiện chất lượng dịch vụ và trải nghiệm người dùng"
+        ],
+        "footer": "Chúng tôi cam kết chỉ sử dụng thông tin đúng với mục đích đã nêu và trong phạm vi cần thiết."
+      },
+      "sharing": {
+        "title": "PHÂN PHỐI VÀ CHIA SẺ THÔNG TIN",
+        "intro": "Thiên Lộc không chia sẻ thông tin cá nhân của khách hàng cho các tổ chức, cá nhân bên ngoài, ngoại trừ các trường hợp sau:",
+        "consent_title": "Có sự đồng ý của khách hàng",
+        "consent_body": "Chúng tôi chỉ chia sẻ thông tin cá nhân khi nhận được sự chấp thuận rõ ràng từ khách hàng.",
+        "legal_title": "Theo yêu cầu pháp lý",
+        "legal_body": "Trong trường hợp có yêu cầu từ cơ quan nhà nước có thẩm quyền hoặc nhằm phục vụ công tác điều tra, phòng chống gian lận theo quy định của pháp luật, Thiên Lộc có thể cung cấp thông tin theo đúng quy định hiện hành."
+      },
+      "security": {
+        "title": "BẢO MẬT THÔNG TIN",
+        "content": "Thiên Lộc áp dụng các biện pháp quản lý và kỹ thuật phù hợp để bảo vệ thông tin cá nhân của khách hàng khỏi các nguy cơ truy cập trái phép, mất mát, ròì rỉ hoặc sử dụng sai mục đích. Chỉ những cá nhân, bộ phận có thẩm quyền mới được phép tiếp cận thông tin trong phạm vi công việc được giao."
+      },
+      "contact": {
+        "title": "CÂU HỎI VÀ LIÊN HỆ",
+        "intro": "Nếu quý khách có bất kỳ câu hỏi, thắc mắc hoặc ý kiến nào liên quan đến chính sách bảo mật, vui lòng liên hệ với chúng tôi qua các kênh sau:",
+        "email_label": "Email:",
+        "hotline_label": "Hotline:",
+        "footer": "Chúng tôi luôn sẵn sàng tiếp nhận và giải đáp mọi phản hồi từ khách hàng."
+      },
+      "changes": {
+        "title": "THAY ĐỔI CHÍNH SÁCH",
+        "content": "Thiên Lộc có quyền cập nhật, điều chỉnh nội dung chính sách bảo mật này khi cần thiết để phù hợp với hoạt động kinh doanh và các quy định pháp luật hiện hành. Mọi thay đổi sẽ được công bố công khai trên website."
+      },
+      "time": {
+        "title": "THỜI GIAN ÁP DỤNG",
+        "content": "Chính sách bảo mật này có hiệu lực và được áp dụng xuyên suốt trong thời gian website của Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc hoạt động."
+      }
     }
   },
   "introduction": {

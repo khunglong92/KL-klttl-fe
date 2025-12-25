@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createRouter } from "@tanstack/react-router";
 import { QueryClientProvider } from "@tanstack/react-query";
+import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import "./styles/globals.css";
 import "./lib/i18n/config";
@@ -249,18 +250,22 @@ if (typeof window !== "undefined") {
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <ColorSchemeScript defaultColorScheme={savedTheme as "light" | "dark"} />
-      <MantineProvider
-        theme={theme}
-        defaultColorScheme={savedTheme as "light" | "dark"}
-        colorSchemeManager={localStorageColorSchemeManager({ key: "theme" })}
-      >
-        <ModalsProvider>
-          <Notifications position="top-right" autoClose={3000} />
-          <ThemeWrapper router={router} />
-        </ModalsProvider>
-      </MantineProvider>
-    </QueryClientProvider>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <ColorSchemeScript
+          defaultColorScheme={savedTheme as "light" | "dark"}
+        />
+        <MantineProvider
+          theme={theme}
+          defaultColorScheme={savedTheme as "light" | "dark"}
+          colorSchemeManager={localStorageColorSchemeManager({ key: "theme" })}
+        >
+          <ModalsProvider>
+            <Notifications position="top-right" autoClose={3000} />
+            <ThemeWrapper router={router} />
+          </ModalsProvider>
+        </MantineProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
   </StrictMode>
 );
