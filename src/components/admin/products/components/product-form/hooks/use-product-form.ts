@@ -41,9 +41,14 @@ export interface ProductFormData {
   isFeatured: boolean;
 }
 
+export type ProductFormSubmitPayload = Omit<ProductFormData, "price"> & {
+  price?: number;
+};
+
 export interface UseProductFormParams {
   isEditing: boolean;
-  form: {
+  onSubmit: (payload: ProductFormSubmitPayload) => Promise<void>;
+  initialValues?: {
     id?: string;
     name: string;
     description: string;
@@ -54,25 +59,26 @@ export interface UseProductFormParams {
     categoryId: number | null;
     isFeatured?: boolean;
   };
-  setForm: (next: any) => void;
-  onSubmit: (finalForm: {
-    id?: string;
-    name: string;
-    description: string;
-    technicalSpecs: string;
-    price: string;
-    warrantyPolicy: string;
-    images: string;
-    categoryId: number | null;
-    isFeatured?: boolean;
-  }) => Promise<void>;
 }
+
+const defaultInitialValues = {
+  id: undefined,
+  name: "",
+  description: "",
+  technicalSpecs: "",
+  price: "",
+  warrantyPolicy: "",
+  images: "",
+  categoryId: null,
+  isFeatured: true,
+};
 
 export function useProductForm(
   params: UseProductFormParams,
   categories: CategoryItem[]
 ) {
-  const { isEditing, form, setForm, onSubmit } = params;
+  const { isEditing, onSubmit, initialValues: form = defaultInitialValues } =
+    params;
   const [currentTab, setCurrentTab] = useState("basic");
   const [imageFiles, setImageFiles] = useState<ImageItem[]>([]);
   const [deletedImageUrls, setDeletedImageUrls] = useState<string[]>([]);
@@ -422,23 +428,24 @@ export function useProductForm(
           delete technicalSpecsObj[k];
       });
 
-      const finalForm = {
-        id: data.id, // Add this line
-        name: data.name,
-        description: JSON.stringify(descriptionObj),
-        technicalSpecs: JSON.stringify(technicalSpecsObj),
-        price: data.price ? String(data.price) : "",
-        warrantyPolicy: data.warrantyPolicy || "",
-        images: JSON.stringify(allImageKeys),
-        categoryId: data.categoryId,
-        isFeatured: data.isFeatured,
+      const price = data.price ? Number(data.price) : undefined;
+      if (price !== undefined && isNaN(price)) {
+        toast.error("Giá sản phẩm không hợp lệ");
+        return;
+      }
+
+      const payload: ProductFormSubmitPayload = {
+        ...data,
+        price,
+        images: allImageKeys,
+        description: descriptionObj as any,
+        technicalSpecs: technicalSpecsObj as any,
       };
 
-      // Bước 4: Cập nhật product
-      setForm(finalForm);
-      await onSubmit(finalForm);
+      // Step 4: Submit the structured data
+      await onSubmit(payload);
 
-      // Bước 5: Reset state sau khi submit thành công
+      // Step 5: Reset state after successful submission
       setDeletedImageUrls([]);
     } catch (e: any) {
       toast.error(e?.message || "Có lỗi xảy ra");

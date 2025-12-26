@@ -9,23 +9,30 @@ import {
   Box,
 } from "@mantine/core";
 import { IconDeviceFloppy } from "@tabler/icons-react";
-import { useProductForm } from "./hooks/use-product-form";
 import { BasicInfoSection } from "./sections/BasicInfoSection";
 import { DescriptionSection } from "./sections/DescriptionSection";
 import { TechnicalSpecsSection } from "./sections/TechnicalSpecsSection";
 import { ImagesSection } from "./sections/ImagesSection";
 
+import {
+  ProductFormSubmitPayload,
+  useProductForm,
+} from "./hooks/use-product-form";
+
 export default function ProductForm({
   isEditing,
-  form,
-  setForm,
   onSubmit,
   onCancel,
   isSaving,
   categories,
+  initialValues,
 }: {
   isEditing: boolean;
-  form: {
+  onSubmit: (payload: ProductFormSubmitPayload) => Promise<void>;
+  onCancel?: () => void;
+  isSaving: boolean;
+  categories: { id: number; name: string }[];
+  initialValues?: {
     id?: string;
     name: string;
     description: string;
@@ -36,21 +43,6 @@ export default function ProductForm({
     categoryId: number | null;
     isFeatured?: boolean;
   };
-  setForm: (next: any) => void;
-  onSubmit: (finalForm: {
-    id?: string;
-    name: string;
-    description: string;
-    technicalSpecs: string;
-    price: string;
-    warrantyPolicy: string;
-    images: string;
-    categoryId: number | null;
-    isFeatured?: boolean;
-  }) => Promise<void>;
-  onCancel?: () => void;
-  isSaving: boolean;
-  categories: { id: number; name: string }[];
 }) {
   const {
     currentTab,
@@ -71,7 +63,10 @@ export default function ProductForm({
     resetForm,
     watchedPrice,
     watchedCategoryId,
-  } = useProductForm({ isEditing, form, setForm, onSubmit }, categories);
+  } = useProductForm(
+    { isEditing, initialValues, onSubmit },
+    categories
+  );
 
   const TABS = [
     { value: "basic", label: "Thông tin cơ bản" },

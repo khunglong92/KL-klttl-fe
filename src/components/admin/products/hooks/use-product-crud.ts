@@ -119,109 +119,16 @@ export function useProductCrud() {
     setIsDialogOpen(true);
   };
 
-  const submit = async (overrideForm?: {
-    name: string;
-    description: string;
-    technicalSpecs: string;
-    price: string;
-    warrantyPolicy: string;
-    images: string;
-    categoryId: number | null;
-    isFeatured?: boolean;
-  }) => {
-    const source = overrideForm ?? form;
-    if (!source.name.trim()) {
+  const submit = async (
+    payload: Omit<UpdateProductDto, "id"> & { id?: string }
+  ) => {
+    if (!payload.name?.trim()) {
       toast.error("Tên sản phẩm là bắt buộc");
       return;
     }
-    if (!source.categoryId) {
+    if (!payload.categoryId) {
       toast.error("Vui lòng chọn danh mục");
       return;
-    }
-
-    // Parse description từ JSON string thành object
-    // Images đã được upload trong form hook và set vào form.images dưới dạng JSON string
-    let descriptionObj: Record<string, unknown> | undefined = undefined;
-    if (source.description) {
-      try {
-        descriptionObj = JSON.parse(source.description);
-      } catch {
-        // Nếu không phải JSON hợp lệ, giữ nguyên string
-        descriptionObj = { overview: source.description } as any;
-      }
-    }
-
-    // Parse technicalSpecs từ JSON string thành object
-    let technicalSpecsObj: Record<string, unknown> | undefined = undefined;
-    if (source.technicalSpecs) {
-      try {
-        technicalSpecsObj = JSON.parse(source.technicalSpecs);
-        // Remove empty values
-        if (technicalSpecsObj) {
-          Object.keys(technicalSpecsObj).forEach((key) => {
-            const value = (technicalSpecsObj as any)[key];
-            if (value === "" || value === null || value === undefined) {
-              delete (technicalSpecsObj as any)[key];
-            }
-          });
-          // Chỉ gửi nếu có ít nhất 1 field
-          if (Object.keys(technicalSpecsObj).length === 0) {
-            technicalSpecsObj = undefined;
-          }
-        }
-      } catch {
-        technicalSpecsObj = undefined;
-      }
-    }
-
-    // Parse images từ JSON string thành array (đã được upload trong form hook)
-    let imagesArray: string[] | undefined = undefined;
-    if (source.images) {
-      try {
-        const parsed = JSON.parse(source.images);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          imagesArray = parsed;
-        }
-      } catch {
-        // Nếu parse lỗi, giữ undefined
-        imagesArray = undefined;
-      }
-    }
-
-    // Build payload theo format của backend API
-    const payload: {
-      name: string;
-      description?: Record<string, unknown>;
-      technicalSpecs?: Record<string, unknown>;
-      price?: number;
-      warrantyPolicy?: string;
-      images?: string[];
-      categoryId: number;
-      isFeatured?: boolean;
-    } = {
-      name: source.name.trim(),
-      categoryId: source.categoryId,
-      isFeatured: source.isFeatured ?? true,
-    };
-
-    // Chỉ thêm các field optional nếu có giá trị
-    if (descriptionObj) {
-      payload.description = descriptionObj;
-    }
-    if (technicalSpecsObj) {
-      payload.technicalSpecs = technicalSpecsObj;
-    }
-    if (source.price) {
-      const priceNum = Number(source.price);
-      if (!isNaN(priceNum) && priceNum > 0) {
-        payload.price = priceNum;
-      }
-    }
-    if (source.warrantyPolicy?.trim()) {
-      payload.warrantyPolicy = source.warrantyPolicy.trim();
-    }
-    if (imagesArray && imagesArray.length > 0) {
-      payload.images = imagesArray;
     }
 
     try {

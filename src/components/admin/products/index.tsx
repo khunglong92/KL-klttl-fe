@@ -83,10 +83,9 @@ export default function AdminProductPage() {
 
           <ProductForm
             isEditing={mode === "edit"}
-            form={crud.form as any}
-            setForm={(next) => crud.setForm(next as any)}
-            onSubmit={async (finalForm) => {
-              await crud.submit(finalForm as any);
+            initialValues={crud.form}
+            onSubmit={async (payload) => {
+              await crud.submit(payload as any);
               setMode("list");
             }}
             onCancel={() => setMode("list")}

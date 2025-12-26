@@ -45,64 +45,48 @@ const isMinioKey = (value: string): boolean => {
 export const getKeyFromUrl = (url: string): string => {
   if (!url) return "";
 
-  // 1. Try to decode the URL first, in case it was encoded
-  let processedUrl = url;
   try {
-    processedUrl = decodeURIComponent(url);
-  } catch {
-    // If decoding fails, continue with original
-  }
+    // Attempt to parse the URL. This works for absolute URLs.
+    const urlObject = new URL(url);
 
-  // 2. Priority: Match known entity patterns FIRST
-  // This is the most robust way because it ignores bucket/host differences
-  const patterns = [
-    /(products\/.+)/,
-    /(projects\/.+)/,
-    /(services\/.+)/,
-    /(posts\/.+)/,
-    /(users\/.+)/,
-    /(avatars\/.+)/,
-    /(banners\/.+)/,
-    /(categories\/.+)/,
-    /(quotes\/.+)/,
-    /(general\/.+)/,
-  ];
+    // Split the pathname and filter out empty segments (from leading/trailing slashes)
+    const pathSegments = urlObject.pathname.split('/').filter(Boolean);
 
-  for (const pattern of patterns) {
-    const match = processedUrl.match(pattern);
-    if (match && match[1]) {
-      // Remove any query parameters if present in the match
-      return match[1]?.split("?")?.[0] || "";
-    }
-  }
+    // Find the index of a known directory ('products', 'projects', etc.)
+    // This makes the function robust to different hostnames and base paths.
+    const knownDirectories = [
+      "products", "projects", "services", "posts",
+      "users", "avatars", "banners", "categories", "quotes", "general"
+    ];
 
-  // 3. Try generic URL parsing logic
-  if (processedUrl.startsWith("http")) {
-    try {
-      const urlObj = new URL(processedUrl);
-      const parts = urlObj.pathname.split("/").filter(Boolean);
-
-      // MinIO path usually: /bucket/key
-      // If we have >= 2 parts, assume first part is bucket and rest is key
-      // Example: /bucket/products/1/image.jpg -> products/1/image.jpg
-      if (parts.length >= 2) {
-        return parts.slice(1).join("/");
+    let keyStartIndex = -1;
+    for (const dir of knownDirectories) {
+      const index = pathSegments.indexOf(dir);
+      if (index !== -1) {
+        keyStartIndex = index;
+        break;
       }
-
-      // If only 1 part, it might be just the key (unlikely for MinIO but possible for other setups)
-      return urlObj.pathname.substring(1);
-    } catch {
-      // URL parsing failed, fall through to regex
     }
-  }
 
-  // 4. Fallback to original logic: if it's not a URL, it might be the key itself
-  // Also blindly strip leading slash if present
-  if (processedUrl.startsWith("/")) {
-    return processedUrl.substring(1);
-  }
+    // If a known directory is found, the key is the rest of the path.
+    if (keyStartIndex !== -1) {
+      return pathSegments.slice(keyStartIndex).join('/');
+    }
 
-  return processedUrl;
+    // Fallback for URLs where the structure is /bucket/key/...
+    // Assumes the first segment is the bucket name.
+    if (pathSegments.length > 1) {
+      return pathSegments.slice(1).join('/');
+    }
+
+    // If all else fails, return the full pathname minus the leading slash.
+    return urlObject.pathname.substring(1);
+
+  } catch {
+    // If the URL is not absolute (e.g., it's already a key like "products/1/image.jpg"),
+    // the constructor will throw. In this case, we assume the input is the key.
+    return url;
+  }
 };
 
 export const uploadService = {
