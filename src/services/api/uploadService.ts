@@ -225,7 +225,7 @@ export const uploadService = {
    */
   async deleteImage(public_id: string): Promise<void> {
     const key = getKeyFromUrl(public_id);
-    return apiClient.delete(`/uploads/image/${key}`);
+    return apiClient.delete(`uploads/image/${key}`);
   },
 
   /**
