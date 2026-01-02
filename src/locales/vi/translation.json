@@ -1,0 +1,1938 @@
+{
+  "common": {
+    "viewDetails": "Xem chi tiết",
+    "close": "Đóng",
+    "all": "Tất cả",
+    "noResults": "Không tìm thấy kết quả",
+    "noImages": "Chưa có hình ảnh nào được chọn",
+    "dropzone": {
+      "title": "Kéo thả hoặc nhấn để chọn file",
+      "subtitle": "Hỗ trợ JPG, PNG, GIF.",
+      "selected": "Đã chọn"
+    },
+    "previous": "Trước",
+    "next": "Tiếp theo",
+    "viewMore": "Xem thêm",
+    "stt": "STT",
+    "noImage": "Không có ảnh",
+    "active": "Hoạt động",
+    "inactive": "Không hoạt động",
+    "delete": "Xóa",
+    "cancel": "Hủy",
+    "total": "Tổng",
+    "page": "Trang",
+    "featured": "Nổi bật"
+  },
+  "sidebar": {
+    "featured_services": "Dịch vụ nổi bật",
+    "featured_projects": "Dự án nổi bật",
+    "online_support": "Hỗ trợ trực tuyến",
+    "product_categories": "Danh mục sản phẩm",
+    "project_categories": "Danh mục dự án",
+    "all_products": "Tất cả sản phẩm",
+    "all_projects": "Tất cả dự án",
+    "hotline": "Hotline 24/7",
+    "service_hours": "Phục vụ 24/7 (Cả ngày lễ)",
+    "featured_news": "Tin nổi bật",
+    "recruitment": "Tuyển dụng"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "products": "Sản phẩm",
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "introduction": "Giới thiệu",
+    "services": "Dịch vụ",
+    "introduction_general": "GIỚI THIỆU CHUNG",
+    "introduction_profile": "HỒ SƠ NĂNG LỰC",
+    "introduction_facilities": "CƠ SỞ VẬT CHẤT",
+    "introduction_partners": "ĐỐI TÁC",
+    "introduction_privacy": "CHÍNH SÁCH BẢO MẬT",
+    "quote": "Báo giá",
+    "project": "Dự án",
+    "news": "Tin tức",
+    "recruitment": "Tuyển dụng",
+    "emailContact": "EMAIL LIÊN HỆ",
+    "phoneContact": "SỐ ĐIỆN THOẠI LIÊN HỆ",
+    "companyName": "THIÊN LỘC",
+    "companyDescription": "SX & GIA CÔNG KIM LOẠI TẤM",
+    "switchToEnglish": "Switch to English",
+    "switchToVietnamese": "Chuyển sang Tiếng Việt"
+  },
+  "theme": {
+    "dark": "Tối",
+    "light": "Sáng"
+  },
+
+  "login": {
+    "success": "Thành công",
+    "successMessage": "Đăng nhập thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+    "error": "Lỗi",
+    "errorMessage": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+    "invalidCredentials": "Tên đăng nhập hoặc mật khẩu không đúng!",
+    "invalidCredentialsMessage": "Tên đăng nhập hoặc mật khẩu không đúng!",
+    "successMessageLogout": "Đăng xuất thành công",
+    "errorMessageLogout": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+    "successMessageRegister": "Đăng ký thành công",
+    "errorMessageRegister": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+    "successMessageResetPassword": "Mật khẩu đã được reset",
+    "errorMessageResetPassword": "Có lỗi xảy ra. Vui lòng thử lại sau."
+  },
+  "hero": {
+    "badge": "Chất lượng cao • Giá tốt nhất",
+    "title": "Đồ Gia Dụng & Nội Thất",
+    "titleHighlight": "Cao Cấp",
+    "description": "Khám phá bộ sưu tập đồ gỗ và nhựa cao cấp cho ngôi nhà của bạn. Từ bàn ghế, tủ kệ đến các đồ dùng gia đình, chúng tôi có tất cả.",
+    "shopNow": "Mua sắm ngay",
+    "viewCollection": "Xem bộ sưu tập",
+    "products": "Sản phẩm",
+    "customers": "Khách hàng",
+    "rating": "Đánh giá"
+  },
+  "products": {
+    "title": "Sản Phẩm Nổi Bật",
+    "description": "Khám phá những công trình tiêu biểu mang dấu ấn Thiên Lộc – nơi kỹ thuật chính xác, chất lượng bền vững và thẩm mỹ tinh tế cùng hội tụ.",
+    "all": "Tất cả",
+    "new": "Mới",
+    "viewAll": "Xem tất cả sản phẩm",
+    "hero": {
+      "badge": "Chuyên nghiệp",
+      "tagline": "Gia công kim loại",
+      "title1": "Chính Xác",
+      "title2": "Chuyên Nghiệp",
+      "title3": "Hoàn Hảo",
+      "description": "Giải pháp gia công kim loại toàn diện với độ chính xác",
+      "description2": "đáp ứng mọi nhu cầu công nghiệp từ đơn giản đến phức tạp nhất.",
+      "cta": {
+        "quote": "Yêu cầu báo giá",
+        "contact": "Liên hệ ngay"
+      }
+    },
+    "features": {
+      "title": "Tại sao chọn chúng tôi",
+      "subtitle": "Cam kết chất lượng và dịch vụ xuất sắc",
+      "iso": {
+        "title": "Chứng nhận ISO 9001:2015",
+        "description": "Đảm bảo chất lượng quốc tế"
+      },
+      "delivery": {
+        "title": "Giao hàng đúng hạn",
+        "description": "Cam kết tiến độ chính xác"
+      },
+      "warranty": {
+        "title": "Bảo hành 24 tháng",
+        "description": "Hỗ trợ kỹ thuật trọn đời"
+      }
+    },
+    "achievements": {
+      "experience": "Năm kinh nghiệm",
+      "projects": "Dự án hoàn thành",
+      "satisfaction": "Hài lòng",
+      "support": "Hỗ trợ"
+    },
+    "categories": {
+      "empty": "Chưa có danh mục sản phẩm"
+    },
+    "card": {
+      "badge": "Sản phẩm",
+      "status": "Trạng thái",
+      "available": "Có sẵn",
+      "unavailable": "Hết hàng",
+      "priceLabel": "Giá",
+      "noPrice": "Liên hệ"
+    },
+    "contact": {
+      "title": "Liên hệ với chúng tôi",
+      "subtitle": "Sẵn sàng hỗ trợ bạn với giải pháp tốt nhất",
+      "hotlineLabel": "Hotline",
+      "emailLabel": "Email",
+      "addressLabel": "Địa chỉ",
+      "addressFallback": "TP. Hồ Chí Minh",
+      "cta": "Gọi ngay",
+      "footer": "© 2024 Tất cả quyền được bảo lưu"
+    },
+    "filter": {
+      "title": "Tất cả sản phẩm",
+      "subtitle": "Khám phá đầy đủ các sản phẩm gia công kim loại chất lượng cao",
+      "allCategories": "Tất cả danh mục",
+      "searchPlaceholder": "Tìm kiếm sản phẩm...",
+      "filterByCategory": "Lọc theo danh mục",
+      "grid": "Lưới",
+      "list": "Danh sách",
+      "clear": "Xóa bộ lọc",
+      "showing": "Hiển thị",
+      "products": "sản phẩm",
+      "noProducts": "Không tìm thấy sản phẩm",
+      "noProductsDesc": "Thử thay đổi bộ lọc hoặc tìm kiếm với từ khóa khác"
+    }
+  },
+  "introduction_pages": {
+    "general": {
+      "hero-title": "TRANG GIỚI THIỆU",
+      "title": "GIỚI THIỆU CHUNG",
+      "content": "Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc được thành lập vào tháng 1 năm 2026, hoạt động trong lĩnh vực sản xuất, gia công và cung ứng các sản phẩm kim loại tấm phục vụ cho nhiều ngành nghề khác nhau. Công ty chuyên gia công kim loại tấm theo yêu cầu với các hạng mục như cắt laser, cắt CNC, chấn gấp, đột dập, hàn, lắp ráp và hoàn thiện bề mặt sản phẩm. Bên cạnh đó, Thiên Lộc còn hoạt động trong các lĩnh vực thiết kế – chế tạo chi tiết cơ khí, sản xuất khung vỏ kim loại, tủ điện, thang máng cáp, lan can – hàng rào kim loại, kết cấu thép nhẹ và các sản phẩm cơ khí phụ trợ cho công nghiệp và xây dựng.\n\nVới định hướng lấy chất lượng, tiến độ và uy tín làm giá trị cốt lõi, công ty không ngừng đầu tư hệ thống máy móc hiện đại, cải tiến quy trình sản xuất và nâng cao tay nghề đội ngũ kỹ thuật. Trụ sở và xưởng sản xuất của công ty đặt tại thôn Võng La, xã Thiên Lộc, thuận tiện cho việc sản xuất, vận chuyển và hợp tác với đối tác trong và ngoài khu vực. Thiên Lộc hướng tới mục tiêu trở thành đơn vị gia công kim loại tấm đáng tin cậy, đồng hành lâu dài cùng khách hàng và đối tác trên con đường phát triển bền vững"
+    },
+    "profile": {
+      "title": "HỒ SƠ NĂNG LỰC",
+      "subtitle": "CÔNG TY SẢN XUẤT VÀ GIA CÔNG KIM LOẠI TẤM THIÊN LỘC",
+      "sections": {
+        "info": {
+          "title": "1. Thông tin chung",
+          "items": [
+            "Tên công ty: Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc",
+            "Thời gian thành lập: Tháng 01 năm 2026",
+            "Địa chỉ: Thôn Võng La, xã Thiên Lộc",
+            "Lĩnh vực hoạt động: Sản xuất và gia công kim loại tấm"
+          ]
+        },
+        "fields": {
+          "title": "2. Lĩnh vực hoạt động chính",
+          "description": "Thiên Lộc hoạt động chuyên sâu trong lĩnh vực sản xuất và gia công kim loại tấm, bao gồm:",
+          "items": [
+            "Gia công kim loại tấm theo yêu cầu",
+            "Cắt laser, cắt CNC kim loại",
+            "Chấn gấp, đột dập kim loại tấm",
+            "Hàn, lắp ráp và hoàn thiện sản phẩm",
+            "Thiết kế và chế tạo chi tiết cơ khí",
+            "Sản xuất khung vỏ kim loại, tủ điện, thang máng cáp",
+            "Gia công lan can, hàng rào, kết cấu thép nhẹ và các sản phẩm cơ khí phụ trợ cho công nghiệp và xây dựng"
+          ]
+        },
+        "capacity": {
+          "title": "3. Năng lực sản xuất",
+          "content": "Công ty sở hữu hệ thống máy móc, thiết bị gia công kim loại tấm hiện đại, đáp ứng tốt các yêu cầu kỹ thuật và tiến độ của khách hàng. Đội ngũ kỹ thuật và công nhân có tay nghề, giàu kinh nghiệm thực tế, sẵn sàng tư vấn và triển khai các giải pháp gia công phù hợp với từng nhu cầu cụ thể."
+        },
+        "quality": {
+          "title": "4. Cam kết chất lượng",
+          "content": "Thiên Lộc luôn đặt chất lượng sản phẩm – tiến độ giao hàng – uy tín hợp tác lên hàng đầu. Mỗi sản phẩm trước khi bàn giao đều được kiểm tra kỹ lưỡng, đảm bảo đúng bản vẽ, đúng yêu cầu kỹ thuật và đạt tính thẩm mỹ cao."
+        },
+        "development": {
+          "title": "5. Định hướng phát triển",
+          "content": "Với mục tiêu phát triển bền vững, Thiên Lộc không ngừng đầu tư nâng cấp máy móc, cải tiến quy trình sản xuất và nâng cao chất lượng dịch vụ, hướng tới trở thành đơn vị gia công kim loại tấm uy tín, là đối tác tin cậy của khách hàng trong và ngoài khu vực."
+        }
+      }
+    },
+    "facilities": {
+      "title": "CƠ SỞ VẬT CHẤT",
+      "intro": "Công ty TNHH Sản Xuất & GIA CÔNG KIM LOẠI TẤM luôn chú trọng đầu tư và hoàn thiện hệ thống cơ sở vật chất nhằm xây dựng môi trường làm việc chuyên nghiệp, hiện đại, tạo điều kiện để đội ngũ cán bộ, công nhân viên phát huy tối đa năng lực và tinh thần làm việc nhiệt huyết. Kim loại tấm thiên lộc không chỉ là nơi hội tụ nhân lực chất lượng cao mà còn là môi trường để mỗi cá nhân được phát triển, cống hiến và đồng hành lâu dài cùng doanh nghiệp.",
+      "section_a": {
+        "title": "A. Xưởng sản xuất",
+        "p1": "Hiện nay, Kim loại tấm thiên lộc sở hữu hệ thống nhà xưởng quy mô lớn, được bố trí khoa học, đáp ứng đầy đủ các yêu cầu sản xuất và gia công theo tiêu chuẩn chất lượng cao.",
+        "p2": "Các khu vực sản xuất được bố trí riêng biệt cho từng công đoạn, từ tiếp nhận nguyên vật liệu, gia công, lắp ráp đến hoàn thiện sản phẩm. Mỗi công đoạn đều được hỗ trợ bởi hệ thống máy móc, thiết bị và phương tiện phụ trợ hiện đại, giúp tối ưu hiệu suất và đảm bảo độ chính xác cao.",
+        "p3": "Bên cạnh đó, các bộ phận chuyên môn tiến hành kiểm tra, giám sát chặt chẽ sau từng công đoạn sản xuất, nhằm đảm bảo sản phẩm khi xuất xưởng luôn đạt chất lượng tốt nhất theo yêu cầu của khách hàng. Hệ thống vệ sinh công nghiệp, an toàn lao động và phòng cháy chữa cháy được trang bị đầy đủ, tuân thủ nghiêm ngặt các quy định hiện hành, góp phần bảo vệ sức khỏe và sự an toàn cho người lao động."
+      },
+      "section_b": {
+        "title": "B. Văn phòng làm việc",
+        "content": "Hệ thống văn phòng của Kim loại tấm thiên lộc được xây dựng khang trang với tổng diện tích trên 700m² mặt sàn, được trang bị đầy đủ các thiết bị, phụ kiện văn phòng và thiết bị kỹ thuật phục vụ chuyên môn. Không gian làm việc được bố trí khoa học, hiện đại, đáp ứng tốt nhu cầu làm việc của các phòng ban và tạo môi trường làm việc chuyên nghiệp, hiệu quả.",
+        "address_label": "Địa chỉ văn phòng giao dịch:",
+        "address_value": "Nhà văn hoá mới, thôn Võng La, xã Thiên Lộc , TP Hà nội"
+      },
+      "section_c": {
+        "title": "C. Thông tin liên hệ",
+        "phone_label": "Số điện thoại:",
+        "email_label": "Email:"
+      }
+    },
+    "partners": {
+      "title": "ĐỐI TÁC",
+      "intro": "Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc luôn coi trọng việc xây dựng và phát triển mối quan hệ hợp tác bền vững với các đối tác, nhà cung cấp và khách hàng trên tinh thần uy tín – minh bạch – cùng phát triển.",
+      "fields": "Công ty hiện đang hợp tác với nhiều đối tác trong các lĩnh vực cơ khí, xây dựng, công nghiệp phụ trợ và sản xuất thiết bị, góp phần tạo nên chuỗi cung ứng ổn định và hiệu quả.",
+      "collaboration": "Thông qua quá trình hợp tác, Thiên Lộc không ngừng nâng cao năng lực sản xuất, cải tiến chất lượng sản phẩm và tối ưu giải pháp kỹ thuật nhằm đáp ứng tốt hơn các yêu cầu ngày càng cao của đối tác.",
+      "motto": "Với phương châm hợp tác lâu dài, tôn trọng cam kết và lợi ích hài hòa, Thiên Lộc hướng tới trở thành đối tác tin cậy, đồng hành cùng khách hàng và đối tác trong các dự án hiện tại và tương lai."
+    },
+    "privacy": {
+      "title": "CHÍNH SÁCH BẢO MẬT",
+      "p1": "Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc cam kết bảo mật tuyệt đối mọi thông tin cá nhân của khách hàng và đối tác khi truy cập, liên hệ và hợp tác thông qua website. Chính sách bảo mật này được xây dựng nhằm thể hiện rõ trách nhiệm của Thiên Lộc trong việc tôn trọng quyền riêng tư và bảo vệ dữ liệu cá nhân của khách hàng.",
+      "p2": "Mọi thông tin thu thập được chỉ được sử dụng cho mục đích nội bộ, phục vụ hoạt động tư vấn, báo giá và thực hiện dịch vụ. Chúng tôi không mua bán, trao đổi hoặc chia sẻ thông tin cá nhân của khách hàng cho bất kỳ bên thứ ba nào khi chưa có sự đồng ý của khách hàng, trừ các trường hợp được quy định bởi pháp luật.",
+      "collection": {
+        "title": "THU THẬP THÔNG TIN CÁ NHÂN",
+        "intro": "Thiên Lộc thu thập các thông tin định danh cá nhân khi khách hàng chủ động cung cấp, bao gồm nhưng không giới hạn ở: họ tên, số điện thoại, địa chỉ email, địa chỉ liên hệ và các thông tin liên quan đến nhu cầu dịch vụ.",
+        "extra": "Ngoài ra, trong quá trình khách hàng truy cập website, chúng tôi có thể thu thập một số thông tin kỹ thuật như:",
+        "list": [
+          "Loại trình duyệt sử dụng",
+          "Thời gian và thời điểm truy cập",
+          "Các trang đã truy cập trên website",
+          "Nguồn truy cập vào website"
+        ],
+        "footer": "Những thông tin này được thu thập nhằm mục đích nâng cao trải nghiệm người dùng, cải thiện chất lượng dịch vụ và quản lý, vận hành website hiệu quả hơn."
+      },
+      "usage": {
+        "title": "MỤC ĐÍCH SỬ DỤNG THÔNG TIN",
+        "intro": "Thông tin cá nhân của khách hàng được Thiên Lộc sử dụng cho các mục đích sau:",
+        "list": [
+          "Liên hệ tư vấn, giải đáp yêu cầu của khách hàng",
+          "Cung cấp báo giá, thông tin dịch vụ và hỗ trợ kỹ thuật",
+          "Thực hiện hợp đồng, đơn hàng và các nghĩa vụ liên quan",
+          "Cải thiện chất lượng dịch vụ và trải nghiệm người dùng"
+        ],
+        "footer": "Chúng tôi cam kết chỉ sử dụng thông tin đúng với mục đích đã nêu và trong phạm vi cần thiết."
+      },
+      "sharing": {
+        "title": "PHÂN PHỐI VÀ CHIA SẺ THÔNG TIN",
+        "intro": "Thiên Lộc không chia sẻ thông tin cá nhân của khách hàng cho các tổ chức, cá nhân bên ngoài, ngoại trừ các trường hợp sau:",
+        "consent_title": "Có sự đồng ý của khách hàng",
+        "consent_body": "Chúng tôi chỉ chia sẻ thông tin cá nhân khi nhận được sự chấp thuận rõ ràng từ khách hàng.",
+        "legal_title": "Theo yêu cầu pháp lý",
+        "legal_body": "Trong trường hợp có yêu cầu từ cơ quan nhà nước có thẩm quyền hoặc nhằm phục vụ công tác điều tra, phòng chống gian lận theo quy định của pháp luật, Thiên Lộc có thể cung cấp thông tin theo đúng quy định hiện hành."
+      },
+      "security": {
+        "title": "BẢO MẬT THÔNG TIN",
+        "content": "Thiên Lộc áp dụng các biện pháp quản lý và kỹ thuật phù hợp để bảo vệ thông tin cá nhân của khách hàng khỏi các nguy cơ truy cập trái phép, mất mát, ròì rỉ hoặc sử dụng sai mục đích. Chỉ những cá nhân, bộ phận có thẩm quyền mới được phép tiếp cận thông tin trong phạm vi công việc được giao."
+      },
+      "contact": {
+        "title": "CÂU HỎI VÀ LIÊN HỆ",
+        "intro": "Nếu quý khách có bất kỳ câu hỏi, thắc mắc hoặc ý kiến nào liên quan đến chính sách bảo mật, vui lòng liên hệ với chúng tôi qua các kênh sau:",
+        "email_label": "Email:",
+        "hotline_label": "Hotline:",
+        "footer": "Chúng tôi luôn sẵn sàng tiếp nhận và giải đáp mọi phản hồi từ khách hàng."
+      },
+      "changes": {
+        "title": "THAY ĐỔI CHÍNH SÁCH",
+        "content": "Thiên Lộc có quyền cập nhật, điều chỉnh nội dung chính sách bảo mật này khi cần thiết để phù hợp với hoạt động kinh doanh và các quy định pháp luật hiện hành. Mọi thay đổi sẽ được công bố công khai trên website."
+      },
+      "time": {
+        "title": "THỜI GIAN ÁP DỤNG",
+        "content": "Chính sách bảo mật này có hiệu lực và được áp dụng xuyên suốt trong thời gian website của Công ty Sản Xuất và Gia Công Kim Loại Tấm Thiên Lộc hoạt động."
+      }
+    }
+  },
+  "introduction": {
+    "aboutUsLabel": "Giới Thiệu Chung",
+    "companyName": "CÔNG TY TNHH SẢN XUẤT VÀ GIA CÔNG KIM LOẠI TẤM THIÊN LỘC",
+    "companyDescription": "Vững vàng uy tín, vươn tầm chất lượng",
+    "missionAndVisionLabel": "Sứ Mệnh & Tầm Nhìn",
+    "servicesDescription": "Ngành gia công kim loại tấm đóng vai trò quan trọng trong nhiều lĩnh vực công nghiệp và dân dụng nhờ khả năng tạo hình linh hoạt, độ chính xác cao và độ bền vượt trội. Các sản phẩm từ kim loại tấm được ứng dụng rộng rãi trong nhiều ngành nghề khác nhau, đáp ứng yêu cầu kỹ thuật và thẩm mỹ ngày càng cao.",
+    "coreValuesLabel": "Giá Trị Cốt Lõi",
+    "coreValuesDescription": "Chính xác trong từng chi tiết – Hoàn hảo trong từng sản phẩm – Tận tâm trong từng hợp tác",
+    "servicesLabel": "LĨNH VỰC ỨNG DỤNG NGÀNH GIA CÔNG KIM LOẠI TẤM",
+    "commitmentLabel": "Cam Kết Của Chúng Tôi",
+    "commitmentDescription": "Công ty Thiên Lộc cam kết luôn đồng hành cùng khách hàng và đối tác trong mọi dự án, mang lại những giá trị bền vững, góp phần nâng cao năng lực sản xuất trong nước và khẳng định vị thế của ngành cơ khí Việt Nam trên thị trường khu vực.",
+    "hero": {
+      "alt": "Nhà máy Thiên Lộc"
+    },
+    "companyInfo": {
+      "foundingDate": "Ngày thành lập",
+      "address": "Địa chỉ",
+      "hotline": "Hotline",
+      "companyType": "Loại hình"
+    },
+    "coreValues": {
+      "precision": {
+        "title": "Chính Xác",
+        "description": "Từng chi tiết được gia công với độ chính xác cao nhất"
+      },
+      "quality": {
+        "title": "Chất Lượng",
+        "description": "Sản phẩm đạt chuẩn quốc tế, đáp ứng yêu cầu khắt khe"
+      },
+      "dedication": {
+        "title": "Tận Tâm",
+        "description": "Đồng hành và hỗ trợ khách hàng trong mọi dự án"
+      },
+      "reputation": {
+        "title": "Uy Tín",
+        "description": "Cam kết chất lượng và tiến độ trong mọi công việc"
+      }
+    },
+    "commitment": {
+      "companyName": "Thiên Lộc",
+      "slogan": "Vững vàng uy tín, vươn tầm chất lượng"
+    },
+    "stats": {
+      "yearsOfExperience": "Năm kinh nghiệm",
+      "projectsCompleted": "Dự án hoàn thành",
+      "satisfiedClients": "Khách hàng tin tưởng",
+      "satisfactionRate": "Khách hàng hài lòng"
+    },
+    "services": {
+      "mechanicalEngineering": "Công nghiệp – cơ khí chế tạo",
+      "mechanicalEngineeringDescription": "Gia công kim loại tấm được sử dụng để sản xuất khung vỏ máy, chi tiết cơ khí, linh kiện lắp ráp, giá đỡ và kết cấu kỹ thuật cho dây chuyền sản xuất và thiết bị công nghiệp.",
+      "electricalEngineering": "Điện – điện công nghiệp",
+      "electricalEngineeringDescription": "Ứng dụng trong sản xuất tủ điện công nghiệp, tủ điện locker, thang máng cáp, vỏ thiết bị điện, đảm bảo an toàn, độ bền và tính thẩm mỹ cho hệ thống điện.",
+      "construction": "Xây dựng – hạ tầng",
+      "constructionDescription": "Kim loại tấm được gia công thành kết cấu thép nhẹ, lan can, cửa, mái che, vách ngăn, phụ kiện xây dựng, đáp ứng yêu cầu chịu lực và độ bền lâu dài.",
+      "interior": "Nội thất – trang trí",
+      "interiorDescription": "Ứng dụng trong nội thất kim loại, bàn ghế, tủ kệ, vách trang trí, sản phẩm trang trí công nghiệp, mang phong cách hiện đại và tính thẩm mỹ cao.",
+      "industrial": "Khu công nghiệp – nhà xưởng",
+      "industrialDescription": "Gia công các sản phẩm như tủ locker, kệ để đồ, thùng chứa, khung bảo vệ, phục vụ nhu cầu sử dụng và quản lý trong môi trường công nghiệp.",
+      "transportation": "Giao thông – thiết bị công cộng",
+      "transportationDescription": "Sản xuất vỏ thiết bị, bảng chỉ dẫn, kết cấu kim loại cho các công trình giao thông và tiện ích công cộng."
+    },
+    "reviewsAdmin": {
+      "title": "Quản lý nhận xét",
+      "subtitle": "Theo dõi và phản hồi đánh giá từ khách hàng",
+      "detailTitle": "Chi tiết nhận xét",
+      "detailSubtitle": "Đang xem nhận xét từ: {{name}}",
+      "backToList": "Quay lại danh sách",
+      "allReviews": "Tất cả đánh giá",
+      "total": "Tổng cộng: {{count}}",
+      "filterPlaceholder": "Lọc theo loại",
+      "filter": {
+        "all": "Tất cả bài viết",
+        "product": "Sản phẩm",
+        "news": "Tin tức",
+        "project": "Dự án",
+        "service": "Dịch vụ",
+        "recruitment": "Tuyển dụng",
+        "other": "Khác"
+      },
+      "table": {
+        "sender": "Người gửi",
+        "rating": "Đánh giá",
+        "content": "Nội dung",
+        "type": "Phân loại",
+        "time": "Thời gian",
+        "actions": "Hành động"
+      },
+      "empty": {
+        "title": "Chưa có nhận xét nào phù hợp"
+      },
+      "pagination": "Hiển thị {{count}} trên tổng số {{total}} nhận xét",
+      "detail": {
+        "senderInfo": "Thông tin người gửi",
+        "rating": "Đánh giá",
+        "content": "Nội dung nhận xét",
+        "time": "Thời gian",
+        "type": "Loại bài viết",
+        "delete": "Xóa nhận xét này"
+      },
+      "deleteModal": {
+        "title": "Xác nhận xóa nhận xét",
+        "description": "Bạn có chắc chắn muốn xóa nhận xét này? Hành động này không thể hoàn tác.",
+        "confirm": "Xóa ngay",
+        "cancel": "Hủy bỏ"
+      },
+      "toast": {
+        "loadError": "Không thể tải danh sách nhận xét",
+        "deleteSuccess": "Đã xóa nhận xét thành công",
+        "deleteError": "Lỗi khi xóa nhận xét"
+      }
+    },
+    "usersAdmin": {
+      "title": "Quản lý người dùng",
+      "subtitle": "Quản lý tài khoản người dùng hệ thống",
+      "editTitle": "Chỉnh sửa người dùng",
+      "editSubtitle": "Xem và cập nhật thông tin cho: {{name}}",
+      "backToList": "Quay lại danh sách",
+      "listTitle": "Danh sách người dùng",
+      "searchPlaceholder": "Tìm kiếm người dùng...",
+      "empty": "Không tìm thấy người dùng nào",
+      "pagination": "Hiển thị {{count}} trên tổng số {{total}} người dùng",
+      "table": {
+        "id": "ID",
+        "user": "Người dùng",
+        "email": "Email",
+        "role": "Vai trò",
+        "joined": "Tham gia",
+        "actions": "Hành động"
+      },
+      "actions": {
+        "edit": "Chỉnh sửa",
+        "view": "Xem chi tiết",
+        "delete": "Xóa tài khoản"
+      },
+      "deleteModal": {
+        "title": "Xác nhận xóa tài khoản",
+        "description": "Bạn có chắc chắn muốn xóa người dùng này? Tài khoản này sẽ bị loại bỏ vĩnh viễn khỏi hệ thống.",
+        "confirm": "Xóa ngay",
+        "cancel": "Hủy bỏ"
+      },
+      "form": {
+        "emailLabel": "Email (Không thể thay đổi)",
+        "nameLabel": "Họ và tên",
+        "namePlaceholder": "Nhập họ và tên",
+        "roleLabel": "Vai trò",
+        "rolePlaceholder": "Chọn vai trò",
+        "dobLabel": "Ngày sinh",
+        "save": "Lưu thay đổi",
+        "saving": "Đang lưu...",
+        "roles": {
+          "user": "Người dùng (USER)",
+          "manager": "Quản lý (MANAGER)",
+          "admin": "Quản trị viên (ADMIN)"
+        }
+      },
+      "toast": {
+        "deleteSelfError": "Bạn không thể tự xóa tài khoản của chính mình",
+        "deleteSuccess": "Đã xóa người dùng thành công",
+        "deleteError": "Có lỗi xảy ra khi xóa",
+        "updateSuccess": "Cập nhật người dùng thành công",
+        "updateError": "Có lỗi xảy ra khi cập nhật"
+      }
+    }
+  },
+  "reviewsAdmin": {
+    "title": "Quản lý nhận xét",
+    "subtitle": "Theo dõi và phản hồi đánh giá từ khách hàng",
+    "detailTitle": "Chi tiết nhận xét",
+    "detailSubtitle": "Đang xem nhận xét từ: {{name}}",
+    "backToList": "Quay lại danh sách",
+    "allReviews": "Tất cả đánh giá",
+    "total": "Tổng cộng: {{count}}",
+    "filterPlaceholder": "Lọc theo loại",
+    "filter": {
+      "all": "Tất cả bài viết",
+      "product": "Sản phẩm",
+      "news": "Tin tức",
+      "project": "Dự án",
+      "service": "Dịch vụ",
+      "recruitment": "Tuyển dụng",
+      "other": "Khác"
+    },
+    "table": {
+      "sender": "Người gửi",
+      "rating": "Đánh giá",
+      "content": "Nội dung",
+      "type": "Phân loại",
+      "time": "Thời gian",
+      "actions": "Hành động"
+    },
+    "empty": {
+      "title": "Chưa có nhận xét nào phù hợp"
+    },
+    "pagination": "Hiển thị {{count}} trên tổng số {{total}} nhận xét",
+    "detail": {
+      "senderInfo": "Thông tin người gửi",
+      "rating": "Đánh giá",
+      "content": "Nội dung nhận xét",
+      "time": "Thời gian",
+      "type": "Loại bài viết",
+      "delete": "Xóa nhận xét này"
+    },
+    "deleteModal": {
+      "title": "Xác nhận xóa nhận xét",
+      "description": "Bạn có chắc chắn muốn xóa nhận xét này? Hành động này không thể hoàn tác.",
+      "confirm": "Xóa ngay",
+      "cancel": "Hủy bỏ"
+    },
+    "toast": {
+      "loadError": "Không thể tải danh sách nhận xét",
+      "deleteSuccess": "Đã xóa nhận xét thành công",
+      "deleteError": "Lỗi khi xóa nhận xét"
+    }
+  },
+  "usersAdmin": {
+    "title": "Quản lý người dùng",
+    "subtitle": "Quản lý tài khoản người dùng hệ thống",
+    "editTitle": "Chỉnh sửa người dùng",
+    "editSubtitle": "Xem và cập nhật thông tin cho: {{name}}",
+    "backToList": "Quay lại danh sách",
+    "listTitle": "Danh sách người dùng",
+    "searchPlaceholder": "Tìm kiếm người dùng...",
+    "empty": "Không tìm thấy người dùng nào",
+    "pagination": "Hiển thị {{count}} trên tổng số {{total}} người dùng",
+    "table": {
+      "id": "ID",
+      "user": "Người dùng",
+      "email": "Email",
+      "role": "Vai trò",
+      "joined": "Tham gia",
+      "actions": "Hành động"
+    },
+    "actions": {
+      "edit": "Chỉnh sửa",
+      "view": "Xem chi tiết",
+      "delete": "Xóa tài khoản"
+    },
+    "deleteModal": {
+      "title": "Xác nhận xóa tài khoản",
+      "description": "Bạn có chắc chắn muốn xóa người dùng này? Tài khoản này sẽ bị loại bỏ vĩnh viễn khỏi hệ thống.",
+      "confirm": "Xóa ngay",
+      "cancel": "Hủy bỏ"
+    },
+    "form": {
+      "emailLabel": "Email (Không thể thay đổi)",
+      "nameLabel": "Họ và tên",
+      "namePlaceholder": "Nhập họ và tên",
+      "roleLabel": "Vai trò",
+      "rolePlaceholder": "Chọn vai trò",
+      "dobLabel": "Ngày sinh",
+      "save": "Lưu thay đổi",
+      "saving": "Đang lưu...",
+      "roles": {
+        "user": "Người dùng (USER)",
+        "manager": "Quản lý (MANAGER)",
+        "admin": "Quản trị viên (ADMIN)"
+      }
+    },
+    "toast": {
+      "deleteSelfError": "Bạn không thể tự xóa tài khoản của chính mình",
+      "deleteSuccess": "Đã xóa người dùng thành công",
+      "deleteError": "Có lỗi xảy ra khi xóa",
+      "updateSuccess": "Cập nhật người dùng thành công",
+      "updateError": "Có lỗi xảy ra khi cập nhật"
+    }
+  },
+  "projectsAdmin": {
+    "headerTitle": "Quản lý dự án",
+    "headerSubtitle": "Quản lý danh mục dự án và các dự án đang thực hiện",
+    "createTitle": "Thêm dự án mới",
+    "updateTitle": "Cập nhật dự án",
+    "addProject": "Thêm dự án",
+    "items": "dự án",
+    "listTitle": "Danh sách dự án",
+    "searchPlaceholder": "Tìm kiếm dự án...",
+    "form": {
+      "createSubtitle": "Nhập thông tin dự án mới",
+      "editSubtitle": "Cập nhật thông tin dự án",
+      "buttons": {
+        "backToList": "Quay lại danh sách",
+        "save": "Lưu dự án",
+        "cancel": "Hủy"
+      },
+      "labels": {
+        "title": "Tên dự án",
+        "shortDescription": "Mô tả ngắn",
+        "featured": "Dự án nổi bật",
+        "active": "Kích hoạt"
+      },
+      "placeholders": {
+        "title": "Nhập tên dự án",
+        "shortDescription": "Nhập mô tả ngắn"
+      },
+      "validation": {
+        "titleRequired": "Vui lòng nhập tên dự án"
+      },
+      "imageUpload": {
+        "title": "Hình ảnh dự án",
+        "description": "Tải lên hoặc kéo thả hình ảnh. Tối đa 10 ảnh, mỗi ảnh không quá 10MB.",
+        "dragText": "Kéo thả hoặc nhấn để chọn file",
+        "supportText": "Hỗ trợ JPG, PNG, GIF. Đã chọn {{count}}/10.",
+        "newBadge": "Mới",
+        "noImagesSelected": "Chưa có hình ảnh nào được chọn"
+      }
+    },
+    "table": {
+      "columns": {
+        "id": "ID",
+        "image": "Ảnh",
+        "title": "Tên dự án",
+        "featured": "Nổi bật",
+        "status": "Trạng thái",
+        "actions": "Hành động"
+      },
+      "noData": "Không có dự án nào."
+    },
+    "toast": {
+      "createProjectSuccess": "Tạo dự án thành công",
+      "updateProjectSuccess": "Cập nhật dự án thành công",
+      "deleteProjectSuccess": "Xóa dự án thành công",
+      "createProjectError": "Lỗi khi tạo dự án",
+      "updateProjectError": "Lỗi khi cập nhật dự án",
+      "deleteProjectError": "Lỗi khi xóa dự án"
+    },
+    "deleteConfirmTitle": "Xác nhận xóa dự án",
+    "deleteConfirmMessage": "Bạn có chắc chắn muốn xóa dự án này? Hành động này không thể hoàn tác."
+  },
+  "servicesAdmin": {
+    "title": "Quản lý dịch vụ",
+    "subtitle": "Quản lý danh sách dịch vụ",
+    "add": "Thêm dịch vụ",
+    "createTitle": "Thêm dịch vụ mới",
+    "updateTitle": "Cập nhật dịch vụ",
+    "createSubtitle": "Nhập thông tin dịch vụ",
+    "updateSubtitle": "Cập nhật thông tin dịch vụ",
+    "items": "dịch vụ",
+    "listTitle": "Danh sách dịch vụ",
+    "searchPlaceholder": "Tìm kiếm dịch vụ...",
+    "table": {
+      "columns": {
+        "id": "ID",
+        "image": "Ảnh",
+        "name": "Tên dịch vụ",
+        "featured": "Nổi bật",
+        "status": "Trạng thái",
+        "actions": "Hành động"
+      },
+      "noData": "Không có dịch vụ nào.",
+      "featured": "Nổi bật",
+      "standard": "Tiêu chuẩn"
+    }
+  },
+  "projectsOld": {
+    "form": {
+      "labels": {
+        "category": "Danh mục",
+        "name": "Tên dự án *",
+        "slug": "Slug *",
+        "shortDescription": "Mô tả ngắn",
+        "detailedDescription": "Nội dung chi tiết",
+        "content": "Nội dung chi tiết",
+        "location": "Vị trí",
+        "completionDate": "Ngày hoàn thành",
+        "mainImage": "Hình ảnh chính",
+        "gallery": "Thư viện ảnh",
+        "featured": "Dự án nổi bật",
+        "active": "Kích hoạt dự án"
+      },
+      "placeholders": {
+        "category": "Chọn danh mục",
+        "name": "Nhập tên dự án",
+        "slug": "Slug tự động tạo từ tên",
+        "shortDescription": "Nhập mô tả ngắn dự án",
+        "detailedDescription": "Nhập nội dung chi tiết dự án",
+        "content": "Nhập nội dung chi tiết dự án",
+        "location": "Nhập vị trí dự án",
+        "completionDate": "Chọn ngày hoàn thành",
+        "slugHelp": "Slug được sử dụng trong URL, tự động tạo từ tên dự án"
+      },
+      "imageUpload": {
+        "title": "Hình ảnh dự án",
+        "description": "Tải lên hoặc kéo thả hình ảnh. Tối đa 10 ảnh, mỗi ảnh không quá 10MB.",
+        "dragText": "Kéo thả hoặc nhấn để chọn file",
+        "supportText": "Hỗ trợ JPG, PNG, GIF. Đã chọn {{count}}/10.",
+        "maxFilesError": "Tối đa {{max}} hình ảnh cho mỗi dự án",
+        "maxFilesWarning": "Chỉ có thể chọn thêm {{remaining}} hình ảnh (tối đa {{max}})",
+        "invalidFileError": "File {{name}} không phải hình ảnh",
+        "fileSizeError": "\"{{name}}\" vượt quá 10MB",
+        "noImagesSelected": "Chưa có hình ảnh nào được chọn",
+        "atLeastOneImage": "Vui lòng thêm ít nhất 1 hình ảnh cho dự án",
+        "newBadge": "Mới"
+      },
+      "validation": {
+        "categoryRequired": "Vui lòng chọn danh mục",
+        "nameRequired": "Vui lòng nhập tên dự án",
+        "slugRequired": "Vui lòng nhập slug"
+      },
+      "buttons": {
+        "cancel": "Hủy",
+        "save": "Lưu dự án",
+        "saving": "Đang lưu...",
+        "deletingImages": "Đang xóa ảnh cũ...",
+        "uploadingImages": "Đang tải lên {{count}} ảnh..."
+      }
+    },
+    "categoryForm": {
+      "labels": {
+        "name": "Tên danh mục *",
+        "slug": "Slug *",
+        "description": "Mô tả",
+        "order": "Thứ tự hiển thị",
+        "active": "Kích hoạt danh mục"
+      },
+      "placeholders": {
+        "name": "Nhập tên danh mục",
+        "slug": "Slug tự động tạo từ tên",
+        "description": "Nhập mô tả danh mục",
+        "order": "0",
+        "orderHelp": "Số nhỏ hơn sẽ hiển thị trước"
+      },
+      "validation": {
+        "nameRequired": "Vui lòng nhập tên danh mục",
+        "slugRequired": "Vui lòng nhập slug"
+      },
+      "buttons": {
+        "cancel": "Hủy",
+        "save": "Lưu danh mục",
+        "saving": "Đang lưu..."
+      }
+    },
+    "toast": {
+      "loadCategoriesError": "Lỗi khi tải danh mục dự án",
+      "loadProjectsError": "Lỗi khi tải danh sách dự án",
+      "updateCategorySuccess": "Cập nhật danh mục thành công",
+      "createCategorySuccess": "Thêm danh mục thành công",
+      "saveCategoryError": "Lỗi khi lưu danh mục",
+      "deleteCategorySuccess": "Xoá danh mục thành công",
+      "deleteCategoryError": "Lỗi khi xoá danh mục",
+      "updateProjectSuccess": "Cập nhật dự án thành công",
+      "createProjectSuccess": "Thêm dự án thành công",
+      "saveProjectError": "Lỗi khi lưu dự án",
+      "deleteProjectSuccess": "Xoá dự án thành công",
+      "deleteProjectError": "Lỗi khi xoá dự án"
+    }
+  },
+  "admin": {
+    "header": {
+      "title": "Thiên Lộc Admin",
+      "subtitle": "Hệ thống quản trị",
+      "logout": "Đăng xuất",
+      "language": "Ngôn ngữ / Language",
+      "vi": "🇻🇳 Tiếng Việt",
+      "en": "🇬🇧 English"
+    },
+    "login": {
+      "login": "Đăng Nhập",
+      "welcomeBack": "Chào mừng quay lại",
+      "signIn": "Đăng nhập quản trị",
+      "username": "Tên đăng nhập",
+      "password": "Mật khẩu",
+      "placeholderUser": "Nhập tên đăng nhập",
+      "placeholderPass": "Nhập mật khẩu",
+      "submit": "Đăng nhập",
+      "demo": "Demo: username",
+      "demoUser": "admin",
+      "demoPass": "admin123",
+      "success": "Đăng nhập thành công!",
+      "error": "Tên đăng nhập hoặc mật khẩu không đúng!",
+      "successMessage": "Đăng nhập thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+      "errorMessage": "Có lỗi xảy ra. Vui lòng thử lại sau."
+    },
+    "sidebar": {
+      "dashboard": "Tổng quan",
+      "products": "Quản lý sản phẩm",
+      "categories": "Danh mục",
+      "services": "Quản lý dịch vụ",
+      "projects": "Quản lý dự án",
+      "news": "Quản lý tin tức",
+      "recruitment": "Quản lý tuyển dụng",
+      "contact": "Quản lý liên hệ",
+      "contactUsManager": "Quản lý thông tin liên hệ",
+      "quotes": "Quản lý báo giá",
+      "users": "Quản lý người dùng",
+      "statistics": "Thống kê",
+      "companyIntros": "Hình ảnh giới thiệu"
+    },
+    "dashboard": {
+      "title": "Bảng điều khiển",
+      "recentActivities": "Hoạt động gần đây"
+    },
+    "contactUsManager": {
+      "title": "Thông Tin Liên Hệ",
+      "subtitle": "Cập nhật thông tin liên hệ của công ty. Thông tin này sẽ được hiển thị công khai trên trang web.",
+      "form": {
+        "labels": {
+          "companyName": "Tên công ty",
+          "address": "Địa chỉ",
+          "phone": "Số điện thoại",
+          "email": "Email",
+          "workingHours": "Giờ làm việc",
+          "googleMapUrl": "Link Google Map",
+          "foundingDate": "Ngày thành lập",
+          "companyType": "Loại hình công ty",
+          "aboutUs": "Giới thiệu về chúng tôi",
+          "yearsOfExperience": "Số năm kinh nghiệm",
+          "projectsCompleted": "Số dự án hoàn thành",
+          "satisfiedClients": "Số khách hàng hài lòng",
+          "satisfactionRate": "Tỷ lệ hài lòng (%)",
+          "mission": "Sứ mệnh",
+          "vision": "Tầm nhìn"
+        },
+        "placeholders": {
+          "companyName": "Nhập tên công ty",
+          "address": "Nhập địa chỉ",
+          "phone": "Nhập số điện thoại",
+          "email": "example@email.com",
+          "workingHours": "Thứ 2 - Chủ nhật: 7:00 - 17:00",
+          "googleMapUrl": "https://maps.google.com/...",
+          "foundingDate": "YYYY-MM-DD",
+          "companyType": "Nhập loại hình công ty",
+          "yearsOfExperience": "Nhập số năm kinh nghiệm",
+          "projectsCompleted": "Nhập số dự án đã hoàn thành",
+          "satisfiedClients": "Nhập số khách hàng hài lòng",
+          "satisfactionRate": "Nhập tỷ lệ hài lòng"
+        },
+        "validation": {
+          "required": "Không được để trống",
+          "phoneInvalid": "Số điện thoại chỉ được chứa các chữ số",
+          "emailInvalid": "Email không hợp lệ"
+        },
+        "save": "Cập nhật"
+      }
+    },
+    "statistics": {
+      "title": "Thống kê & Báo cáo",
+      "subtitle": "Phân tích dữ liệu kinh doanh chi tiết",
+      "growthTitle": "Biểu đồ tăng trưởng (6 tháng gần nhất)",
+      "categoryDistribution": "Phân bố sản phẩm theo danh mục",
+      "topItems": "Top danh mục",
+      "loading": "Đang tải...",
+      "noData": "Không có dữ liệu"
+    },
+    "companyIntros": {
+      "title": "Quản lý hình ảnh giới thiệu",
+      "subtitle": "Quản lý các hình ảnh hiển thị trên slider trang chủ",
+      "addImage": "Thêm hình ảnh",
+      "createTitle": "Thêm hình ảnh mới",
+      "editTitle": "Chỉnh sửa hình ảnh",
+      "createSubtitle": "Thêm hình ảnh mới vào slider trang chủ",
+      "editSubtitle": "Cập nhật thông tin hình ảnh",
+      "backToList": "Quay lại danh sách",
+      "table": {
+        "title": "Danh sách hình ảnh giới thiệu",
+        "totalImages": "Tổng: {{count}} hình ảnh",
+        "columns": {
+          "image": "Hình ảnh",
+          "description": "Mô tả",
+          "order": "Thứ tự",
+          "status": "Trạng thái",
+          "createdAt": "Ngày tạo",
+          "updatedAt": "Cập nhật",
+          "actions": "Thao tác"
+        },
+        "noData": "Chưa có hình ảnh nào"
+      },
+      "form": {
+        "imageLabel": "Hình ảnh *",
+        "uploadButton": "Tải ảnh lên",
+        "uploading": "Đang tải...",
+        "urlPlaceholder": "https://example.com/image.jpg",
+        "urlHint": "Hoặc nhập URL trực tiếp",
+        "descriptionLabel": "Mô tả",
+        "descriptionPlaceholder": "Mô tả hình ảnh (tùy chọn)",
+        "subDescriptionLabel": "Mô tả phụ",
+        "subDescriptionPlaceholder": "Mô tả phụ (tùy chọn)",
+        "urlDescription": "Nhập key hoặc URL của hình ảnh",
+        "orderLabel": "Thứ tự hiển thị",
+        "orderDescription": "Số nhỏ hơn sẽ hiển thị trước",
+        "activeLabel": "Kích hoạt hiển thị",
+        "activeDescription": "Bật để hiển thị trên trang chủ",
+        "cancel": "Hủy",
+        "save": "Thêm mới",
+        "update": "Cập nhật"
+      },
+      "toast": {
+        "createSuccess": "Thêm mới thành công",
+        "updateSuccess": "Cập nhật thành công",
+        "uploading": "Đang tải ảnh lên...",
+        "uploadingButton": "Đang tải ảnh...",
+        "deleteSuccess": "Đã xóa thành công!",
+        "toggleActiveOn": "Đã kích hoạt",
+        "toggleActiveOff": "Đã ẩn",
+        "urlRequired": "URL hình ảnh là bắt buộc",
+        "uploadSuccess": "Tải ảnh lên thành công",
+        "uploadError": "Tải ảnh thất bại",
+        "imageOnly": "Chỉ chấp nhận file hình ảnh",
+        "fileTooLarge": "File không được vượt quá 5MB",
+        "error": "Có lỗi xảy ra"
+      }
+    }
+  },
+  "categories": {
+    "title": "Quản lý danh mục",
+    "subtitle": "Quản lý các danh mục sản phẩm",
+    "add": "Thêm danh mục",
+    "listTitle": "Danh sách danh mục",
+    "searchPlaceholder": "Tìm kiếm danh mục...",
+    "name": "Tên danh mục",
+    "description": "Mô tả",
+    "createTitle": "Thêm danh mục mới",
+    "createSubtitle": "Tạo danh mục sản phẩm mới",
+    "updateTitle": "Cập nhật danh mục",
+    "updateSubtitle": "Chỉnh sửa thông tin danh mục",
+    "formTitle": "Thông tin danh mục",
+    "backToList": "Quay lại danh sách",
+    "save": "Lưu",
+    "update": "Cập nhật",
+    "cancel": "Hủy",
+    "table": {
+      "id": "STT",
+      "actions": "Hành động"
+    },
+    "toast": {
+      "createSuccess": "Đã thêm danh mục thành công",
+      "updateSuccess": "Cập nhật danh mục thành công",
+      "deleteSuccess": "Đã xóa danh mục thành công!",
+      "nameRequired": "Tên danh mục là bắt buộc"
+    },
+    "deleteConfirmTitle": "Xác nhận xóa danh mục",
+    "deleteConfirmMessage": "Bạn có chắc chắn muốn xóa danh mục này? Hành động này không thể hoàn tác."
+  },
+  "services": {
+    "title": "Dịch Vụ Nổi Bật",
+    "description": "Trải nghiệm quy trình quản lý dịch vụ chuyên nghiệp tại Thiên Lộc – nơi mỗi chi tiết được giám sát chặt chẽ, đảm bảo tiến độ, chất lượng và sự hài lòng tuyệt đối cho khách hàng.",
+    "viewAll": "Xem tất cả dịch vụ",
+    "card": {
+      "available": "Có sẵn",
+      "serviceLabel": "Dịch vụ",
+      "professional": "Chuyên nghiệp"
+    },
+    "admin": {
+      "title": "Quản lý dịch vụ",
+      "subtitle": "Quản lý các dịch vụ cung cấp",
+      "add": "Thêm dịch vụ",
+      "listTitle": "Danh sách dịch vụ",
+      "searchPlaceholder": "Tìm kiếm dịch vụ...",
+      "name": "Tên dịch vụ",
+      "slug": "Slug",
+      "description": "Mô tả",
+      "content": "Nội dung",
+      "image": "Ảnh đại diện",
+      "imagePlaceholder": "URL ảnh...",
+      "order": "Thứ tự",
+      "active": "Kích hoạt",
+      "activeOn": "Hoạt động",
+      "activeOff": "Tạm dừng",
+      "createTitle": "Thêm dịch vụ mới",
+      "updateTitle": "Cập nhật dịch vụ",
+      "save": "Lưu",
+      "update": "Cập nhật",
+      "cancel": "Hủy",
+      "toast": {
+        "createSuccess": "Đã thêm dịch vụ thành công",
+        "updateSuccess": "Cập nhật dịch vụ thành công",
+        "deleteSuccess": "Đã xóa dịch vụ thành công!",
+        "nameRequired": "Tên dịch vụ là bắt buộc",
+        "slugRequired": "Slug là bắt buộc"
+      },
+      "deleteConfirmTitle": "Xác nhận xóa dịch vụ",
+      "deleteConfirmMessage": "Bạn có chắc chắn muốn xóa dịch vụ này? Hành động này không thể hoàn tác."
+    }
+  },
+  "serviceForm": {
+    "createTitle": "Thêm Dịch Vụ Mới",
+    "editTitle": "Chỉnh Sửa Dịch Vụ",
+    "tabs": {
+      "general": "Thông tin chung",
+      "content": "Nội dung",
+      "config": "Cấu hình",
+      "seo": "SEO"
+    },
+    "title": "Tiêu đề",
+    "slug": "Slug (URL)",
+    "subtitle": "Phụ đề",
+    "icon": "Icon (ví dụ: tên icon Lucide)",
+    "shortDescription": "Mô tả ngắn",
+    "images": "Ảnh",
+    "uploadImages": "Tải ảnh lên (tối đa 20)",
+    "alt_text": "Văn bản thay thế cho ảnh (Alt Text)",
+    "content": "Nội dung chính",
+    "features": "Hash tag",
+    "featuresDesc": "Nhập các từ khóa tìm kiếm (dạng liệt kê)",
+    "featuresPlaceholder": "Enter để thêm hash tag",
+    "technologies": "Công nghệ sử dụng",
+    "benefits": "Lợi ích",
+    "status": "Trạng thái",
+    "theme_variant": "Giao diện (Theme)",
+    "order": "Thứ tự hiển thị",
+    "featured": "Là dịch vụ nổi bật?",
+    "customers": "Đối tượng khách hàng",
+    "cta_label": "Nhãn nút CTA",
+    "cta_link": "Link nút CTA",
+    "tags": "Thẻ (Tags)",
+    "tagsPlaceholder": "Thêm thẻ và nhấn Enter",
+    "seo_title": "Tiêu đề SEO",
+    "seo_description": "Mô tả SEO",
+    "uploading": "Đang tải lên {{count}} ảnh...",
+    "uploadSuccess": "Đã tải lên {{count}} ảnh mới",
+    "uploadError": "Có lỗi xảy ra khi tải ảnh lên",
+    "deletingImages": "Đang xóa ảnh cũ...",
+    "deleteSuccess": "Đã xóa {{count}} ảnh cũ",
+    "pendingImages": "{{count}} ảnh chờ tải lên",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "statusOptions": {
+      "draft": "Bản nháp",
+      "published": "Công khai",
+      "archived": "Lưu trữ"
+    },
+    "themeVariantOptions": {
+      "light": "Sáng",
+      "dark": "Tối",
+      "auto": "Tự động"
+    }
+  },
+  "validation": {
+    "error": "Dữ liệu không hợp lệ",
+    "slugRequired": "Slug là bắt buộc",
+    "titleRequired": "Tiêu đề là bắt buộc",
+    "shortDescriptionRequired": "Mô tả ngắn là bắt buộc",
+    "imageUrlRequired": "Ảnh đại diện là bắt buộc",
+    "ctaLabelRequired": "Nhãn nút CTA là bắt buộc",
+    "ctaLinkRequired": "Link nút CTA là bắt buộc",
+    "ctaLinkInvalid": "Link nút CTA không phải là một URL hợp lệ",
+    "imageTooLarge": "Ảnh vượt quá giới hạn 20MB. Vui lòng chọn ảnh nhỏ hơn.",
+    "imageUrlsRequired": "Cần có ít nhất một ảnh đại diện."
+  },
+  "contacts": {
+    "title": "Quản lý liên hệ",
+    "subtitle": "Quản lý các liên hệ phản hồi từ khách hàng",
+    "listTitle": "Danh sách liên hệ",
+    "totalContacts": "Tổng số: {{count}} liên hệ",
+    "name": "Họ tên",
+    "subject": "Tiêu đề",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ",
+    "content": "Nội dung",
+    "status": "Trạng thái",
+    "confirmed": "Đã xác nhận",
+    "pending": "Chờ xác nhận",
+    "createdAt": "Ngày tạo",
+    "actions": "Thao tác",
+    "viewDetail": "Xem chi tiết",
+    "confirmContact": "Xác nhận",
+    "deleteContact": "Xóa",
+    "detailTitle": "Chi tiết liên hệ",
+    "noData": "Chưa có liên hệ nào",
+    "showing": "Hiển thị {{from}} - {{to}} trên tổng số {{total}} liên hệ",
+    "toast": {
+      "confirmSuccess": "Đã xác nhận liên hệ thành công",
+      "deleteSuccess": "Đã xóa liên hệ thành công"
+    },
+    "showing": "Hiển thị {{from}} - {{to}} trong tổng số {{total}}"
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất",
+    "rating": "(39 bình chọn)",
+    "info": {
+      "title": "Địa chỉ:",
+      "hanoi": {
+        "label": "🏢 Văn phòng Hà Nội",
+        "address": "Số 08,09 - NV 27, Khu đô thị Lideco, Hoài Đức, Hà Nội.",
+        "hotline": "Hotline HN"
+      },
+      "hcm": {
+        "label": "🏢 Chi nhánh TP.HCM",
+        "address": "Số 15, Đường 27, Khu đô thị Vạn Phúc, TP Thủ Đức, TP Hồ Chí Minh.",
+        "hotline": "Hotline TP.HCM"
+      },
+      "factory1": {
+        "label": "🏭 Nhà máy 1",
+        "address": "Lô 3, ô 5, Cụm CN Lai Xá, Hoài Đức, Hà Nội."
+      },
+      "factory2": {
+        "label": "🏭 Nhà máy 2",
+        "address": "CN 04 - 02, Cụm CN Đồng Sóc, Vĩnh Tường, Phú Thọ."
+      }
+    },
+    "form": {
+      "title": "Gửi tin nhắn cho chúng tôi",
+      "description": "Vui lòng điền vào form dưới đây và để lại tin nhắn, góp ý giúp chúng tôi phục vụ bạn được tốt hơn.",
+      "name": "Họ tên",
+      "namePlaceholder": "Nhập họ tên của bạn",
+      "subject": "Tiêu đề",
+      "subjectPlaceholder": "Nhập tiêu đề",
+      "phone": "Điện thoại",
+      "phonePlaceholder": "+(84-24) 3566.8888",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "address": "Địa chỉ",
+      "addressPlaceholder": "Nhập địa chỉ của bạn",
+      "content": "Nội dung",
+      "contentPlaceholder": "Nhập nội dung tin nhắn của bạn...",
+      "submit": "GỬI",
+      "sending": "Đang gửi...",
+      "requiredFields": "Vui lòng điền đầy đủ thông tin bắt buộc",
+      "successMessage": "Gửi tin nhắn thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+      "errorMessage": "Có lỗi xảy ra. Vui lòng thử lại sau."
+    }
+  },
+  "about": {
+    "title": "Gia Công Kim Loại Tấm Chất Lượng Cao",
+    "description": "Khám phá giải pháp sản xuất và gia công kim loại tấm chuyên nghiệp tại Thiên Lộc.",
+    "content": "Từ cắt – dập – chấn – hàn – sơn tĩnh điện đến lắp ráp hoàn thiện, chúng tôi mang đến sản phẩm chính xác, bền đẹp và theo yêu cầu cho mọi ngành công nghiệp.",
+    "viewProducts": "Xem Sản Phẩm",
+    "viewServices": "Xem Dịch Vụ",
+    "services": "Dịch Vụ",
+    "sectionTitle": "Về Chúng Tôi",
+    "paragraph1": "CÔNG TY TNHH SẢN XUẤT VÀ GIA CÔNG KIM LOẠI TẤM THIÊN LỘC là đơn vị hàng đầu trong lĩnh vực sản xuất và gia công kim loại tấm tại Việt Nam.",
+    "paragraph2": "Với hơn 10 năm kinh nghiệm cùng đội ngũ kỹ thuật viên tay nghề cao, chúng tôi cam kết mang đến sản phẩm chất lượng, chính xác và bền vững, đáp ứng tiêu chuẩn khắt khe của các ngành công nghiệp.",
+    "paragraph3": "Từ cắt, dập, chấn, hàn, sơn tĩnh điện cho đến lắp ráp hoàn thiện, mỗi sản phẩm của Thiên Lộc đều được gia công tỉ mỉ trên dây chuyền hiện đại, đảm bảo độ chính xác cao và tính thẩm mỹ vượt trội.",
+    "paragraph4": "Chúng tôi không ngừng đổi mới công nghệ, nâng cao chất lượng dịch vụ nhằm mang lại giải pháp tối ưu và hiệu quả nhất cho mọi khách hàng và đối tác.",
+    "stats": {
+      "products": "Sản phẩm",
+      "customers": "Khách hàng",
+      "rating": "Đánh giá",
+      "experience": "Năm kinh nghiệm"
+    }
+  },
+  "location": {
+    "title": "Vị Trí & Liên Hệ",
+    "description": "Liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất",
+    "contactInfo": "Thông Tin Liên Hệ",
+    "address": "Địa chỉ",
+    "phone": "Điện thoại",
+    "email": "Email",
+    "workingHours": "Giờ làm việc",
+    "addressValue": "Võng La, Thiên Lộc, Hà Nội",
+    "phoneValue": "0967853383",
+    "emailValue": "kimloaitamthienloc@gmail.com",
+    "workingHoursValue": "Thứ 2 - Chủ nhật: 7:00 - 17:00",
+    "consultationTitle": "Đặt lịch tư vấn miễn phí",
+    "consultationDescription": "Để được tư vấn chi tiết về sản phẩm và nhận ưu đãi đặc biệt, hãy liên hệ với chúng tôi ngay hôm nay!",
+    "callNow": "Gọi ngay",
+    "sendEmail": "Gửi email"
+  },
+  "servicesPage": {
+    "hero": {
+      "badge": "Dịch Vụ Của Chúng Tôi",
+      "title": "Giải Pháp Gia Công Kim Loại Toàn Diện",
+      "subtitle": "Cung cấp đa dạng dịch vụ gia công kim loại chất lượng cao với công nghệ hiện đại và đội ngũ chuyên nghiệp"
+    },
+    "main": {
+      "title": "Dịch Vụ Chính",
+      "subtitle": "Thiên Lộc cung cấp đầy đủ các dịch vụ gia công kim loại tấm và thi công trần chuyên nghiệp"
+    },
+    "whyChooseUs": {
+      "title": "Tại Sao Chọn Thiên Lộc?",
+      "subtitle": "Chúng tôi cam kết mang đến dịch vụ tốt nhất với chất lượng vượt trội",
+      "quality": {
+        "title": "Chất Lượng Hàng Đầu",
+        "description": "Sản phẩm đạt tiêu chuẩn chất lượng cao, bền đẹp và chính xác đến từng chi tiết."
+      },
+      "technology": {
+        "title": "Công Nghệ Hiện Đại",
+        "description": "Áp dụng máy móc và công nghệ tiên tiến nhất vào quy trình sản xuất."
+      },
+      "experience": {
+        "title": "Đội Ngũ Kinh Nghiệm",
+        "description": "Kỹ thuật viên tay nghề cao, giàu kinh nghiệm và tận tâm với công việc."
+      },
+      "support": {
+        "title": "Hỗ Trợ Tận Tình",
+        "description": "Luôn sẵn sàng tư vấn và hỗ trợ khách hàng 24/7 để đưa ra giải pháp tối ưu nhất."
+      }
+    },
+    "cta": {
+      "title": "Bạn Cần Tư Vấn Dịch Vụ?",
+      "subtitle": "Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn giải pháp tốt nhất cho dự án của bạn",
+      "contactButton": "Liên hệ ngay",
+      "quoteButton": "Xem báo giá"
+    }
+  },
+  "serviceListItems": {
+    "noServices": "Không có dịch vụ nào để hiển thị.",
+    "featuredBadge": "Dịch vụ nổi bật",
+    "viewDetails": "Xem chi tiết"
+  },
+  "serviceDetail": {
+    "toast": {
+      "loadError": "Không thể tải chi tiết dịch vụ."
+    },
+    "notFound": {
+      "title": "Không Tìm Thấy Dịch Vụ",
+      "description": "Dịch vụ bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.",
+      "backButton": "Quay lại danh sách dịch vụ"
+    },
+    "sidebar": {
+      "benefits": "Lợi ích",
+      "technologies": "Công nghệ",
+      "customers": "Đối tác & Khách hàng"
+    },
+    "features": {
+      "title": "Tính Năng Vượt Trội"
+    },
+    "gallery": {
+      "title": "Thư Viện Dự Án"
+    },
+    "cta": {
+      "defaultTitle": "Bắt Đầu Dự Án Của Bạn",
+      "description": "Liên hệ ngay để được tư vấn giải pháp tối ưu nhất.",
+      "contactButton": "Liên Hệ Ngay"
+    }
+  },
+  "userMenu": {
+    "account": "Tài khoản",
+    "settings": "Quản trị",
+    "logout": "Đăng xuất"
+  },
+  "productsPage": {
+    "hero": {
+      "badge": "Chất lượng cao • Giá tốt nhất",
+      "title": "Chất Lượng Hàng Đầu",
+      "subtitle": "Khám phá những công trình tiêu biểu mang dấu ấn Thiên Lộc – nơi kỹ thuật chính xác, chất lượng bền vững và thẩm mỹ tinh tế cùng hội tụ."
+    },
+    "cta": {
+      "title": "Bạn Cần Tư Vấn Sản Phẩm?",
+      "subtitle": "Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn giải pháp tốt nhất cho dự án của bạn",
+      "contactButton": "Liên Hệ Ngay",
+      "quoteButton": "Xem Báo Giá"
+    },
+    "admin": {
+      "title": "Quản lý sản phẩm",
+      "subtitle": "Thêm, chỉnh sửa và quản lý danh sách sản phẩm của bạn",
+      "addProduct": "Thêm sản phẩm mới",
+      "createTitle": "Thêm sản phẩm",
+      "editTitle": "Chỉnh sửa sản phẩm",
+      "createSubtitle": "Vui lòng nhập đầy đủ thông tin bên dưới để tạo sản phẩm mới",
+      "editSubtitle": "Cập nhật các thông tin cần thiết cho sản phẩm này",
+      "backToList": "Quay lại danh sách",
+      "table": {
+        "title": "Danh sách sản phẩm",
+        "searchPlaceholder": "Tìm kiếm tên sản phẩm...",
+        "columns": {
+          "index": "STT",
+          "id": "ID",
+          "name": "Tên sản phẩm",
+          "category": "Danh mục",
+          "image": "Ảnh",
+          "price": "Giá bán",
+          "status": "Trạng thái",
+          "createdAt": "Ngày tạo",
+          "actions": "Thao tác"
+        },
+        "noProducts": "Không tìm thấy sản phẩm nào phù hợp.",
+        "total": "Tổng cộng",
+        "items": "sản phẩm",
+        "page": "Trang",
+        "display": "Hiển thị",
+        "unknownCategory": "Chưa phân loại",
+        "contactPrice": "Liên hệ",
+        "featured": "Tiêu biểu",
+        "showPrice": "Hiện giá",
+        "hidePrice": "Ẩn giá",
+        "deleteConfirmTitle": "Xác nhận xóa sản phẩm",
+        "deleteConfirmMessage": "Bạn có chắc chắn muốn xóa sản phẩm này? Hành động này không thể hoàn tác."
+      },
+      "form": {
+        "sections": {
+          "basicInfo": "Thông tin cơ bản",
+          "shortDescription": "Mô tả ngắn",
+          "detailedDescription": "Bài viết chi tiết",
+          "images": "Hình ảnh sản phẩm"
+        },
+        "labels": {
+          "name": "Tên sản phẩm",
+          "category": "Danh mục",
+          "price": "Giá (VNĐ)",
+          "description": "Mô tả",
+          "isFeatured": "Sản phẩm tiêu biểu",
+          "isFeaturedHint": "Hiển thị trong danh sách tiêu biểu ngoài trang chủ",
+          "showPrice": "Hiển thị giá",
+          "showPriceHint": "Cho phép người dùng thấy giá sản phẩm công khai",
+          "summary": "Tóm tắt sản phẩm",
+          "summaryHint": "Phần này hiển thị các dòng mô tả ngắn gọn bên dưới tên sản phẩm ở trang chi tiết.",
+          "addDescription": "Thêm dòng mô tả",
+          "imageUploadHint": "Tải lên hoặc kéo thả hình ảnh. Tối đa 12 ảnh, mỗi ảnh không quá 10MB.",
+          "loadingDetailed": "Đang tải nội dung bài viết...",
+          "detailedDescription": "Nội dung chi tiết sản phẩm",
+          "detailedHint": "Sử dụng trình soạn thảo để viết mô tả chi tiết, thêm hình ảnh, định dạng văn bản...",
+          "cancel": "Hủy",
+          "save": "Lưu sản phẩm",
+          "update": "Cập nhật sản phẩm",
+          "newBadge": "Mới"
+        },
+        "placeholders": {
+          "name": "VD: Bàn thao tác cơ khí Inox 304",
+          "category": "Chọn danh mục",
+          "price": "3200000",
+          "shortDescription": "VD: Khung bàn làm từ thép không gỉ Inox 304"
+        },
+        "validation": {
+          "nameRequired": "Tên sản phẩm là bắt buộc",
+          "nameTooShort": "Tên sản phẩm phải có ít nhất {{count}} ký tự",
+          "categoryRequired": "Vui lòng chọn danh mục",
+          "atLeastOneImage": "Vui lòng thêm ít nhất 1 hình ảnh"
+        },
+        "toasts": {
+          "uploadingImages": "Đang tải lên {{count}} ảnh...",
+          "savingDetailed": "Đang lưu bài viết chi tiết...",
+          "saveSuccess": "Đã thêm sản phẩm thành công",
+          "updateSuccess": "Cập nhật sản phẩm thành công",
+          "deleteSuccess": "Đã xóa sản phẩm thành công!",
+          "error": "Có lỗi xảy ra",
+          "deleteError": "Xóa thất bại",
+          "maxFiles": "Tối đa {{count}} hình ảnh cho mỗi sản phẩm",
+          "checkForm": "Vui lòng kiểm tra lại các trường thông tin"
+        }
+      }
+    }
+  },
+  "productDetail": {
+    "header": {
+      "title": "Chi tiết sản phẩm",
+      "backButton": "Quay lại"
+    },
+    "loading": {
+      "message": "Đang tải..."
+    },
+    "error": {
+      "loadError": "Lỗi tải sản phẩm: {{message}}",
+      "notFound": "Không tìm thấy sản phẩm."
+    },
+    "badge": {
+      "featured": "Sản phẩm nổi bật"
+    },
+    "category": {
+      "label": "Danh mục:"
+    },
+    "price": {
+      "label": "Giá sản phẩm",
+      "contact": "Liên hệ"
+    },
+    "specs": {
+      "title": "Thông số nổi bật",
+      "dimensions": "Kích thước",
+      "weight": "Trọng lượng",
+      "loadCapacity": "Tải trọng",
+      "material": "Vật liệu",
+      "weldingType": "Phương pháp liên kết",
+      "surfaceFinish": "Hoàn thiện bề mặt"
+    },
+    "customizable": {
+      "message": "Sản phẩm có thể tùy chỉnh theo yêu cầu của khách hàng",
+      "yes": "Có thể tùy chỉnh",
+      "no": "Không tùy chỉnh",
+      "label": "Tùy chỉnh"
+    },
+    "actions": {
+      "contact": "Liên hệ ngay",
+      "favorite": "Thêm vào yêu thích",
+      "share": "Chia sẻ"
+    },
+    "tabs": {
+      "overview": "Tổng quan",
+      "features": "Đặc điểm",
+      "materials": "Vật liệu",
+      "specs": "Thông số kỹ thuật",
+      "warranty": "Chính sách bảo hành",
+      "description": "Mô tả chi tiết"
+    },
+    "overview": {
+      "title": "Mô tả sản phẩm",
+      "noInfo": "Chưa có thông tin.",
+      "applications": "Ứng dụng"
+    },
+    "features": {
+      "title": "Đặc điểm nổi bật",
+      "noInfo": "Chưa có thông tin."
+    },
+    "materials": {
+      "title": "Vật liệu sản xuất",
+      "noInfo": "Chưa có thông tin."
+    },
+    "technicalSpecs": {
+      "title": "Thông số kỹ thuật chi tiết"
+    },
+    "warranty": {
+      "message": "Vui lòng liên hệ với chúng tôi để biết thêm thông tin về chính sách bảo hành."
+    }
+  },
+  "footer": {
+    "createdAt": "Sản phẩm được tạo ngày:",
+    "quickLinks": "Liên kết nhanh",
+    "contactUs": "Liên hệ với chúng tôi",
+    "contactDescription": "Sẵn sàng hỗ trợ bạn với giải pháp tốt nhất"
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Hỗ trợ 24/7",
+      "title": "Bắt Đầu Cuộc Trò Chuyện",
+      "subtitle": "Dù bạn có câu hỏi về sản phẩm, cần hỗ trợ kỹ thuật hay muốn hợp tác kinh doanh, đội ngũ của chúng tôi luôn sẵn sàng giúp đỡ."
+    }
+  },
+  "contactForm": {
+    "success": "Thành công",
+    "error": "Lỗi",
+    "successMessage": "Gửi tin nhắn thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+    "errorMessage": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+    "title": "Gửi Tin Nhắn",
+    "subtitle": "Điền thông tin vào form bên dưới và chúng tôi sẽ phản hồi trong thời gian sớm nhất.",
+    "labels": {
+      "name": "Họ và Tên",
+      "email": "Email",
+      "address": "Địa Chỉ",
+      "phone": "Số Điện Thoại",
+      "title": "Tiêu đề",
+      "subject": "Chủ Đề",
+      "message": "Tin Nhắn"
+    },
+    "placeholders": {
+      "name": "Nhập họ và tên của bạn",
+      "title": "Nhập tiêu đề",
+      "subject": "Chọn chủ đề liên hệ",
+      "address": "Nhập địa chỉ của bạn",
+      "message": "Nhập nội dung tin nhắn của bạn..."
+    },
+    "subjects": {
+      "general": "Thông tin chung",
+      "support": "Hỗ trợ kỹ thuật",
+      "sales": "Tư vấn bán hàng",
+      "partnership": "Hợp tác kinh doanh",
+      "feedback": "Góp ý, phản hồi",
+      "other": "Khác"
+    },
+    "validation": {
+      "nameRequired": "Họ và tên là bắt buộc",
+      "emailInvalid": "Email không hợp lệ",
+      "messageRequired": "Tin nhắn là bắt buộc",
+      "titleRequired": "Tiêu đề là bắt buộc",
+      "phoneInvalid": "Số điện thoại không hợp lệ"
+    },
+    "submitButton": "Gửi Tin Nhắn"
+  },
+  "contactInfo": {
+    "title": "Thông Tin Liên Hệ",
+    "details": {
+      "address": "Địa Chỉ",
+      "phone": "Điện Thoại",
+      "email": "Email",
+      "workingHours": "Giờ Làm Việc"
+    },
+    "connectTitle": "Kết Nối Với Chúng Tôi",
+    "locationTitle": "Vị Trí"
+  },
+  "quotePage": {
+    "hero": {
+      "badge": "Yêu Cầu Báo Giá",
+      "title": "Nhận Báo Giá Chuyên Nghiệp Cho Dự Án Của Bạn",
+      "subtitle": "Điền thông tin dự án của bạn và chúng tôi sẽ gửi báo giá chi tiết trong vòng 24 giờ"
+    },
+    "features": {
+      "title": "Tại Sao Chọn Dịch Vụ Báo Giá Của Chúng Tôi",
+      "subtitle": "Quy trình báo giá nhanh chóng, chính xác và chuyên nghiệp",
+      "quick": {
+        "title": "Phản Hồi Nhanh",
+        "description": "Nhận báo giá trong vòng 24 giờ"
+      },
+      "detailed": {
+        "title": "Chi Tiết Đầy Đủ",
+        "description": "Báo giá chi tiết với đầy đủ thông tin"
+      },
+      "fast": {
+        "title": "Xử Lý Nhanh",
+        "description": "Quy trình đơn giản, tiết kiệm thời gian"
+      },
+      "support": {
+        "title": "Hỗ Trợ 24/7",
+        "description": "Đội ngũ tư vấn luôn sẵn sàng hỗ trợ"
+      }
+    }
+  },
+  "quoteForm": {
+    "title": "Điền Thông Tin Dự Án",
+    "subtitle": "Vui lòng điền đầy đủ thông tin để chúng tôi có thể báo giá chính xác nhất",
+    "sections": {
+      "customerInfo": "Thông Tin Khách Hàng",
+      "projectInfo": "Thông Tin Dự Án",
+      "technicalRequirements": "Yêu Cầu Kỹ Thuật"
+    },
+    "labels": {
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "company": "Công ty",
+      "address": "Địa chỉ",
+      "title": "Chức danh",
+      "projectName": "Tên dự án",
+      "projectType": "Loại dự án",
+      "projectDescription": "Mô tả dự án",
+      "budget": "Ngân sách dự kiến",
+      "expectedCompletion": "Thời gian hoàn thành dự kiến",
+      "technicalRequirements": "Yêu cầu kỹ thuật",
+      "attachments": "File đính kèm",
+      "additionalInfo": "Thông tin bổ sung"
+    },
+    "placeholders": {
+      "name": "Nhập họ và tên",
+      "email": "example@email.com",
+      "phone": "0123 456 789",
+      "company": "Tên công ty",
+      "address": "Địa chỉ công ty",
+      "title": "Chức danh",
+      "projectName": "Tên dự án của bạn",
+      "projectType": "Chọn loại dự án",
+      "projectDescription": "Mô tả chi tiết về dự án",
+      "budget": "Chọn mức ngân sách",
+      "expectedCompletion": "VD: 3 tháng, 6 tháng...",
+      "technicalRequirements": "Mô tả yêu cầu kỹ thuật cụ thể",
+      "attachments": "Chọn file đính kèm",
+      "additionalInfo": "Thông tin bổ sung về dự án"
+    },
+    "projectTypes": {
+      "mechanical": "Cơ Khí Chế Tạo",
+      "electrical": "Điện - Điện Tử",
+      "construction": "Xây Dựng",
+      "transportation": "Giao Thông Vận Tải",
+      "custom": "Tùy Chỉnh",
+      "other": "Khác"
+    },
+    "budgetRanges": {
+      "under50m": "Dưới 50 triệu",
+      "50m100m": "50 - 100 triệu",
+      "100m500m": "100 - 500 triệu",
+      "500m1b": "500 triệu - 1 tỷ",
+      "over1b": "Trên 1 tỷ",
+      "discuss": "Cần thảo luận"
+    },
+    "attachmentsDescription": "Hỗ trợ: PDF, DOC, XLS, JPG, PNG, DWG, DXF (tối đa 10MB)",
+    "submitButton": "Gửi Yêu Cầu Báo Giá",
+    "success": "Yêu cầu báo giá đã được gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+    "error": "Gửi yêu cầu thất bại. Vui lòng thử lại sau.",
+    "validation": {
+      "nameRequired": "Vui lòng nhập họ và tên",
+      "emailInvalid": "Email không hợp lệ",
+      "phoneRequired": "Vui lòng nhập số điện thoại",
+      "phoneInvalid": "Số điện thoại không hợp lệ (10 chữ số, bắt đầu bằng 0)",
+      "projectNameRequired": "Vui lòng nhập tên dự án",
+      "projectTypeRequired": "Vui lòng chọn loại dự án",
+      "projectDescriptionRequired": "Vui lòng mô tả dự án",
+      "messageRequired": "Vui lòng nhập thông tin bổ sung"
+    }
+  },
+  "quoteInfo": {
+    "contactTitle": "Thông Tin Liên Hệ",
+    "benefitsTitle": "Lợi Ích Khi Làm Việc Với Chúng Tôi",
+    "processTitle": "Quy Trình Báo Giá",
+    "benefits": {
+      "quality": {
+        "title": "Chất Lượng Đảm Bảo",
+        "description": "Sản phẩm đạt tiêu chuẩn quốc tế"
+      },
+      "experience": {
+        "title": "Kinh Nghiệm Dày Dặn",
+        "description": "Hơn 15 năm trong ngành"
+      },
+      "support": {
+        "title": "Hỗ Trợ Tận Tình",
+        "description": "Đội ngũ tư vấn chuyên nghiệp"
+      },
+      "competitive": {
+        "title": "Giá Cạnh Tranh",
+        "description": "Báo giá hợp lý, minh bạch"
+      }
+    },
+    "process": {
+      "step1": "Nhận yêu cầu và phân tích dự án",
+      "step1_desc": "Tiếp nhận và làm rõ các yêu cầu kỹ thuật, quy mô và mục tiêu của dự án.",
+      "step2": "Tư vấn và đề xuất giải pháp",
+      "step2_desc": "Đội ngũ kỹ sư sẽ phân tích và đưa ra các giải pháp tối ưu về vật liệu, công nghệ và chi phí.",
+      "step3": "Báo giá chi tiết trong 24 giờ",
+      "step3_desc": "Gửi báo giá minh bạch, chi tiết từng hạng mục kèm theo thời gian thực hiện dự kiến.",
+      "step4": "Hỗ trợ và điều chỉnh theo yêu cầu",
+      "step4_desc": "Sẵn sàng thảo luận, điều chỉnh báo giá và giải pháp để phù hợp nhất với ngân sách và yêu cầu của bạn."
+    }
+  },
+  "quotes": {
+    "title": "Quản lý báo giá",
+    "searchPlaceholder": "Tìm kiếm theo tên, email, hoặc tên dự án...",
+    "status": "Trạng thái",
+    "confirmed": "Đã xác nhận",
+    "pending": "Chờ xác nhận",
+    "table": {
+      "name": "Tên khách hàng",
+      "projectName": "Tên dự án",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "status": "Trạng thái",
+      "createdAt": "Ngày nhận",
+      "actions": "Hành động",
+      "noData": "Không có yêu cầu báo giá nào."
+    },
+    "actions": {
+      "viewDetail": "Xem chi tiết",
+      "confirm": "Xác nhận yêu cầu"
+    },
+    "detail": {
+      "title": "Chi tiết yêu cầu báo giá",
+      "customerInfo": "Thông tin khách hàng",
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "company": "Công ty",
+      "jobTitle": "Chức danh",
+      "address": "Địa chỉ",
+      "projectInfo": "Thông tin dự án",
+      "projectName": "Tên dự án",
+      "projectType": "Loại dự án",
+      "projectDescription": "Mô tả dự án",
+      "budget": "Ngân sách dự kiến",
+      "expectedCompletion": "Thời gian hoàn thành dự kiến",
+      "technicalRequirements": "Yêu cầu kỹ thuật",
+      "requirements": "Nội dung yêu cầu",
+      "attachments": "File đính kèm",
+      "viewAttachment": "Xem file",
+      "additionalInfo": "Thông tin bổ sung",
+      "content": "Nội dung",
+      "status": "Trạng thái",
+      "createdAt": "Ngày nhận yêu cầu"
+    },
+    "toast": {
+      "confirmSuccess": "Đã xác nhận yêu cầu báo giá thành công!",
+      "confirmError": "Có lỗi xảy ra khi xác nhận yêu cầu."
+    },
+    "error": {
+      "load": "Không thể tải danh sách báo giá. Vui lòng thử lại."
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Dự án",
+      "tagline": "Công trình tiêu biểu",
+      "title1": "Công trình",
+      "title2": "Chất lượng",
+      "title3": "Uy tín",
+      "description": "Khám phá những công trình tiêu biểu của chúng tôi",
+      "description2": "từ khắp nơi",
+      "description3": "thể hiện sự cam kết",
+      "description4": "chất lượng và sáng tạo",
+      "cta": {
+        "quote": "Yêu cầu báo giá",
+        "contact": "Liên hệ ngay"
+      }
+    },
+    "features": {
+      "title": "Tại sao chọn chúng tôi",
+      "subtitle": "Cam kết chất lượng và dịch vụ xuất sắc",
+      "quality": {
+        "title": "Chất lượng cao",
+        "description": "Mỗi công trình được thực hiện với tiêu chuẩn chất lượng cao nhất"
+      },
+      "timeline": {
+        "title": "Đúng tiến độ",
+        "description": "Cam kết hoàn thành công trình đúng thời gian đã thỏa thuận"
+      },
+      "expertise": {
+        "title": "Chuyên môn",
+        "description": "Đội ngũ chuyên gia với kinh nghiệm hơn 15 năm trong ngành"
+      }
+    },
+    "achievements": {
+      "completed": "Dự án hoàn thành",
+      "experience": "Năm kinh nghiệm",
+      "satisfaction": "Tỷ lệ hài lòng",
+      "support": "Hỗ trợ 24/7"
+    },
+    "section": {
+      "title": "Dự án tiêu biểu",
+      "subtitle": "Những công trình đã hoàn thành thành công"
+    },
+    "featured": {
+      "title": "Dự án nổi bật"
+    },
+    "viewAll": "Xem tất cả dự án",
+    "card": {
+      "featured": "Nổi bật",
+      "viewDetails": "Xem chi tiết"
+    },
+    "categories": {
+      "title": "Danh mục dự án"
+    },
+    "list": {
+      "empty": "Dự án đang được cập nhật..."
+    },
+    "contact": {
+      "title": "Liên hệ với chúng tôi",
+      "subtitle": "Sẵn sàng hỗ trợ bạn với giải pháp tốt nhất",
+      "hotlineLabel": "Hotline",
+      "emailLabel": "Email",
+      "addressLabel": "Địa chỉ",
+      "addressFallback": "Địa chỉ công ty",
+      "cta": "Gọi ngay",
+      "footer": "© 2024 Tất cả quyền được bảo lưu"
+    }
+  },
+  "newsAdmin": {
+    "createTitle": "Thêm tin tức mới",
+    "updateTitle": "Cập nhật tin tức",
+    "headerTitle": "Quản lý tin tức",
+    "headerSubtitle": "Quản lý các bài viết tin tức và sự kiện",
+    "addNews": "Thêm tin tức",
+    "items": "tin tức",
+    "form": {
+      "createSubtitle": "Nhập thông tin tin tức mới",
+      "editSubtitle": "Cập nhật thông tin tin tức",
+      "buttons": {
+        "backToList": "Quay lại danh sách",
+        "save": "Lưu tin tức"
+      },
+      "labels": {
+        "title": "Tiêu đề",
+        "subtitle": "Tiêu đề phụ",
+        "image": "Ảnh bìa",
+        "featured": "Tin nổi bật",
+        "active": "Kích hoạt"
+      },
+      "placeholders": {
+        "title": "Nhập tiêu đề tin tức",
+        "subtitle": "Nhập tiêu đề phụ"
+      },
+      "validation": {
+        "titleRequired": "Vui lòng nhập tiêu đề"
+      },
+      "sections": {
+        "title": "Nội dung chi tiết",
+        "add": "Thêm section",
+        "empty": "Chưa có section nào. Nhấn nút trên để thêm.",
+        "sectionTitle": "Tiêu đề section",
+        "sectionTitlePlaceholder": "Nhập tiêu đề section",
+        "description": "Nội dung",
+        "descriptionPlaceholder": "Nhập nội dung chi tiết..."
+      }
+    },
+    "table": {
+      "title": "Danh sách tin tức",
+      "searchPlaceholder": "Tìm kiếm tin tức...",
+      "columns": {
+        "image": "Ảnh",
+        "title": "Tiêu đề",
+        "subtitle": "Tiêu đề phụ",
+        "featured": "Nổi bật",
+        "status": "Trạng thái",
+        "actions": "Hành động"
+      },
+      "noData": "Không có tin tức nào",
+      "featured": "Nổi bật"
+    },
+    "delete": {
+      "title": "Xác nhận xoá",
+      "confirm": "Bạn có chắc chắn muốn xoá tin tức này? Hành động này không thể hoàn tác."
+    }
+  },
+  "priceQuotesAdmin": {
+    "createTitle": "Thêm báo giá mới",
+    "updateTitle": "Cập nhật báo giá",
+    "headerTitle": "Quản lý báo giá",
+    "headerSubtitle": "Quản lý các bài viết báo giá",
+    "addQuote": "Thêm báo giá",
+    "items": "báo giá",
+    "form": {
+      "createSubtitle": "Nhập thông tin báo giá mới",
+      "editSubtitle": "Cập nhật thông tin báo giá",
+      "buttons": {
+        "backToList": "Quay lại danh sách",
+        "save": "Lưu báo giá"
+      },
+      "labels": {
+        "title": "Tiêu đề",
+        "subtitle": "Tiêu đề phụ",
+        "image": "Ảnh bìa",
+        "featured": "Nổi bật",
+        "active": "Kích hoạt"
+      },
+      "placeholders": {
+        "title": "Nhập tiêu đề báo giá",
+        "subtitle": "Nhập tiêu đề phụ"
+      },
+      "validation": {
+        "titleRequired": "Vui lòng nhập tiêu đề"
+      },
+      "sections": {
+        "title": "Nội dung chi tiết",
+        "add": "Thêm section",
+        "empty": "Chưa có section nào. Nhấn nút trên để thêm.",
+        "sectionTitle": "Tiêu đề section",
+        "sectionTitlePlaceholder": "Nhập tiêu đề section",
+        "description": "Nội dung",
+        "descriptionPlaceholder": "Nhập nội dung chi tiết..."
+      }
+    },
+    "table": {
+      "title": "Danh sách báo giá",
+      "searchPlaceholder": "Tìm kiếm báo giá...",
+      "columns": {
+        "image": "Ảnh",
+        "title": "Tiêu đề",
+        "subtitle": "Tiêu đề phụ",
+        "featured": "Nổi bật",
+        "status": "Trạng thái",
+        "actions": "Hành động"
+      },
+      "noData": "Không có báo giá nào",
+      "featured": "Nổi bật"
+    },
+    "delete": {
+      "title": "Xác nhận xoá",
+      "confirm": "Bạn có chắc chắn muốn xoá báo giá này? Hành động này không thể hoàn tác."
+    }
+  },
+  "quotes": {
+    "title": "Yêu cầu báo giá",
+    "searchPlaceholder": "Tìm kiếm theo tên, email, điện thoại...",
+    "error": {
+      "load": "Có lỗi khi tải danh sách yêu cầu"
+    },
+    "confirmed": "Đã xác nhận",
+    "pending": "Chờ xác nhận",
+    "status": "Trạng thái",
+    "table": {
+      "name": "Họ tên",
+      "projectName": "Tên dự án",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "status": "Trạng thái",
+      "createdAt": "Ngày gửi",
+      "actions": "Thao tác",
+      "noData": "Chưa có yêu cầu báo giá nào"
+    },
+    "actions": {
+      "viewDetail": "Xem chi tiết",
+      "confirm": "Xác nhận"
+    },
+    "detail": {
+      "title": "Chi tiết yêu cầu báo giá",
+      "customerInfo": "Thông tin khách hàng",
+      "name": "Họ tên",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "company": "Công ty",
+      "jobTitle": "Chức vụ",
+      "address": "Địa chỉ",
+      "projectInfo": "Thông tin dự án",
+      "projectName": "Tên dự án",
+      "projectType": "Loại dự án",
+      "budget": "Ngân sách",
+      "expectedCompletion": "Dự kiến hoàn thành",
+      "projectDescription": "Mô tả dự án",
+      "technicalRequirements": "Yêu cầu kỹ thuật",
+      "requirements": "Yêu cầu chi tiết",
+      "attachments": "Tài liệu đính kèm",
+      "additionalInfo": "Thông tin thêm",
+      "content": "Ghi chú",
+      "status": "Trạng thái",
+      "createdAt": "Thời gian gửi"
+    }
+  },
+  "recruitmentAdmin": {
+    "headerTitle": "Quản lý tuyển dụng",
+    "headerSubtitle": "Quản lý các tin tuyển dụng",
+    "addRecruitment": "Thêm tin tuyển dụng",
+    "createTitle": "Thêm tin tuyển dụng mới",
+    "updateTitle": "Cập nhật tin tuyển dụng",
+    "items": "tin tuyển dụng",
+    "delete": {
+      "title": "Xác nhận xoá",
+      "confirm": "Bạn có chắc chắn muốn xoá tin tuyển dụng này? Hành động này không thể hoàn tác."
+    },
+    "form": {
+      "createSubtitle": "Nhập thông tin tin tuyển dụng",
+      "editSubtitle": "Cập nhật thông tin tin tuyển dụng",
+      "buttons": {
+        "backToList": "Quay lại danh sách",
+        "save": "Lưu tin tuyển dụng"
+      },
+      "errors": {
+        "required": "Trường này là bắt buộc"
+      },
+      "uploadPlaceholder": "Click để tải ảnh lên",
+      "labels": {
+        "title": "Tiêu đề",
+        "subtitle": "Tiêu đề phụ",
+        "image": "Ảnh bìa (URL)",
+        "featured": "Tin nổi bật",
+        "active": "Kích hoạt"
+      },
+      "placeholders": {
+        "title": "Nhập tiêu đề",
+        "subtitle": "Nhập tiêu đề phụ",
+        "image": "Nhập URL ảnh bìa"
+      },
+      "sections": {
+        "title": "Nội dung chi tiết",
+        "add": "Thêm section",
+        "empty": "Chưa có section nào. Nhấn nút trên để thêm.",
+        "section": "Section",
+        "sectionTitle": "Tiêu đề section",
+        "sectionTitlePlaceholder": "Nhập tiêu đề",
+        "description": "Mô tả",
+        "descriptionPlaceholder": "Nhập nội dung mô tả",
+        "sectionImage": "Ảnh minh họa (URL, optional)",
+        "sectionImagePlaceholder": "Nhập URL ảnh"
+      }
+    },
+    "table": {
+      "title": "Danh sách tin tuyển dụng",
+      "searchPlaceholder": "Tìm kiếm tin tuyển dụng...",
+      "featured": "Nổi bật",
+      "noData": "Không có tin tuyển dụng nào.",
+      "columns": {
+        "image": "Ảnh",
+        "title": "Tiêu đề",
+        "subtitle": "Tiêu đề phụ",
+        "featured": "Nổi bật",
+        "status": "Trạng thái",
+        "actions": "Hành động"
+      }
+    },
+    "toast": {
+      "createSuccess": "Tạo tin tuyển dụng thành công",
+      "createError": "Lỗi khi tạo tin tuyển dụng",
+      "updateSuccess": "Cập nhật tin tuyển dụng thành công",
+      "updateError": "Lỗi khi cập nhật tin tuyển dụng",
+      "deleteSuccess": "Xóa tin tuyển dụng thành công",
+      "deleteError": "Lỗi khi xóa tin tuyển dụng"
+    }
+  }
+}

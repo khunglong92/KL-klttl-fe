@@ -1,0 +1,208 @@
+/* Custom Product Tabs Styling */
+.custom-product-tabs {
+  position: relative;
+}
+
+.custom-tabs-list {
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Base tab button styling */
+.custom-tab-button {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tab content wrapper for z-index control */
+.custom-tab-button .tab-content {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Inactive tab state */
+.custom-tab-button:not([data-active="true"]) {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.custom-tab-button:not([data-active="true"]):hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+/* Active tab state - gradient background like AppButton */
+.custom-tab-button[data-active="true"] {
+  background: linear-gradient(to right, #f59e0b, #ea580c);
+  color: white !important;
+  box-shadow:
+    0 4px 6px -1px rgba(245, 158, 11, 0.3),
+    0 2px 4px -1px rgba(245, 158, 11, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.custom-tab-button[data-active="true"]:hover {
+  background: linear-gradient(to right, #d97706, #c2410c);
+  box-shadow:
+    0 10px 15px -3px rgba(245, 158, 11, 0.5),
+    0 4px 6px -2px rgba(245, 158, 11, 0.3);
+}
+
+/* Glow effects for active tab */
+.custom-tab-button[data-active="true"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background: rgba(251, 191, 36, 0.25);
+  filter: blur(16px);
+  z-index: 0;
+  animation: pulse-glow 2s ease-in-out infinite;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-tab-button[data-active="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background: rgba(249, 115, 22, 0.2);
+  filter: blur(12px);
+  z-index: 0;
+  animation: pulse-glow-secondary 2.3s ease-in-out infinite;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sweeping shine effect for active tab */
+.custom-tab-button[data-active="true"] .tab-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  opacity: 0.8;
+  mix-blend-mode: screen;
+  animation: sweep-shine 1.5s ease-in-out infinite;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Inner pulse glow for active tab */
+.custom-tab-button[data-active="true"] .tab-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  animation: inner-pulse 1.6s ease-in-out infinite;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse-glow-secondary {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes sweep-shine {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes inner-pulse {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Dark mode adjustments */
+[data-mantine-color-scheme="dark"]
+  .custom-tab-button:not([data-active="true"]) {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-mantine-color-scheme="dark"]
+  .custom-tab-button:not([data-active="true"]):hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light mode adjustments */
+[data-mantine-color-scheme="light"]
+  .custom-tab-button:not([data-active="true"]) {
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-mantine-color-scheme="light"]
+  .custom-tab-button:not([data-active="true"]):hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Icon styling */
+.custom-tab-button svg {
+  position: relative;
+  z-index: 10;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-tabs-list {
+    gap: 0.5rem;
+  }
+
+  .custom-tab-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+}

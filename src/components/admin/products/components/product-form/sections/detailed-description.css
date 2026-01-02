@@ -1,0 +1,74 @@
+/* Quill Dark Mode Overrides */
+.dark .ql-toolbar.ql-snow {
+  background-color: #1a1b1e;
+  border-color: #373a40;
+  color: #c1c2c5;
+}
+
+.dark .ql-container.ql-snow {
+  background-color: #1a1b1e;
+  border-color: #373a40;
+  color: #c1c2c5;
+}
+
+.dark .ql-editor.ql-blank::before {
+  color: #5c5f66;
+}
+
+.dark .ql-snow .ql-stroke {
+  stroke: #c1c2c5;
+}
+
+.dark .ql-snow .ql-fill {
+  fill: #c1c2c5;
+}
+
+.dark .ql-snow .ql-picker {
+  color: #c1c2c5;
+}
+
+.dark .ql-snow .ql-picker-options {
+  background-color: #1a1b1e;
+  border-color: #373a40;
+}
+
+.dark .ql-snow .ql-picker-label:hover,
+.dark .ql-snow .ql-picker-label.ql-active {
+  color: #f59e0b; /* orange.6 */
+}
+
+.dark .ql-snow.ql-toolbar button:hover,
+.dark .ql-snow.ql-toolbar button:focus,
+.dark .ql-snow.ql-toolbar button.ql-active,
+.dark .ql-snow.ql-toolbar .ql-picker-label:hover,
+.dark .ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.dark .ql-snow.ql-toolbar .ql-picker-item:hover,
+.dark .ql-snow.ql-toolbar .ql-picker-item.ql-selected {
+  color: #f59e0b;
+}
+
+.dark .ql-snow.ql-toolbar button:hover .ql-stroke,
+.dark .ql-snow.ql-toolbar button:focus .ql-stroke,
+.dark .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.dark .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.dark .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.dark .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.dark .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke {
+  stroke: #f59e0b;
+}
+
+.dark .ql-snow.ql-toolbar button:hover .ql-fill,
+.dark .ql-snow.ql-toolbar button:focus .ql-fill,
+.dark .ql-snow.ql-toolbar button.ql-active .ql-fill,
+.dark .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill,
+.dark .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.dark .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill,
+.dark .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill {
+  fill: #f59e0b;
+}
+
+/* Image resizing handles in dark mode */
+.dark .ql-image-resize-module .handler {
+  background-color: #f59e0b !important;
+  border-color: #fff !important;
+}

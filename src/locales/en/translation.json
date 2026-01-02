@@ -1,0 +1,1937 @@
+{
+  "common": {
+    "viewDetails": "View Details",
+    "close": "Close",
+    "all": "All",
+    "noResults": "No results found",
+    "noImages": "No images selected",
+    "dropzone": {
+      "title": "Drag and drop or click to select files",
+      "subtitle": "Supports JPG, PNG, GIF.",
+      "selected": "Selected"
+    },
+    "previous": "Previous",
+    "next": "Next",
+    "viewMore": "View more",
+    "stt": "No.",
+    "noImage": "No image",
+    "active": "Active",
+    "inactive": "Inactive",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "total": "Total",
+    "page": "Page",
+    "featured": "Featured"
+  },
+  "sidebar": {
+    "featured_services": "Featured Services",
+    "featured_projects": "Featured Projects",
+    "online_support": "Online Support",
+    "product_categories": "Product Categories",
+    "project_categories": "Project Categories",
+    "all_products": "All Products",
+    "all_projects": "All Projects",
+    "hotline": "Hotline 24/7",
+    "service_hours": "Service Hours 24/7 (Including Holidays)",
+    "featured_news": "Featured News",
+    "recruitment": "Recruitment"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "introduction": "Introduction",
+    "services": "Services",
+    "introduction_general": "GENERAL INTRODUCTION",
+    "introduction_profile": "CAPABILITY PROFILE",
+    "introduction_facilities": "FACILITIES",
+    "introduction_partners": "PARTNERS",
+    "introduction_privacy": "PRIVACY POLICY",
+    "quote": "Quote",
+    "project": "Project",
+    "news": "News",
+    "recruitment": "Recruitment",
+    "emailContact": "CONTACT EMAIL",
+    "phoneContact": "CONTACT PHONE",
+    "companyName": "THIEN LOC",
+    "companyDescription": "SHEET METAL FABRICATION & PROCESSING",
+    "switchToEnglish": "Switch to English",
+    "switchToVietnamese": "Switch to Vietnamese"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  },
+
+  "login": {
+    "success": "Success",
+    "successMessage": "Login successful! We will contact you as soon as possible.",
+    "error": "Error",
+    "errorMessage": "An error occurred. Please try again later.",
+    "invalidCredentials": "Incorrect username or password!",
+    "invalidCredentialsMessage": "Incorrect username or password!",
+    "successMessageLogout": "Logout successful",
+    "errorMessageLogout": "An error occurred. Please try again later.",
+    "successMessageRegister": "Registration successful",
+    "errorMessageRegister": "An error occurred. Please try again later.",
+    "successMessageResetPassword": "Password has been reset",
+    "errorMessageResetPassword": "An error occurred. Please try again later."
+  },
+  "hero": {
+    "badge": "High Quality • Best Price",
+    "title": "Housewares & Furniture",
+    "titleHighlight": "Premium",
+    "description": "Explore our collection of premium wood and plastic products for your home. From tables and chairs to cabinets and household items, we have it all.",
+    "shopNow": "Shop Now",
+    "viewCollection": "View Collection",
+    "products": "Products",
+    "customers": "Customers",
+    "rating": "Rating"
+  },
+  "products": {
+    "title": "Featured Products",
+    "description": "Explore representative projects with the Thien Loc mark – where precision, sustainable quality, and sophisticated aesthetics converge.",
+    "all": "All",
+    "new": "New",
+    "viewAll": "View all products",
+    "hero": {
+      "badge": "Professional",
+      "tagline": "Metal processing",
+      "title1": "Precision",
+      "title2": "Professional",
+      "title3": "Perfect",
+      "description": "Comprehensive metal processing solutions with precision",
+      "description2": "meeting all industrial requirements from simple to the most complex.",
+      "cta": {
+        "quote": "Request a quote",
+        "contact": "Contact now"
+      }
+    },
+    "features": {
+      "title": "Why choose us",
+      "subtitle": "Commitment to quality and excellent service",
+      "iso": {
+        "title": "ISO 9001:2015 certification",
+        "description": "Ensuring international quality"
+      },
+      "delivery": {
+        "title": "On-time delivery",
+        "description": "Commitment to precise schedule"
+      },
+      "warranty": {
+        "title": "24-month warranty",
+        "description": "Lifetime technical support"
+      }
+    },
+    "achievements": {
+      "experience": "Years of experience",
+      "projects": "Completed projects",
+      "satisfaction": "Satisfaction",
+      "support": "Support"
+    },
+    "categories": {
+      "empty": "No product categories yet"
+    },
+    "card": {
+      "badge": "Products",
+      "status": "Status",
+      "available": "Available",
+      "unavailable": "Out of stock",
+      "priceLabel": "Price",
+      "noPrice": "Contact"
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "Ready to support you with the best solutions",
+      "hotlineLabel": "Hotline",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "addressFallback": "Ho Chi Minh City",
+      "cta": "Call now",
+      "footer": "© 2024 All rights reserved"
+    },
+    "filter": {
+      "title": "All Products",
+      "subtitle": "Explore our full range of high-quality metal processing products",
+      "allCategories": "All Categories",
+      "searchPlaceholder": "Search products...",
+      "filterByCategory": "Filter by category",
+      "grid": "Grid",
+      "list": "List",
+      "clear": "Clear filter",
+      "showing": "Showing",
+      "products": "products",
+      "noProducts": "No products found",
+      "noProductsDesc": "Try changing filters or searching with different keywords"
+    }
+  },
+  "introduction_pages": {
+    "general": {
+      "hero-title": "INTRODUCTION PAGE",
+      "title": "GENERAL INTRODUCTION",
+      "content": "Thien Loc Sheet Metal Production and Fabrication Company was established in January 2026, operating in the field of production, processing and supplying sheet metal products for many different industries. The company specializes in processing sheet metal according to requirements with items such as laser cutting, CNC cutting, bending, punching, welding, assembly and surface finishing. Besides, Thien Loc also operates in the fields of design - manufacturing of mechanical parts, production of metal frames, electrical cabinets, cable trays, metal railings - fences, light steel structures and auxiliary mechanical products for industry and construction.\n\nWith the orientation of taking quality, progress and prestige as the core values, the company constantly invests in modern machinery systems, improves production processes and enhances the skills of the technical team. The company's headquarters and production workshop are located in Vong La village, Thien Loc commune, convenient for production, transportation and cooperation with partners in and out of the region. Thien Loc aims to become a reliable sheet metal processing unit, accompanying customers and partners for a long time on the path of sustainable development"
+    },
+    "profile": {
+      "title": "CAPABILITY PROFILE",
+      "subtitle": "THIEN LOC SHEET METAL PRODUCTION AND FABRICATION COMPANY",
+      "sections": {
+        "info": {
+          "title": "1. General information",
+          "items": [
+            "Company name: Thien Loc Sheet Metal Production and Fabrication Company",
+            "Founding time: January 2026",
+            "Address: Vong La village, Thien Loc commune",
+            "Field of activity: Sheet metal production and fabrication"
+          ]
+        },
+        "fields": {
+          "title": "2. Main fields of activity",
+          "description": "Thien Loc operates intensively in the field of sheet metal production and fabrication, including:",
+          "items": [
+            "Custom sheet metal processing",
+            "Laser cutting, CNC metal cutting",
+            "Bending, punching sheet metal",
+            "Welding, assembly and product finishing",
+            "Design and manufacturing of mechanical parts",
+            "Production of metal frames, electrical cabinets, cable trays",
+            "Processing of railings, fences, light steel structures and auxiliary mechanical products for industry and construction"
+          ]
+        },
+        "capacity": {
+          "title": "3. Production capacity",
+          "content": "The company owns a modern system of sheet metal processing machinery and equipment, well meeting the technical requirements and progress of customers. The technical team and workers are skilled, rich in practical experience, ready to advise and implement processing solutions suitable for each specific need."
+        },
+        "quality": {
+          "title": "4. Quality commitment",
+          "content": "Thien Loc always puts product quality - delivery progress - cooperative reputation first. Each product before handover is carefully inspected, ensuring it matches the drawings, technical requirements and achieves high aesthetic value."
+        },
+        "development": {
+          "title": "5. Development orientation",
+          "content": "With the goal of sustainable development, Thien Loc constantly invests in upgrading machinery, improving production processes and enhancing service quality, aiming to become a reputable sheet metal processing unit, a reliable partner of customers inside and outside the region."
+        }
+      }
+    },
+    "facilities": {
+      "title": "FACILITIES",
+      "intro": "Thien Loc Sheet Metal Production & Fabrication Co., Ltd. always focuses on investing and completing the infrastructure system to build a professional, modern working environment, creating conditions for staff and employees to maximize their capabilities and work enthusiastically. Thien Loc is not only a gathering place for high-quality human resources but also an environment for each individual to develop, contribute and accompany the company for a long time.",
+      "section_a": {
+        "title": "A. Production Workshop",
+        "p1": "Currently, Thien Loc owns a large-scale factory system, scientifically arranged, fully meeting production and processing requirements according to high quality standards.",
+        "p2": "Production areas are arranged separately for each stage, from receiving raw materials, processing, assembling to finishing products. Each stage is supported by a system of modern machinery, equipment and auxiliary means, helping to optimize performance and ensure high precision.",
+        "p3": "Besides, specialized departments conduct strict inspection and supervision after each production stage, to ensure that products when leaving the factory always achieve the best quality according to customer requirements. The industrial hygiene, labor safety and fire prevention systems are fully equipped, strictly complying with current regulations, contributing to protecting the health and safety of workers."
+      },
+      "section_b": {
+        "title": "B. Office",
+        "content": "Thien Loc's office system is built spaciously with a total floor area of over 700m², fully equipped with office equipment, accessories and technical equipment for professional work. The workspace is scientifically and modernly arranged, meeting the working needs of departments and creating a professional, efficient working environment.",
+        "address_label": "Office address:",
+        "address_value": "New Cultural House, Vong La village, Thien Loc commune, Hanoi City"
+      },
+      "section_c": {
+        "title": "C. Contact Information",
+        "phone_label": "Phone:",
+        "email_label": "Email:"
+      }
+    },
+    "partners": {
+      "title": "PARTNERS",
+      "intro": "Thien Loc Sheet Metal Production and Fabrication Company always values building and developing sustainable cooperative relationships with partners, suppliers and customers in the spirit of reputation - transparency - mutual development.",
+      "fields": "The company is currently cooperating with many partners in the fields of mechanics, construction, supporting industries and equipment manufacturing, contributing to creating a stable and effective supply chain.",
+      "collaboration": "Through the cooperation process, Thien Loc constantly improves production capacity, enhances product quality and optimizes technical solutions to better meet the increasingly high requirements of partners.",
+      "motto": "With the motto of long-term cooperation, respecting commitments and harmonious benefits, Thien Loc aims to become a reliable partner, accompanying customers and partners in current and future projects."
+    },
+    "privacy": {
+      "title": "PRIVACY POLICY",
+      "p1": "Thien Loc Sheet Metal Production and Fabrication Company is committed to absolute confidentiality of all personal information of customers and partners when accessing, contacting and cooperating through the website. This privacy policy is built to clearly demonstrate Thien Loc's responsibility in respecting privacy and protecting customers' personal data.",
+      "p2": "All information collected is only used for internal purposes, serving consulting, quotation and service activities. We do not buy, sell, exchange or share customers' personal information with any third party without the customer's consent, except as required by law.",
+      "collection": {
+        "title": "PERSONAL INFORMATION COLLECTION",
+        "intro": "Thien Loc collects personal identification information when customers voluntarily provide it, including but not limited to: full name, phone number, email address, contact address and information related to service needs.",
+        "extra": "Additionally, during customer website access, we may collect some technical information such as:",
+        "list": [
+          "Type of browser used",
+          "Time and date of access",
+          "Pages visited on the website",
+          "Source of access to the website"
+        ],
+        "footer": "This information is collected to enhance user experience, improve service quality and manage, operate the website more effectively."
+      },
+      "usage": {
+        "title": "PURPOSE OF INFORMATION USE",
+        "intro": "Customer personal information is used by Thien Loc for the following purposes:",
+        "list": [
+          "Contact for consultation, answering customer requests",
+          "Provide quotations, service information and technical support",
+          "Perform contracts, orders and related obligations",
+          "Improve service quality and user experience"
+        ],
+        "footer": "We commit to using information only for the stated purposes and within the necessary scope."
+      },
+      "sharing": {
+        "title": "INFORMATION DISTRIBUTION AND SHARING",
+        "intro": "Thien Loc does not share customers' personal information with external organizations or individuals, except in the following cases:",
+        "consent_title": "With customer consent",
+        "consent_body": "We only share personal information when we receive clear consent from the customer.",
+        "legal_title": "Legal requirements",
+        "legal_body": "In case of requests from competent state agencies or for investigation and fraud prevention purposes as required by law, Thien Loc may provide information in accordance with current regulations."
+      },
+      "security": {
+        "title": "INFORMATION SECURITY",
+        "content": "Thien Loc applies appropriate management and technical measures to protect customers' personal information from risks of unauthorized access, loss, leakage or misuse. Only authorized individuals and departments are allowed to access information within the scope of their assigned work."
+      },
+      "contact": {
+        "title": "QUESTIONS AND CONTACT",
+        "intro": "If you have any questions, concerns or comments regarding the privacy policy, please contact us through the following channels:",
+        "email_label": "Email:",
+        "hotline_label": "Hotline:",
+        "footer": "We are always ready to receive and answer all feedback from customers."
+      },
+      "changes": {
+        "title": "POLICY CHANGES",
+        "content": "Thien Loc reserves the right to update and adjust the content of this privacy policy when necessary to suit business activities and current legal regulations. All changes will be publicly announced on the website."
+      },
+      "time": {
+        "title": "APPLICATION TIME",
+        "content": "This privacy policy is effective and applies throughout the time the Thien Loc Sheet Metal Production and Fabrication Company website is in operation."
+      }
+    }
+  },
+  "introduction": {
+    "aboutUsLabel": "General Introduction",
+    "companyName": "THIEN LOC SHEET METAL PRODUCTION AND FABRICATION CO., LTD.",
+    "companyDescription": "Solid reputation, rising quality",
+    "missionAndVisionLabel": "Mission & Vision",
+    "servicesDescription": "The sheet metal processing industry plays a crucial role in many industrial and civil sectors thanks to its flexible shaping capability, high precision, and superior durability. Sheet metal products are widely applied in various industries, meeting increasingly high technical and aesthetic requirements.",
+    "coreValuesLabel": "Core Values",
+    "coreValuesDescription": "Precision in every detail – Perfection in every product – Dedication in every collaboration",
+    "servicesLabel": "APPLICATION FIELDS OF SHEET METAL PROCESSING",
+    "commitmentLabel": "Our Commitment",
+    "commitmentDescription": "Thien Loc Company commits to always accompany customers and partners in every project, bringing sustainable values, contributing to improving domestic production capacity and affirming the position of the Vietnamese mechanical industry in the regional market.",
+    "hero": {
+      "alt": "Thien Loc Factory"
+    },
+    "companyInfo": {
+      "foundingDate": "Founding Date",
+      "address": "Address",
+      "hotline": "Hotline",
+      "companyType": "Type"
+    },
+    "coreValues": {
+      "precision": {
+        "title": "Precision",
+        "description": "Every detail is processed with the highest precision"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Products meet international standards, meeting strict requirements"
+      },
+      "dedication": {
+        "title": "Dedication",
+        "description": "Accompanying and supporting customers in every project"
+      },
+      "reputation": {
+        "title": "Reputation",
+        "description": "Commitment to quality and schedule in every task"
+      }
+    },
+    "commitment": {
+      "companyName": "Thien Loc",
+      "slogan": "Solid reputation, rising quality"
+    },
+    "stats": {
+      "yearsOfExperience": "Years of Experience",
+      "projectsCompleted": "Completed Projects",
+      "satisfiedClients": "Trusted Clients",
+      "satisfactionRate": "Satisfied Clients"
+    },
+    "services": {
+      "mechanicalEngineering": "Industrial – Mechanical Engineering",
+      "mechanicalEngineeringDescription": "Sheet metal processing is used to manufacture machine housings, mechanical parts, assembly components, brackets, and technical structures for production lines and industrial equipment.",
+      "electricalEngineering": "Electrical – Industrial Electrical",
+      "electricalEngineeringDescription": "Application in the production of industrial electrical cabinets, locker cabinets, cable trays, electrical equipment housings, ensuring safety, durability, and aesthetics for electrical systems.",
+      "construction": "Construction – Infrastructure",
+      "constructionDescription": "Sheet metal is processed into light steel structures, railings, doors, roofing, partitions, and construction accessories, meeting load-bearing requirements and long-term durability.",
+      "interior": "Interior – Decoration",
+      "interiorDescription": "Applied in metal furniture, tables and chairs, shelves, decorative partitions, and industrial decorative products, bringing modern style and high aesthetics.",
+      "industrial": "Industrial Zones – Workshops",
+      "industrialDescription": "Processing products such as locker cabinets, storage shelves, containers, and protective frames, serving use and management needs in industrial environments.",
+      "transportation": "Transportation – Public Equipment",
+      "transportationDescription": "Manufacture equipment housings, signage, and metal structures for transportation projects and public utilities."
+    },
+    "reviewsAdmin": {
+      "title": "Reviews Management",
+      "subtitle": "Track and respond to customer reviews",
+      "detailTitle": "Review Details",
+      "detailSubtitle": "Viewing review from: {{name}}",
+      "backToList": "Back to list",
+      "allReviews": "All Reviews",
+      "total": "Total: {{count}}",
+      "filterPlaceholder": "Filter by type",
+      "filter": {
+        "all": "All posts",
+        "product": "Product",
+        "news": "News",
+        "project": "Project",
+        "service": "Service",
+        "recruitment": "Recruitment",
+        "other": "Other"
+      },
+      "table": {
+        "sender": "Sender",
+        "rating": "Rating",
+        "content": "Content",
+        "type": "Type",
+        "time": "Time",
+        "actions": "Actions"
+      },
+      "empty": {
+        "title": "No matching reviews found"
+      },
+      "pagination": "Showing {{count}} of {{total}} reviews",
+      "detail": {
+        "senderInfo": "Sender Information",
+        "rating": "Rating",
+        "content": "Review Content",
+        "time": "Time",
+        "type": "Post Type",
+        "delete": "Delete this review"
+      },
+      "deleteModal": {
+        "title": "Confirm Delete Review",
+        "description": "Are you sure you want to delete this review? This action cannot be undone.",
+        "confirm": "Delete Now",
+        "cancel": "Cancel"
+      },
+      "toast": {
+        "loadError": "Failed to load review list",
+        "deleteSuccess": "Review deleted successfully",
+        "deleteError": "Error deleting review"
+      }
+    },
+    "usersAdmin": {
+      "title": "User Management",
+      "subtitle": "Manage system user accounts",
+      "editTitle": "Edit User",
+      "editSubtitle": "View and update information for: {{name}}",
+      "backToList": "Back to list",
+      "listTitle": "User List",
+      "searchPlaceholder": "Search users...",
+      "empty": "No users found",
+      "pagination": "Showing {{count}} of {{total}} users",
+      "table": {
+        "id": "ID",
+        "user": "User",
+        "email": "Email",
+        "role": "Role",
+        "joined": "Joined",
+        "actions": "Actions"
+      },
+      "actions": {
+        "edit": "Edit",
+        "view": "View Details",
+        "delete": "Delete Account"
+      },
+      "deleteModal": {
+        "title": "Confirm Delete Account",
+        "description": "Are you sure you want to delete this user? This account will be permanently removed from the system.",
+        "confirm": "Delete Now",
+        "cancel": "Cancel"
+      },
+      "form": {
+        "emailLabel": "Email (Cannot be changed)",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "Enter full name",
+        "roleLabel": "Role",
+        "rolePlaceholder": "Select role",
+        "dobLabel": "Date of Birth",
+        "save": "Save Changes",
+        "saving": "Saving...",
+        "roles": {
+          "user": "User (USER)",
+          "manager": "Manager (MANAGER)",
+          "admin": "Administrator (ADMIN)"
+        }
+      },
+      "toast": {
+        "deleteSelfError": "You cannot delete your own account",
+        "deleteSuccess": "User deleted successfully",
+        "deleteError": "Error occurred while deleting",
+        "updateSuccess": "User updated successfully",
+        "updateError": "Error occurred while updating"
+      }
+    }
+  },
+  "reviewsAdmin": {
+    "title": "Reviews Management",
+    "subtitle": "Track and respond to customer reviews",
+    "detailTitle": "Review Details",
+    "detailSubtitle": "Viewing review from: {{name}}",
+    "backToList": "Back to list",
+    "allReviews": "All Reviews",
+    "total": "Total: {{count}}",
+    "filterPlaceholder": "Filter by type",
+    "filter": {
+      "all": "All posts",
+      "product": "Product",
+      "news": "News",
+      "project": "Project",
+      "service": "Service",
+      "recruitment": "Recruitment",
+      "other": "Other"
+    },
+    "table": {
+      "sender": "Sender",
+      "rating": "Rating",
+      "content": "Content",
+      "type": "Type",
+      "time": "Time",
+      "actions": "Actions"
+    },
+    "empty": {
+      "title": "No matching reviews found"
+    },
+    "pagination": "Showing {{count}} of {{total}} reviews",
+    "detail": {
+      "senderInfo": "Sender Information",
+      "rating": "Rating",
+      "content": "Review Content",
+      "time": "Time",
+      "type": "Post Type",
+      "delete": "Delete this review"
+    },
+    "deleteModal": {
+      "title": "Confirm Delete Review",
+      "description": "Are you sure you want to delete this review? This action cannot be undone.",
+      "confirm": "Delete Now",
+      "cancel": "Cancel"
+    },
+    "toast": {
+      "loadError": "Failed to load review list",
+      "deleteSuccess": "Review deleted successfully",
+      "deleteError": "Error deleting review"
+    }
+  },
+  "usersAdmin": {
+    "title": "User Management",
+    "subtitle": "Manage system user accounts",
+    "editTitle": "Edit User",
+    "editSubtitle": "View and update information for: {{name}}",
+    "backToList": "Back to list",
+    "listTitle": "User List",
+    "searchPlaceholder": "Search users...",
+    "empty": "No users found",
+    "pagination": "Showing {{count}} of {{total}} users",
+    "table": {
+      "id": "ID",
+      "user": "User",
+      "email": "Email",
+      "role": "Role",
+      "joined": "Joined",
+      "actions": "Actions"
+    },
+    "actions": {
+      "edit": "Edit",
+      "view": "View Details",
+      "delete": "Delete Account"
+    },
+    "deleteModal": {
+      "title": "Confirm Delete Account",
+      "description": "Are you sure you want to delete this user? This account will be permanently removed from the system.",
+      "confirm": "Delete Now",
+      "cancel": "Cancel"
+    },
+    "form": {
+      "emailLabel": "Email (Cannot be changed)",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter full name",
+      "roleLabel": "Role",
+      "rolePlaceholder": "Select role",
+      "dobLabel": "Date of Birth",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "roles": {
+        "user": "User (USER)",
+        "manager": "Manager (MANAGER)",
+        "admin": "Administrator (ADMIN)"
+      }
+    },
+    "toast": {
+      "deleteSelfError": "You cannot delete your own account",
+      "deleteSuccess": "User deleted successfully",
+      "deleteError": "Error occurred while deleting",
+      "updateSuccess": "User updated successfully",
+      "updateError": "Error occurred while updating"
+    }
+  },
+  "projectsAdmin": {
+    "headerTitle": "Project Management",
+    "headerSubtitle": "Manage project categories and ongoing projects",
+    "createTitle": "Add New Project",
+    "updateTitle": "Update Project",
+    "addProject": "Add Project",
+    "items": "projects",
+    "listTitle": "Project List",
+    "searchPlaceholder": "Search projects...",
+    "form": {
+      "createSubtitle": "Enter new project information",
+      "editSubtitle": "Update project information",
+      "buttons": {
+        "backToList": "Back to list",
+        "save": "Save Project",
+        "cancel": "Cancel"
+      },
+      "labels": {
+        "title": "Project Name",
+        "shortDescription": "Short Description",
+        "featured": "Featured Project",
+        "active": "Active"
+      },
+      "placeholders": {
+        "title": "Enter project name",
+        "shortDescription": "Enter short description"
+      },
+      "validation": {
+        "titleRequired": "Please enter project name"
+      },
+      "imageUpload": {
+        "title": "Project Images",
+        "description": "Upload or drag and drop images. Maximum 10 images, up to 10MB each.",
+        "dragText": "Drag and drop or click to select files",
+        "supportText": "Supports JPG, PNG, GIF. Selected {{count}}/10.",
+        "newBadge": "New",
+        "noImagesSelected": "No images selected"
+      }
+    },
+    "table": {
+      "columns": {
+        "id": "ID",
+        "image": "Image",
+        "title": "Project Name",
+        "featured": "Featured",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "noData": "No projects found."
+    },
+    "toast": {
+      "createProjectSuccess": "Project created successfully",
+      "updateProjectSuccess": "Project updated successfully",
+      "deleteProjectSuccess": "Project deleted successfully",
+      "createProjectError": "Error creating project",
+      "updateProjectError": "Error updating project",
+      "deleteProjectError": "Error deleting project"
+    },
+    "deleteConfirmTitle": "Confirm Project Deletion",
+    "deleteConfirmMessage": "Are you sure you want to delete this project? This action cannot be undone."
+  },
+  "servicesAdmin": {
+    "title": "Service Management",
+    "subtitle": "Manage service list",
+    "add": "Add Service",
+    "createTitle": "Add New Service",
+    "updateTitle": "Update Service",
+    "createSubtitle": "Enter service information",
+    "updateSubtitle": "Update service information",
+    "items": "services",
+    "listTitle": "Service List",
+    "searchPlaceholder": "Search services...",
+    "table": {
+      "columns": {
+        "id": "ID",
+        "image": "Image",
+        "name": "Service Name",
+        "featured": "Featured",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "noData": "No services found.",
+      "featured": "Featured",
+      "standard": "Standard"
+    }
+  },
+  "projectsOld": {
+    "form": {
+      "labels": {
+        "category": "Category",
+        "name": "Project Name *",
+        "slug": "Slug *",
+        "shortDescription": "Short Description",
+        "detailedDescription": "Detailed Content",
+        "content": "Detailed Content",
+        "location": "Location",
+        "completionDate": "Completion Date",
+        "mainImage": "Main Image",
+        "gallery": "Image Gallery",
+        "featured": "Featured Project",
+        "active": "Activate Project"
+      },
+      "placeholders": {
+        "category": "Select category",
+        "name": "Enter project name",
+        "slug": "Slug auto-generated from name",
+        "shortDescription": "Enter short project description",
+        "detailedDescription": "Enter detailed project content",
+        "content": "Enter detailed project content",
+        "location": "Enter project location",
+        "completionDate": "Select completion date",
+        "slugHelp": "Slug is used in URL, auto-generated from project name"
+      },
+      "imageUpload": {
+        "title": "Project Images",
+        "description": "Upload or drag and drop images. Maximum 10 images, each no more than 10MB.",
+        "dragText": "Drag and drop or click to select files",
+        "supportText": "Supports JPG, PNG, GIF. Selected {{count}}/10.",
+        "maxFilesError": "Maximum {{max}} images per project",
+        "maxFilesWarning": "Can only select {{remaining}} more images (max {{max}})",
+        "invalidFileError": "File {{name}} is not an image",
+        "fileSizeError": "\"{{name}}\" exceeds 10MB",
+        "noImagesSelected": "No images selected yet",
+        "atLeastOneImage": "Please add at least 1 image for the project",
+        "newBadge": "New"
+      },
+      "validation": {
+        "categoryRequired": "Please select a category",
+        "nameRequired": "Please enter project name",
+        "slugRequired": "Please enter slug"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save Project",
+        "saving": "Saving...",
+        "deletingImages": "Deleting old images...",
+        "uploadingImages": "Uploading {{count}} images..."
+      }
+    },
+    "categoryForm": {
+      "labels": {
+        "name": "Category Name *",
+        "slug": "Slug *",
+        "description": "Description",
+        "order": "Display Order",
+        "active": "Activate Category"
+      },
+      "placeholders": {
+        "name": "Enter category name",
+        "slug": "Slug auto-generated from name",
+        "description": "Enter category description",
+        "order": "0",
+        "orderHelp": "Smaller number displays first"
+      },
+      "validation": {
+        "nameRequired": "Please enter category name",
+        "slugRequired": "Please enter slug"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save Category",
+        "saving": "Saving..."
+      }
+    },
+    "toast": {
+      "loadCategoriesError": "Error loading project categories",
+      "loadProjectsError": "Error loading project list",
+      "updateCategorySuccess": "Category updated successfully",
+      "createCategorySuccess": "Category added successfully",
+      "saveCategoryError": "Error saving category",
+      "deleteCategorySuccess": "Category deleted successfully",
+      "deleteCategoryError": "Error deleting category",
+      "updateProjectSuccess": "Project updated successfully",
+      "createProjectSuccess": "Project added successfully",
+      "saveProjectError": "Error saving project",
+      "deleteProjectSuccess": "Project deleted successfully",
+      "deleteProjectError": "Error deleting project"
+    }
+  },
+  "admin": {
+    "header": {
+      "title": "Thien Loc Admin",
+      "subtitle": "Administration System",
+      "logout": "Logout",
+      "language": "Language",
+      "vi": "🇻🇳 Tiếng Việt",
+      "en": "🇬🇧 English"
+    },
+    "login": {
+      "login": "Login",
+      "welcomeBack": "Welcome Back",
+      "signIn": "Admin Login",
+      "username": "Username",
+      "password": "Password",
+      "placeholderUser": "Enter username",
+      "placeholderPass": "Enter password",
+      "submit": "Login",
+      "demo": "Demo: username",
+      "demoUser": "admin",
+      "demoPass": "admin123",
+      "success": "Login successful!",
+      "error": "Incorrect username or password!",
+      "successMessage": "Login successful! We will contact you soon.",
+      "errorMessage": "An error occurred. Please try again later."
+    },
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "products": "Product Management",
+      "categories": "Categories",
+      "services": "Service Management",
+      "projects": "Project Management",
+      "news": "News Management",
+      "recruitment": "Recruitment Management",
+      "contact": "Contact Management",
+      "contactUsManager": "Contact Info Management",
+      "quotes": "Quote Management",
+      "users": "User Management",
+      "statistics": "Statistics",
+      "companyIntros": "Introduction Images"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "recentActivities": "Recent Activities"
+    },
+    "contactUsManager": {
+      "title": "Contact Information",
+      "subtitle": "Update company contact information. This information will be publicly displayed on the website.",
+      "form": {
+        "labels": {
+          "companyName": "Company Name",
+          "address": "Address",
+          "phone": "Phone Number",
+          "email": "Email",
+          "workingHours": "Working Hours",
+          "googleMapUrl": "Google Map Link",
+          "foundingDate": "Founding Date",
+          "companyType": "Company Type",
+          "aboutUs": "About Us",
+          "yearsOfExperience": "Years of Experience",
+          "projectsCompleted": "Completed Projects",
+          "satisfiedClients": "Satisfied Clients",
+          "satisfactionRate": "Satisfaction Rate (%)",
+          "mission": "Mission",
+          "vision": "Vision"
+        },
+        "placeholders": {
+          "companyName": "Enter company name",
+          "address": "Enter address",
+          "phone": "Enter phone number",
+          "email": "example@email.com",
+          "workingHours": "Mon - Sun: 7:00 - 17:00",
+          "googleMapUrl": "https://maps.google.com/...",
+          "foundingDate": "YYYY-MM-DD",
+          "companyType": "Enter company type",
+          "yearsOfExperience": "Enter years of experience",
+          "projectsCompleted": "Enter number of completed projects",
+          "satisfiedClients": "Enter number of satisfied clients",
+          "satisfactionRate": "Enter satisfaction rate"
+        },
+        "validation": {
+          "required": "Required field",
+          "phoneInvalid": "Phone number can only contain digits",
+          "emailInvalid": "Invalid email"
+        },
+        "save": "Update"
+      }
+    },
+    "statistics": {
+      "title": "Statistics & Reports",
+      "subtitle": "Detailed business data analysis",
+      "growthTitle": "Growth Chart (Last 6 months)",
+      "categoryDistribution": "Product Distribution by Category",
+      "topItems": "Top Categories",
+      "loading": "Loading...",
+      "noData": "No data available"
+    },
+    "companyIntros": {
+      "title": "Introduction Images Management",
+      "subtitle": "Manage images displayed on homepage slider",
+      "addImage": "Add Image",
+      "createTitle": "Add New Image",
+      "editTitle": "Edit Image",
+      "createSubtitle": "Add new image to homepage slider",
+      "editSubtitle": "Update image information",
+      "backToList": "Back to list",
+      "table": {
+        "title": "Introduction Images List",
+        "totalImages": "Total: {{count}} images",
+        "columns": {
+          "image": "Image",
+          "description": "Description",
+          "order": "Order",
+          "status": "Status",
+          "createdAt": "Created",
+          "updatedAt": "Updated",
+          "actions": "Actions"
+        },
+        "noData": "No images yet"
+      },
+      "form": {
+        "imageLabel": "Image *",
+        "uploadButton": "Upload Image",
+        "uploading": "Uploading...",
+        "urlPlaceholder": "https://example.com/image.jpg",
+        "urlHint": "Or enter URL directly",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "Image description (optional)",
+        "subDescriptionLabel": "Sub Description",
+        "subDescriptionPlaceholder": "Sub description (optional)",
+        "urlDescription": "Enter image key or URL",
+        "orderLabel": "Display Order",
+        "orderDescription": "Smaller number displays first",
+        "activeLabel": "Activate Display",
+        "activeDescription": "Turn on to display on homepage",
+        "cancel": "Cancel",
+        "save": "Add New",
+        "update": "Update"
+      },
+      "toast": {
+        "createSuccess": "Added successfully",
+        "updateSuccess": "Updated successfully",
+        "uploading": "Uploading image...",
+        "uploadingButton": "Uploading image...",
+        "deleteSuccess": "Deleted successfully!",
+        "toggleActiveOn": "Activated",
+        "toggleActiveOff": "Hidden",
+        "urlRequired": "Image URL is required",
+        "uploadSuccess": "Image uploaded successfully",
+        "uploadError": "Image upload failed",
+        "imageOnly": "Only image files accepted",
+        "fileTooLarge": "File cannot exceed 5MB",
+        "error": "An error occurred"
+      }
+    }
+  },
+  "categories": {
+    "title": "Category Management",
+    "subtitle": "Manage product categories",
+    "add": "Add Category",
+    "listTitle": "Category List",
+    "searchPlaceholder": "Search categories...",
+    "name": "Category Name",
+    "description": "Description",
+    "createTitle": "Add New Category",
+    "createSubtitle": "Create a new product category",
+    "updateTitle": "Update Category",
+    "updateSubtitle": "Edit category information",
+    "formTitle": "Category Information",
+    "backToList": "Back to list",
+    "save": "Save",
+    "update": "Update",
+    "cancel": "Cancel",
+    "table": {
+      "id": "STT",
+      "actions": "Actions"
+    },
+    "toast": {
+      "createSuccess": "Category added successfully",
+      "updateSuccess": "Category updated successfully",
+      "deleteSuccess": "Category deleted successfully!",
+      "nameRequired": "Category name is required"
+    },
+    "deleteConfirmTitle": "Confirm Category Deletion",
+    "deleteConfirmMessage": "Are you sure you want to delete this category? This action cannot be undone."
+  },
+  "services": {
+    "title": "Featured Services",
+    "description": "Experience professional service management at Thien Loc – where every detail is closely monitored, ensuring progress, quality and absolute customer satisfaction.",
+    "viewAll": "View all services",
+    "card": {
+      "available": "Available",
+      "serviceLabel": "Service",
+      "professional": "Professional"
+    },
+    "admin": {
+      "title": "Service Management",
+      "subtitle": "Manage services provided",
+      "add": "Add Service",
+      "listTitle": "Service List",
+      "searchPlaceholder": "Search services...",
+      "name": "Service Name",
+      "slug": "Slug",
+      "description": "Description",
+      "content": "Content",
+      "image": "Cover Image",
+      "imagePlaceholder": "Image URL...",
+      "order": "Order",
+      "active": "Active",
+      "activeOn": "Active",
+      "activeOff": "Paused",
+      "createTitle": "Add New Service",
+      "updateTitle": "Update Service",
+      "save": "Save",
+      "update": "Update",
+      "cancel": "Cancel",
+      "toast": {
+        "createSuccess": "Service added successfully",
+        "updateSuccess": "Service updated successfully",
+        "deleteSuccess": "Service deleted successfully!",
+        "nameRequired": "Service name is required",
+        "slugRequired": "Slug is required"
+      },
+      "deleteConfirmTitle": "Confirm Service Deletion",
+      "deleteConfirmMessage": "Are you sure you want to delete this service? This action cannot be undone."
+    }
+  },
+  "serviceForm": {
+    "createTitle": "Add New Service",
+    "editTitle": "Edit Service",
+    "tabs": {
+      "general": "General Info",
+      "content": "Content",
+      "config": "Configuration",
+      "seo": "SEO"
+    },
+    "title": "Title",
+    "slug": "Slug (URL)",
+    "subtitle": "Subtitle",
+    "icon": "Icon (e.g., Lucide icon name)",
+    "shortDescription": "Short Description",
+    "images": "Images",
+    "uploadImages": "Upload images (max 20)",
+    "alt_text": "Image Alt Text",
+    "content": "Main Content",
+    "features": "Hash Tags",
+    "featuresDesc": "Enter search keywords (list format)",
+    "featuresPlaceholder": "Press Enter to add hash tag",
+    "technologies": "Technologies Used",
+    "benefits": "Benefits",
+    "status": "Status",
+    "theme_variant": "Theme",
+    "order": "Display Order",
+    "featured": "Is Featured Service?",
+    "customers": "Target Customers",
+    "cta_label": "CTA Button Label",
+    "cta_link": "CTA Button Link",
+    "tags": "Tags",
+    "tagsPlaceholder": "Add tag and press Enter",
+    "seo_title": "SEO Title",
+    "seo_description": "SEO Description",
+    "uploading": "Uploading {{count}} images...",
+    "uploadSuccess": "Uploaded {{count}} new images",
+    "uploadError": "An error occurred while uploading images",
+    "deletingImages": "Deleting old images...",
+    "deleteSuccess": "Deleted {{count}} old images",
+    "pendingImages": "{{count}} images pending upload",
+    "cancel": "Cancel",
+    "save": "Save",
+    "statusOptions": {
+      "draft": "Draft",
+      "published": "Published",
+      "archived": "Archived"
+    },
+    "themeVariantOptions": {
+      "light": "Light",
+      "dark": "Dark",
+      "auto": "Auto"
+    }
+  },
+  "validation": {
+    "error": "Invalid data",
+    "slugRequired": "Slug is required",
+    "titleRequired": "Title is required",
+    "shortDescriptionRequired": "Short description is required",
+    "imageUrlRequired": "Cover image is required",
+    "ctaLabelRequired": "CTA button label is required",
+    "ctaLinkRequired": "CTA button link is required",
+    "ctaLinkInvalid": "CTA button link is not a valid URL",
+    "imageTooLarge": "Image exceeds 20MB limit. Please select a smaller image.",
+    "imageUrlsRequired": "At least one cover image is required."
+  },
+  "contacts": {
+    "title": "Contact Management",
+    "subtitle": "Manage customer contact feedback",
+    "listTitle": "Contact List",
+    "totalContacts": "Total: {{count}} contacts",
+    "name": "Name",
+    "subject": "Subject",
+    "email": "Email",
+    "phone": "Phone Number",
+    "address": "Address",
+    "content": "Content",
+    "status": "Status",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "createdAt": "Created Date",
+    "actions": "Actions",
+    "viewDetail": "View Details",
+    "confirmContact": "Confirm",
+    "deleteContact": "Delete",
+    "detailTitle": "Contact Details",
+    "noData": "No contacts yet",
+    "showing": "Showing {{from}} - {{to}} of {{total}} contacts",
+    "toast": {
+      "confirmSuccess": "Contact confirmed successfully",
+      "deleteSuccess": "Contact deleted successfully"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contact us for the best consultation and support",
+    "rating": "(39 votes)",
+    "info": {
+      "title": "Address:",
+      "hanoi": {
+        "label": "🏢 Hanoi Office",
+        "address": "No. 08, 09 - NV 27, Lideco Urban Area, Hoai Duc, Hanoi.",
+        "hotline": "Hanoi Hotline"
+      },
+      "hcm": {
+        "label": "🏢 Ho Chi Minh Branch",
+        "address": "No. 15, Street 27, Van Phuc Urban Area, Thu Duc City, Ho Chi Minh City.",
+        "hotline": "HCMC Hotline"
+      },
+      "factory1": {
+        "label": "🏭 Factory 1",
+        "address": "Lot 3, Block 5, Lai Xa Industrial Cluster, Hoai Duc, Hanoi."
+      },
+      "factory2": {
+        "label": "🏭 Factory 2",
+        "address": "CN 04 - 02, Dong Soc Industrial Cluster, Vinh Tuong, Phu Tho."
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Please fill out the form below and leave a message to help us serve you better.",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "subject": "Subject",
+      "subjectPlaceholder": "Enter subject",
+      "phone": "Phone",
+      "phonePlaceholder": "+(84-24) 3566.8888",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "address": "Address",
+      "addressPlaceholder": "Enter your address",
+      "content": "Content",
+      "contentPlaceholder": "Enter your message...",
+      "submit": "SEND",
+      "sending": "Sending...",
+      "requiredFields": "Please fill in all required fields",
+      "successMessage": "Message sent successfully! We will contact you as soon as possible.",
+      "errorMessage": "An error occurred. Please try again later."
+    }
+  },
+  "about": {
+    "title": "High-Quality Sheet Metal Processing",
+    "description": "Discover professional sheet metal production and processing solutions at Thien Loc.",
+    "content": "From cutting - stamping - bending - welding - electrostatic painting to assembly, we deliver precise, durable and customized products for all industries.",
+    "viewProducts": "View Products",
+    "viewServices": "View Services",
+    "services": "Services",
+    "sectionTitle": "About Us",
+    "paragraph1": "THIEN LOC SHEET METAL PRODUCTION AND FABRICATION CO., LTD. is a leading unit in the field of sheet metal production and processing in Vietnam.",
+    "paragraph2": "With over 10 years of experience and a team of highly skilled technicians, we are committed to delivering quality, precision and sustainable products that meet the strict standards of industries.",
+    "paragraph3": "From cutting, stamping, bending, welding, electrostatic painting to assembly, every Thien Loc product is meticulously processed on modern production lines, ensuring high precision and superior aesthetics.",
+    "paragraph4": "We continuously innovate technology and improve service quality to bring the most optimal and effective solutions to all customers and partners.",
+    "stats": {
+      "products": "Products",
+      "customers": "Customers",
+      "rating": "Rating",
+      "experience": "Years of Experience"
+    }
+  },
+  "location": {
+    "title": "Location & Contact",
+    "description": "Contact us for the best consultation and support",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "workingHours": "Working Hours",
+    "addressValue": "Vong La, Thien Loc, Hanoi",
+    "phoneValue": "0967853383",
+    "emailValue": "kimloaitamthienloc@gmail.com",
+    "workingHoursValue": "Mon - Sun: 7:00 - 17:00",
+    "consultationTitle": "Schedule a Free Consultation",
+    "consultationDescription": "For detailed product consultation and special offers, contact us today!",
+    "callNow": "Call Now",
+    "sendEmail": "Send Email"
+  },
+  "servicesPage": {
+    "hero": {
+      "badge": "Our Services",
+      "title": "Comprehensive Metal Processing Solutions",
+      "subtitle": "Providing diverse high-quality metal processing services with modern technology and professional team"
+    },
+    "main": {
+      "title": "Main Services",
+      "subtitle": "Thien Loc provides complete sheet metal processing and professional ceiling installation services"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Thien Loc?",
+      "subtitle": "We commit to delivering the best service with superior quality",
+      "quality": {
+        "title": "Top Quality",
+        "description": "Products meet high quality standards, durable and precise down to every detail."
+      },
+      "technology": {
+        "title": "Modern Technology",
+        "description": "Applying the most advanced machinery and technology in the production process."
+      },
+      "experience": {
+        "title": "Experienced Team",
+        "description": "Highly skilled technicians with rich experience and dedication to work."
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "Always ready to consult and support customers 24/7 to provide the most optimal solutions."
+      }
+    },
+    "cta": {
+      "title": "Need Service Consultation?",
+      "subtitle": "Our expert team is always ready to support and advise the best solutions for your project",
+      "contactButton": "Contact Now",
+      "quoteButton": "View Quote"
+    }
+  },
+  "serviceListItems": {
+    "noServices": "No services to display.",
+    "featuredBadge": "Featured Service",
+    "viewDetails": "View Details"
+  },
+  "serviceDetail": {
+    "toast": {
+      "loadError": "Unable to load service details."
+    },
+    "notFound": {
+      "title": "Service Not Found",
+      "description": "The service you are looking for does not exist or has been removed.",
+      "backButton": "Back to service list"
+    },
+    "sidebar": {
+      "benefits": "Benefits",
+      "technologies": "Technologies",
+      "customers": "Partners & Customers"
+    },
+    "features": {
+      "title": "Outstanding Features"
+    },
+    "gallery": {
+      "title": "Project Gallery"
+    },
+    "cta": {
+      "defaultTitle": "Start Your Project",
+      "description": "Contact us now for the most optimal solution consultation.",
+      "contactButton": "Contact Now"
+    }
+  },
+  "userMenu": {
+    "account": "Account",
+    "settings": "Admin",
+    "logout": "Logout"
+  },
+  "productsPage": {
+    "hero": {
+      "badge": "High Quality • Best Price",
+      "title": "Premium Quality",
+      "subtitle": "Discover outstanding projects bearing Thien Loc's signature – where precise engineering, sustainable quality, and refined aesthetics converge."
+    },
+    "cta": {
+      "title": "Need Product Consultation?",
+      "subtitle": "Our expert team is always ready to support and advise on the best solutions for your project",
+      "contactButton": "Contact Now",
+      "quoteButton": "View Quote"
+    },
+    "admin": {
+      "title": "Product Management",
+      "subtitle": "Add, edit and manage your product list",
+      "addProduct": "Add New Product",
+      "createTitle": "Add Product",
+      "editTitle": "Edit Product",
+      "createSubtitle": "Please fill in the information below to create a new product",
+      "editSubtitle": "Update the necessary information for this product",
+      "backToList": "Back to List",
+      "table": {
+        "title": "Product List",
+        "searchPlaceholder": "Search product name...",
+        "columns": {
+          "index": "No.",
+          "id": "ID",
+          "name": "Product Name",
+          "category": "Category",
+          "image": "Image",
+          "price": "Price",
+          "status": "Status",
+          "createdAt": "Created Date",
+          "actions": "Actions"
+        },
+        "noProducts": "No matching products found.",
+        "total": "Total",
+        "items": "products",
+        "page": "Page",
+        "display": "Display",
+        "unknownCategory": "Uncategorized",
+        "contactPrice": "Contact",
+        "featured": "Featured",
+        "showPrice": "Show Price",
+        "hidePrice": "Hide Price",
+        "deleteConfirmTitle": "Confirm Product Deletion",
+        "deleteConfirmMessage": "Are you sure you want to delete this product? This action cannot be undone."
+      },
+      "form": {
+        "sections": {
+          "basicInfo": "Basic Information",
+          "shortDescription": "Short Description",
+          "detailedDescription": "Detailed Article",
+          "images": "Product Images"
+        },
+        "labels": {
+          "name": "Product Name",
+          "category": "Category",
+          "price": "Price (VND)",
+          "description": "Description",
+          "isFeatured": "Featured Product",
+          "isFeaturedHint": "Display in featured list on homepage",
+          "showPrice": "Show Price",
+          "showPriceHint": "Allow users to see product price publicly",
+          "summary": "Product Summary",
+          "summaryHint": "This section displays brief description lines below the product name on the detail page.",
+          "addDescription": "Add Description Line",
+          "imageUploadHint": "Upload or drag and drop images. Maximum 12 images, each no more than 10MB.",
+          "loadingDetailed": "Loading article content...",
+          "detailedDescription": "Detailed Product Content",
+          "detailedHint": "Use the editor to write detailed descriptions, add images, format text...",
+          "cancel": "Cancel",
+          "save": "Save Product",
+          "update": "Update Product",
+          "newBadge": "New"
+        },
+        "placeholders": {
+          "name": "E.g.: Inox 304 Mechanical Workbench",
+          "category": "Select Category",
+          "price": "3200000",
+          "shortDescription": "E.g.: Table frame made from Inox 304 stainless steel"
+        },
+        "validation": {
+          "nameRequired": "Product name is required",
+          "nameTooShort": "Product name must have at least {{count}} characters",
+          "categoryRequired": "Please select a category",
+          "atLeastOneImage": "Please add at least 1 image"
+        },
+        "toasts": {
+          "uploadingImages": "Uploading {{count}} images...",
+          "savingDetailed": "Saving detailed article...",
+          "saveSuccess": "Product added successfully",
+          "updateSuccess": "Product updated successfully",
+          "deleteSuccess": "Product deleted successfully!",
+          "error": "An error occurred",
+          "deleteError": "Delete failed",
+          "maxFiles": "Maximum {{count}} images per product",
+          "checkForm": "Please check the form fields again"
+        }
+      }
+    }
+  },
+  "productDetail": {
+    "header": {
+      "title": "Product Details",
+      "backButton": "Back"
+    },
+    "loading": {
+      "message": "Loading..."
+    },
+    "error": {
+      "loadError": "Error loading product: {{message}}",
+      "notFound": "Product not found."
+    },
+    "badge": {
+      "featured": "Featured Product"
+    },
+    "category": {
+      "label": "Category:"
+    },
+    "price": {
+      "label": "Product Price",
+      "contact": "Contact"
+    },
+    "specs": {
+      "title": "Key Specifications",
+      "dimensions": "Dimensions",
+      "weight": "Weight",
+      "loadCapacity": "Load Capacity",
+      "material": "Material",
+      "weldingType": "Connection Method",
+      "surfaceFinish": "Surface Finish"
+    },
+    "customizable": {
+      "message": "Product can be customized according to customer requirements",
+      "yes": "Customizable",
+      "no": "Non-customizable",
+      "label": "Customization"
+    },
+    "actions": {
+      "contact": "Contact Now",
+      "favorite": "Add to Favorites",
+      "share": "Share"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "features": "Features",
+      "materials": "Materials",
+      "specs": "Technical Specs",
+      "warranty": "Warranty Policy",
+      "description": "Detailed Description"
+    },
+    "overview": {
+      "title": "Product Description",
+      "noInfo": "No information available.",
+      "applications": "Applications"
+    },
+    "features": {
+      "title": "Key Features",
+      "noInfo": "No information available."
+    },
+    "materials": {
+      "title": "Manufacturing Materials",
+      "noInfo": "No information available."
+    },
+    "technicalSpecs": {
+      "title": "Detailed Technical Specifications"
+    },
+    "warranty": {
+      "message": "Please contact us for more information about warranty policy."
+    }
+  },
+  "footer": {
+    "createdAt": "Product created on:",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "contactDescription": "Ready to support you with the best solutions"
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "24/7 Support",
+      "title": "Start a Conversation",
+      "subtitle": "Whether you have questions about products, need technical support, or want to partner with us, our team is always ready to help."
+    }
+  },
+  "contactForm": {
+    "success": "Success",
+    "error": "Error",
+    "successMessage": "Message sent successfully! We will contact you as soon as possible.",
+    "errorMessage": "An error occurred. Please try again later.",
+    "title": "Send a Message",
+    "subtitle": "Fill in the form below and we will respond as soon as possible.",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email",
+      "address": "Address",
+      "phone": "Phone Number",
+      "title": "Title",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Enter your full name",
+      "title": "Enter title",
+      "subject": "Select contact subject",
+      "address": "Enter your address",
+      "message": "Enter your message..."
+    },
+    "subjects": {
+      "general": "General Information",
+      "support": "Technical Support",
+      "sales": "Sales Consultation",
+      "partnership": "Business Partnership",
+      "feedback": "Feedback",
+      "other": "Other"
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "emailInvalid": "Invalid email",
+      "messageRequired": "Message is required",
+      "titleRequired": "Title is required",
+      "phoneInvalid": "Invalid phone number"
+    },
+    "submitButton": "Send Message"
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "details": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "workingHours": "Working Hours"
+    },
+    "connectTitle": "Connect With Us",
+    "locationTitle": "Location"
+  },
+  "quotePage": {
+    "hero": {
+      "badge": "Request a Quote",
+      "title": "Get a Professional Quote for Your Project",
+      "subtitle": "Fill in your project information and we will send you a detailed quote within 24 hours"
+    },
+    "features": {
+      "title": "Why Choose Our Quote Service",
+      "subtitle": "Fast, accurate and professional quoting process",
+      "quick": {
+        "title": "Quick Response",
+        "description": "Receive a quote within 24 hours"
+      },
+      "detailed": {
+        "title": "Comprehensive Details",
+        "description": "Detailed quote with complete information"
+      },
+      "fast": {
+        "title": "Fast Processing",
+        "description": "Simple process, saves time"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Consulting team always ready to assist"
+      }
+    }
+  },
+  "quoteForm": {
+    "title": "Fill in Project Information",
+    "subtitle": "Please fill in complete information so we can provide the most accurate quote",
+    "sections": {
+      "customerInfo": "Customer Information",
+      "projectInfo": "Project Information",
+      "technicalRequirements": "Technical Requirements"
+    },
+    "labels": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "company": "Company",
+      "address": "Address",
+      "title": "Job Title",
+      "projectName": "Project Name",
+      "projectType": "Project Type",
+      "projectDescription": "Project Description",
+      "budget": "Estimated Budget",
+      "expectedCompletion": "Expected Completion Time",
+      "technicalRequirements": "Technical Requirements",
+      "attachments": "Attachments",
+      "additionalInfo": "Additional Information"
+    },
+    "placeholders": {
+      "name": "Enter full name",
+      "email": "example@email.com",
+      "phone": "0123 456 789",
+      "company": "Company name",
+      "address": "Company address",
+      "title": "Job title",
+      "projectName": "Your project name",
+      "projectType": "Select project type",
+      "projectDescription": "Detailed project description",
+      "budget": "Select budget range",
+      "expectedCompletion": "E.g.: 3 months, 6 months...",
+      "technicalRequirements": "Describe specific technical requirements",
+      "attachments": "Select attachments",
+      "additionalInfo": "Additional project information"
+    },
+    "projectTypes": {
+      "mechanical": "Mechanical Engineering",
+      "electrical": "Electrical - Electronics",
+      "construction": "Construction",
+      "transportation": "Transportation",
+      "custom": "Custom",
+      "other": "Other"
+    },
+    "budgetRanges": {
+      "under50m": "Under 50 million",
+      "50m100m": "50 - 100 million",
+      "100m500m": "100 - 500 million",
+      "500m1b": "500 million - 1 billion",
+      "over1b": "Over 1 billion",
+      "discuss": "Need discussion"
+    },
+    "attachmentsDescription": "Supported: PDF, DOC, XLS, JPG, PNG, DWG, DXF (max 10MB)",
+    "submitButton": "Submit Quote Request",
+    "success": "Quote request submitted successfully! We will contact you as soon as possible.",
+    "error": "Submission failed. Please try again later.",
+    "validation": {
+      "nameRequired": "Please enter full name",
+      "emailInvalid": "Invalid email",
+      "phoneRequired": "Please enter phone number",
+      "phoneInvalid": "Invalid phone number (10 digits, starting with 0)",
+      "projectNameRequired": "Please enter project name",
+      "projectTypeRequired": "Please select project type",
+      "projectDescriptionRequired": "Please describe the project",
+      "messageRequired": "Please enter additional information"
+    }
+  },
+  "quoteInfo": {
+    "contactTitle": "Contact Information",
+    "benefitsTitle": "Benefits of Working With Us",
+    "processTitle": "Quotation Process",
+    "benefits": {
+      "quality": {
+        "title": "Quality Guaranteed",
+        "description": "Products meet international standards"
+      },
+      "experience": {
+        "title": "Extensive Experience",
+        "description": "Over 15 years in the industry"
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "Professional consulting team"
+      },
+      "competitive": {
+        "title": "Competitive Pricing",
+        "description": "Reasonable and transparent pricing"
+      }
+    },
+    "process": {
+      "step1": "Receive request and analyze project",
+      "step1_desc": "Receive and clarify technical requirements, scope and objectives of the project.",
+      "step2": "Consult and propose solutions",
+      "step2_desc": "Our engineering team will analyze and provide optimal solutions for materials, technology and costs.",
+      "step3": "Detailed quote within 24 hours",
+      "step3_desc": "Send transparent, detailed quote for each item along with estimated implementation time.",
+      "step4": "Support and adjust as required",
+      "step4_desc": "Ready to discuss, adjust quotes and solutions to best fit your budget and requirements."
+    }
+  },
+  "quotes": {
+    "title": "Quote Management",
+    "searchPlaceholder": "Search by name, email, or project name...",
+    "status": "Status",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "table": {
+      "name": "Customer Name",
+      "projectName": "Project Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "status": "Status",
+      "createdAt": "Date Received",
+      "actions": "Actions",
+      "noData": "No quote requests."
+    },
+    "actions": {
+      "viewDetail": "View Details",
+      "confirm": "Confirm Request"
+    },
+    "detail": {
+      "title": "Quote Request Details",
+      "customerInfo": "Customer Information",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "company": "Company",
+      "jobTitle": "Job Title",
+      "address": "Address",
+      "projectInfo": "Project Information",
+      "projectName": "Project Name",
+      "projectType": "Project Type",
+      "projectDescription": "Project Description",
+      "budget": "Estimated Budget",
+      "expectedCompletion": "Expected Completion Time",
+      "technicalRequirements": "Technical Requirements",
+      "requirements": "Request Content",
+      "attachments": "Attachments",
+      "viewAttachment": "View File",
+      "additionalInfo": "Additional Information",
+      "content": "Content",
+      "status": "Status",
+      "createdAt": "Date Received"
+    },
+    "toast": {
+      "confirmSuccess": "Quote request confirmed successfully!",
+      "confirmError": "An error occurred while confirming the request."
+    },
+    "error": {
+      "load": "Unable to load quote list. Please try again."
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Projects",
+      "tagline": "Featured Projects",
+      "title1": "Projects",
+      "title2": "Quality",
+      "title3": "Trust",
+      "description": "Discover our featured projects",
+      "description2": "from everywhere",
+      "description3": "demonstrating our commitment",
+      "description4": "to quality and creativity",
+      "cta": {
+        "quote": "Request Quote",
+        "contact": "Contact Now"
+      }
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "subtitle": "Commitment to quality and excellent service",
+      "quality": {
+        "title": "High Quality",
+        "description": "Every project is executed with the highest quality standards"
+      },
+      "timeline": {
+        "title": "On Schedule",
+        "description": "Committed to completing projects on agreed timelines"
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Expert team with over 15 years of industry experience"
+      }
+    },
+    "achievements": {
+      "completed": "Projects Completed",
+      "experience": "Years of Experience",
+      "satisfaction": "Satisfaction Rate",
+      "support": "24/7 Support"
+    },
+    "section": {
+      "title": "Featured Projects",
+      "subtitle": "Successfully completed projects"
+    },
+    "featured": {
+      "title": "Featured Projects"
+    },
+    "viewAll": "View all projects",
+    "card": {
+      "featured": "Featured",
+      "viewDetails": "View Details"
+    },
+    "categories": {
+      "title": "Project Categories"
+    },
+    "list": {
+      "empty": "Projects are being updated..."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Ready to support you with the best solutions",
+      "hotlineLabel": "Hotline",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "addressFallback": "Company Address",
+      "cta": "Call Now",
+      "footer": "© 2024 All rights reserved"
+    }
+  },
+  "newsAdmin": {
+    "createTitle": "Add New News",
+    "updateTitle": "Update News",
+    "headerTitle": "News Management",
+    "headerSubtitle": "Manage news articles and events",
+    "addNews": "Add News",
+    "items": "news items",
+    "form": {
+      "createSubtitle": "Enter new news information",
+      "editSubtitle": "Update news information",
+      "buttons": {
+        "backToList": "Back to List",
+        "save": "Save News"
+      },
+      "labels": {
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "image": "Cover Image",
+        "featured": "Featured News",
+        "active": "Active"
+      },
+      "placeholders": {
+        "title": "Enter news title",
+        "subtitle": "Enter subtitle"
+      },
+      "validation": {
+        "titleRequired": "Please enter title"
+      },
+      "sections": {
+        "title": "Detailed Content",
+        "add": "Add Section",
+        "empty": "No sections yet. Click the button above to add.",
+        "sectionTitle": "Section Title",
+        "sectionTitlePlaceholder": "Enter section title",
+        "description": "Content",
+        "descriptionPlaceholder": "Enter detailed content..."
+      }
+    },
+    "table": {
+      "title": "News List",
+      "searchPlaceholder": "Search news...",
+      "columns": {
+        "image": "Image",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "featured": "Featured",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "noData": "No news available",
+      "featured": "Featured"
+    },
+    "delete": {
+      "title": "Confirm Delete",
+      "confirm": "Are you sure you want to delete this news? This action cannot be undone."
+    }
+  },
+  "priceQuotesAdmin": {
+    "createTitle": "Add New Quote",
+    "updateTitle": "Update Quote",
+    "headerTitle": "Quote Management",
+    "headerSubtitle": "Manage quote articles",
+    "addQuote": "Add Quote",
+    "items": "quotes",
+    "form": {
+      "createSubtitle": "Enter new quote information",
+      "editSubtitle": "Update quote information",
+      "buttons": {
+        "backToList": "Back to List",
+        "save": "Save Quote"
+      },
+      "labels": {
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "image": "Cover Image",
+        "featured": "Featured",
+        "active": "Active"
+      },
+      "placeholders": {
+        "title": "Enter quote title",
+        "subtitle": "Enter subtitle"
+      },
+      "validation": {
+        "titleRequired": "Please enter title"
+      },
+      "sections": {
+        "title": "Detailed Content",
+        "add": "Add Section",
+        "empty": "No sections yet. Click the button above to add.",
+        "sectionTitle": "Section Title",
+        "sectionTitlePlaceholder": "Enter section title",
+        "description": "Content",
+        "descriptionPlaceholder": "Enter detailed content..."
+      }
+    },
+    "table": {
+      "title": "Quote List",
+      "searchPlaceholder": "Search quotes...",
+      "columns": {
+        "image": "Image",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "featured": "Featured",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "noData": "No quotes available",
+      "featured": "Featured"
+    },
+    "delete": {
+      "title": "Confirm Delete",
+      "confirm": "Are you sure you want to delete this quote? This action cannot be undone."
+    }
+  },
+  "quotes": {
+    "title": "Quote Requests",
+    "searchPlaceholder": "Search by name, email, phone...",
+    "error": {
+      "load": "Error loading request list"
+    },
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "status": "Status",
+    "table": {
+      "name": "Full Name",
+      "projectName": "Project Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "createdAt": "Date Sent",
+      "actions": "Actions",
+      "noData": "No quote requests yet"
+    },
+    "actions": {
+      "viewDetail": "View Details",
+      "confirm": "Confirm"
+    },
+    "detail": {
+      "title": "Quote Request Details",
+      "customerInfo": "Customer Information",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "jobTitle": "Job Title",
+      "address": "Address",
+      "projectInfo": "Project Information",
+      "projectName": "Project Name",
+      "projectType": "Project Type",
+      "budget": "Budget",
+      "expectedCompletion": "Expected Completion",
+      "projectDescription": "Project Description",
+      "technicalRequirements": "Technical Requirements",
+      "requirements": "Detailed Requirements",
+      "attachments": "Attachments",
+      "additionalInfo": "Additional Info",
+      "content": "Notes",
+      "status": "Status",
+      "createdAt": "Time Sent"
+    }
+  },
+  "recruitmentAdmin": {
+    "headerTitle": "Recruitment Management",
+    "headerSubtitle": "Manage recruitment posts",
+    "addRecruitment": "Add Recruitment Post",
+    "createTitle": "Add New Recruitment Post",
+    "updateTitle": "Update Recruitment Post",
+    "items": "recruitment posts",
+    "delete": {
+      "title": "Confirm Delete",
+      "confirm": "Are you sure you want to delete this recruitment post? This action cannot be undone."
+    },
+    "form": {
+      "createSubtitle": "Enter recruitment post information",
+      "editSubtitle": "Update recruitment post information",
+      "buttons": {
+        "backToList": "Back to List",
+        "save": "Save Recruitment Post"
+      },
+      "errors": {
+        "required": "This field is required"
+      },
+      "uploadPlaceholder": "Click to upload image",
+      "labels": {
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "image": "Cover Image (URL)",
+        "featured": "Featured Post",
+        "active": "Active"
+      },
+      "placeholders": {
+        "title": "Enter title",
+        "subtitle": "Enter subtitle",
+        "image": "Enter cover image URL"
+      },
+      "sections": {
+        "title": "Detailed Content",
+        "add": "Add Section",
+        "empty": "No sections yet. Click the button above to add.",
+        "section": "Section",
+        "sectionTitle": "Section Title",
+        "sectionTitlePlaceholder": "Enter title",
+        "description": "Description",
+        "descriptionPlaceholder": "Enter description content",
+        "sectionImage": "Illustration Image (URL, optional)",
+        "sectionImagePlaceholder": "Enter image URL"
+      }
+    },
+    "table": {
+      "title": "Recruitment Post List",
+      "searchPlaceholder": "Search recruitment posts...",
+      "featured": "Featured",
+      "noData": "No recruitment posts available.",
+      "columns": {
+        "image": "Image",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "featured": "Featured",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "toast": {
+      "createSuccess": "Recruitment post created successfully",
+      "createError": "Error creating recruitment post",
+      "updateSuccess": "Recruitment post updated successfully",
+      "updateError": "Error updating recruitment post",
+      "deleteSuccess": "Recruitment post deleted successfully",
+      "deleteError": "Error deleting recruitment post"
+    }
+  }
+}
