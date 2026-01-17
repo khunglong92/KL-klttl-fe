@@ -8,7 +8,10 @@ import {
   useDeleteCategory,
   useUpdateCategory,
 } from "@/services/hooks/useCategories";
-import type { Category } from "@/services/api/categoriesService";
+import {
+  categoriesService,
+  type Category,
+} from "@/services/api/categoriesService";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 
@@ -114,9 +117,7 @@ export function useCategoryCrud() {
       // If nothing changed effectively (shouldn't happen if filtered well upstream, but safe to check)
       if (payload.length === 0) return;
 
-      await import("@/services/api/categoriesService").then((m) =>
-        m.categoriesService.reorder(payload)
-      );
+      await categoriesService.reorder(payload);
 
       // Invalidate to fetch fresh data (ensure orderIndex is updated in local cache)
       await queryClient.invalidateQueries({ queryKey: ["categories"] });

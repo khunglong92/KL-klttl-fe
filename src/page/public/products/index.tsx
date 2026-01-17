@@ -64,6 +64,7 @@ export default function ProductsPage() {
           ? `${t("nav.products")} - ${activeCategory.name}`
           : t("nav.products"),
         description: t("products.description"),
+        keywords: `sản phẩm kim loại, ${activeCategory?.name || "tủ locker, xe đẩy, thiết bị công nghiệp"}, gia công kim loại, Thiên Lộc`,
       }}
       breadcrumbs={
         <>

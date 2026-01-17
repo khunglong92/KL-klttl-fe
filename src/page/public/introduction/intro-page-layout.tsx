@@ -32,6 +32,7 @@ export default function IntroPageLayout({
       <SEO
         title={t(titleKey)}
         description={contentKey ? t(contentKey).substring(0, 160) : undefined}
+        keywords="giới thiệu công ty, Thiên Lộc, gia công kim loại tấm, sản xuất kim loại, Hà Nội"
       />
 
       {/* Breadcrumbs */}

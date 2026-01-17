@@ -4,6 +4,7 @@ import companyLogo from "@/images/common/company-logo.png";
 import { AppThumbnailImage } from "@/components/public/common/app-thumbnail-image";
 import { Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import "@/styles/floating-buttons.css";
 
 export default function CompanyLogoHeader() {
   const { t } = useTranslation();
@@ -11,30 +12,6 @@ export default function CompanyLogoHeader() {
   const companyPhone = import.meta.env["VITE_COMPANY_PHONE"] || "0967853833";
   const companyEmail =
     import.meta.env["VITE_EMAIL_CONTACT"] || "kimloaitamthienloc@gmail.com";
-
-  // VISIBLE + FAST WAVE
-  const waveVisible = {
-    animate: {
-      scale: [1, 1.45],
-      opacity: [0.35, 0],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeOut",
-    },
-  };
-
-  const iconPulse = {
-    animate: {
-      scale: [1, 1.12, 1],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
 
   const formatPhoneNumber = (phone: string) => {
     const cleaned = phone.replace(/\D/g, "");
@@ -56,22 +33,15 @@ export default function CompanyLogoHeader() {
 
             <a
               href={`mailto:${companyEmail}`}
-              className="flex items-center gap-2 text-base font-semibold text-gray-700 hover:text-blue-600 transition"
+              className="flex items-center gap-2 text-base font-semibold text-gray-700 hover:text-blue-600 transition group"
             >
-              <div className="relative flex items-center justify-center">
-                {/* Wave */}
-                <motion.span
-                  {...waveVisible}
-                  className="absolute inset-0 rounded-full bg-blue-500/40"
-                />
-
-                {/* Icon */}
-                <motion.span
-                  {...iconPulse}
-                  className="relative z-10 p-2.5 rounded-full text-blue-600"
-                >
-                  <Mail className="h-5 w-5" />
-                </motion.span>
+              {/* Mini Ring Effect - Blue */}
+              <div className="hotline-mini-ring-wrap">
+                <div className="hotline-mini-ring-circle blue"></div>
+                <div className="hotline-mini-ring-circle-fill blue"></div>
+                <div className="hotline-mini-ring-img-circle blue">
+                  <Mail className="h-5 w-5 text-white" />
+                </div>
               </div>
 
               <span className="underline underline-offset-4 text-blue-500">
@@ -94,6 +64,8 @@ export default function CompanyLogoHeader() {
               <AppThumbnailImage
                 src={companyLogo}
                 alt={t("nav.companyName")}
+                width="128"
+                height="128"
                 className="h-28 md:h-32 w-auto"
               />
 
@@ -116,22 +88,15 @@ export default function CompanyLogoHeader() {
 
             <a
               href={`tel:${companyPhone.replace(/\s+/g, "")}`}
-              className="flex items-center gap-2 text-base font-semibold hover:text-red-600 transition"
+              className="flex items-center gap-2 text-base font-semibold hover:text-red-600 transition group"
             >
-              <div className="relative flex items-center justify-center">
-                {/* Wave */}
-                <motion.span
-                  {...waveVisible}
-                  className="absolute inset-0 rounded-full bg-red-500/40"
-                />
-
-                {/* Icon */}
-                <motion.span
-                  {...iconPulse}
-                  className="relative z-10 p-2.5 rounded-full text-red-600"
-                >
-                  <Phone className="h-5 w-5" />
-                </motion.span>
+              {/* Mini Ring Effect - Red */}
+              <div className="hotline-mini-ring-wrap">
+                <div className="hotline-mini-ring-circle"></div>
+                <div className="hotline-mini-ring-circle-fill"></div>
+                <div className="hotline-mini-ring-img-circle">
+                  <Phone className="h-5 w-5 text-white" />
+                </div>
               </div>
 
               <span className="text-red-600 font-semibold tracking-wide">

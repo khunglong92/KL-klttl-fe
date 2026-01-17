@@ -162,7 +162,10 @@ export default function NewsDetailPage() {
             <img
               src={news.image}
               alt={news.title}
+              width="800"
+              height="450"
               className="w-full h-auto object-cover max-h-[500px]"
+              style={{ aspectRatio: "16/9" }}
             />
           </div>
         )}

@@ -166,13 +166,13 @@ export default function Introduction() {
     >
       <HeroSection companyInfoSection={companyInfoSection} />
       <div className="py-16 md:py-24 container mx-auto px-4 space-y-24">
-        <AboutSection aboutUs={displayInfo?.aboutUs} />
+        <AboutSection aboutUs={displayInfo?.aboutUs || undefined} />
       </div>
       <StatsSection stats={stats} />
       <div className="py-16 md:py-24 container mx-auto px-4 space-y-24">
         <MissionVisionSection
-          mission={displayInfo?.mission}
-          vision={displayInfo?.vision}
+          mission={displayInfo?.mission || undefined}
+          vision={displayInfo?.vision || undefined}
         />
         <CoreValuesSection coreValues={coreValues} />
         <ServicesSection services={services} />

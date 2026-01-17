@@ -1,7 +1,6 @@
 import { Phone, Clock } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import Ultils from "@/utils";
 
 const PHONE_NUMBER = import.meta.env["VITE_PHONE_NUMBER"] || "0967853833";
@@ -9,28 +8,6 @@ const PHONE_NUMBER = import.meta.env["VITE_PHONE_NUMBER"] || "0967853833";
 export const OnlineSupportSidebar = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
-  const waveVisible = {
-    animate: {
-      scale: [1, 1.45],
-      opacity: [0.35, 0],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeOut",
-    },
-  };
-
-  const iconPulse = {
-    animate: {
-      scale: [1, 1.12, 1],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
 
   return (
     <div
@@ -50,33 +27,17 @@ export const OnlineSupportSidebar = () => {
       <div
         className={`p-4 flex flex-col items-center ${theme === "dark" ? "bg-[#242830]/50" : "bg-gray-50/50"}`}
       >
-        <div className="relative w-24 h-24 mb-2">
-          <div className="absolute inset-0 bg-accent-red/10 animate-ping rounded-full" />
-          <div
-            className={`relative p-3 rounded-full border shadow-sm ${
-              theme === "dark"
-                ? "bg-[#1a2742] border-accent-red/20"
-                : "bg-white border-accent-red/20"
-            }`}
-          >
-            <a href={`tel:${PHONE_NUMBER}`}>
-              <div className="relative flex items-center justify-center">
-                {/* Wave */}
-                <motion.span
-                  {...waveVisible}
-                  className="absolute inset-0 rounded-full bg-red-500/40"
-                />
-
-                {/* Icon */}
-                <motion.span
-                  {...iconPulse}
-                  className="relative z-10 p-2.5 rounded-full text-green-600"
-                >
-                  <Phone className="h-12 w-12" />
-                </motion.span>
+        <div className="mb-4 flex justify-center">
+          <a href={`tel:${PHONE_NUMBER}`}>
+            {/* Sidebar Ring Effect - Red */}
+            <div className="hotline-sidebar-ring-wrap">
+              <div className="hotline-sidebar-ring-circle"></div>
+              <div className="hotline-sidebar-ring-circle-fill"></div>
+              <div className="hotline-sidebar-ring-img-circle">
+                <Phone className="h-7 w-7 text-white" />
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
 
         <div className="text-center">
@@ -89,7 +50,7 @@ export const OnlineSupportSidebar = () => {
           </p>
           <a
             href={`tel:${PHONE_NUMBER}`}
-            className={`text-2xl ${theme === "dark" ? "text-white" : "text-black"} font-bold hover:scale-105 transition-transform inline-block`}
+            className={`text-2xl ${theme === "dark" ? "text-red-500" : "text-red-600"} font-bold hover:scale-105 transition-transform inline-block`}
           >
             {Ultils.formatPhoneNumber(PHONE_NUMBER)}
           </a>

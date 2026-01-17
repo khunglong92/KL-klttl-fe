@@ -42,10 +42,8 @@ export const AboutSection = ({ aboutUs }: AboutSectionProps) => {
             {aboutUs && (
               <RawHtml
                 html={aboutUs}
-                className={`prose prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight ${
-                  theme === "dark"
-                    ? "prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-li:text-gray-300"
-                    : "prose-headings:text-black prose-p:text-gray-700 prose-strong:text-black prose-li:text-gray-700"
+                className={`ql-snow ql-editor max-w-none ${
+                  theme === "dark" ? "text-gray-300" : "text-gray-700"
                 }`}
               />
             )}

@@ -29,17 +29,17 @@ export function ProductInfo({ product }: ProductInfoProps) {
     ? formatPrice(
         typeof product.price === "string"
           ? parseFloat(product.price)
-          : product.price || 0
+          : product.price || 0,
       )
     : t("products.card.noPrice", "Liên hệ");
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 w-full min-w-0">
       {/* Product Title */}
       <h2
         className={cn(
-          "text-2xl font-bold uppercase",
-          theme === "dark" ? "text-white" : "text-gray-900"
+          "text-xl md:text-2xl font-bold uppercase break-words",
+          theme === "dark" ? "text-white" : "text-gray-900",
         )}
       >
         {product.name}
@@ -49,16 +49,16 @@ export function ProductInfo({ product }: ProductInfoProps) {
       <hr
         className={cn(
           "border-t",
-          theme === "dark" ? "border-gray-700" : "border-gray-200"
+          theme === "dark" ? "border-gray-700" : "border-gray-200",
         )}
       />
 
       {/* Price line: "Giá sản phẩm: [price]" */}
-      <div>
+      <div className="break-words">
         <span
           className={cn(
             "text-base",
-            theme === "dark" ? "text-gray-400" : "text-gray-700"
+            theme === "dark" ? "text-gray-400" : "text-gray-700",
           )}
         >
           {t("productDetail.price.label", "Giá sản phẩm")}:{" "}
@@ -70,12 +70,12 @@ export function ProductInfo({ product }: ProductInfoProps) {
       {descriptionLines.length > 0 && (
         <ul
           className={cn(
-            "list-disc list-inside space-y-1.5",
-            theme === "dark" ? "text-gray-300" : "text-gray-700"
+            "list-disc list-outside pl-5 space-y-1.5 break-words",
+            theme === "dark" ? "text-gray-300" : "text-gray-700",
           )}
         >
           {descriptionLines.map((line, idx) => (
-            <li key={idx} className="text-sm leading-relaxed">
+            <li key={idx} className="text-sm leading-relaxed break-words">
               {line}
             </li>
           ))}

@@ -1,0 +1,26 @@
+{
+  "name": "Thiên Lộc - Sản xuất & Gia công Kim loại Tấm",
+  "short_name": "Thiên Lộc",
+  "description": "Chuyên gia công cắt laser CNC, chấn CNC, đột CNC, sơn tĩnh điện. Sản xuất tủ locker, xe đẩy, thiết bị công nghiệp.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#CF0927",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

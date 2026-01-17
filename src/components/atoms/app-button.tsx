@@ -18,6 +18,7 @@ export default function AppButton({
   htmlType = "button",
   className = "",
   noBorder = false,
+  "aria-label": ariaLabelProp,
 }: {
   label?: string;
   size?: "default" | "sm" | "lg" | "icon";
@@ -32,8 +33,10 @@ export default function AppButton({
   htmlType?: "button" | "submit" | "reset";
   className?: string;
   noBorder?: boolean;
+  "aria-label"?: string;
 }) {
   const { theme } = useTheme();
+  const ariaLabel = ariaLabelProp || label || undefined;
   const getTextSize = () => {
     switch (size) {
       case "sm":
@@ -82,6 +85,7 @@ export default function AppButton({
         size={size}
         variant="outline"
         disabled={disabled}
+        aria-label={ariaLabel}
         className={`group relative overflow-hidden rounded-lg bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:text-white transition-all duration-300 ${className}`}
       >
         {/* Glow for outline button - contained */}
@@ -132,6 +136,7 @@ export default function AppButton({
         size={size}
         variant="outline"
         disabled={disabled}
+        aria-label={ariaLabel}
         className={`group relative overflow-hidden rounded-lg bg-white/10 backdrop-blur-md ${noBorder ? "border-transparent" : "border-black/30"} text-white hover:bg-white/20 hover:text-white transition-all duration-300 ${className}`}
       >
         {/* Glow for outline button - contained */}
@@ -182,6 +187,7 @@ export default function AppButton({
         size={size}
         variant="outline"
         disabled={disabled}
+        aria-label={ariaLabel}
         className={`group relative overflow-hidden rounded-lg bg-red-500/5 backdrop-blur-md border-red-500/30 text-red-600 hover:bg-red-500/10 hover:text-red-700 transition-all duration-300 ${className}`}
       >
         <motion.span
@@ -219,6 +225,7 @@ export default function AppButton({
       type={htmlType}
       size={size}
       disabled={disabled}
+      aria-label={ariaLabel}
     >
       {/* Enhanced outer glow - contained */}
       <motion.span

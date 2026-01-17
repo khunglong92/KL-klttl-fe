@@ -13,6 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useMemo, useRef, Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
+import "@/styles/floating-buttons.css";
 
 import { Link, useLocation, useNavigate } from "@tanstack/react-router";
 import UserSetting from "./user-setting";
@@ -191,30 +192,6 @@ export function Header({
     navigate({ to: "/", replace: true });
   };
 
-  // VISIBLE + FAST WAVE
-  const waveVisible = {
-    animate: {
-      scale: [1, 1.45],
-      opacity: [0.35, 0],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeOut",
-    },
-  };
-
-  const iconPulse = {
-    animate: {
-      scale: [1, 1.12, 1],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
-
   return (
     <>
       <div className="hidden lg:block">
@@ -235,20 +212,16 @@ export function Header({
             <div className="lg:hidden">
               <a
                 href="tel:0967853833"
-                className="relative flex items-center justify-center w-8 h-8 rounded-full"
+                className="relative flex items-center justify-center p-2"
               >
-                {/* Wave */}
-                <motion.span
-                  {...waveVisible}
-                  className="absolute inset-0 rounded-full bg-red-500/40"
-                />
-                {/* Icon */}
-                <motion.span
-                  {...iconPulse}
-                  className="relative z-10 flex items-center justify-center text-red-600"
-                >
-                  <Phone className="w-8 h-8" />
-                </motion.span>
+                {/* Mini Ring Effect - Red */}
+                <div className="hotline-mini-ring-wrap">
+                  <div className="hotline-mini-ring-circle"></div>
+                  <div className="hotline-mini-ring-circle-fill"></div>
+                  <div className="hotline-mini-ring-img-circle">
+                    <Phone className="h-5 w-5 text-white" />
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -258,6 +231,8 @@ export function Header({
                 <AppThumbnailImage
                   src={companyLogo}
                   alt={t("nav.companyName")}
+                  width="88"
+                  height="88"
                   className="h-22 w-auto object-contain"
                 />
               </Link>
@@ -413,6 +388,11 @@ export function Header({
                     variant="ghost"
                     onClick={toggleLanguage}
                     className="rounded-full h-8 sm:h-10 px-2 sm:px-3 text-white hover:text-white"
+                    aria-label={
+                      i18n.language === "vi"
+                        ? t("nav.switchToEnglish", "Switch to English")
+                        : t("nav.switchToVietnamese", "Chuyển sang Tiếng Việt")
+                    }
                     title={
                       i18n.language === "vi"
                         ? t("nav.switchToEnglish", "Switch to English")
@@ -447,6 +427,11 @@ export function Header({
                     size="icon"
                     onClick={toggleTheme}
                     className="rounded-full h-8 w-8 sm:h-10 sm:w-10 text-white hover:text-white"
+                    aria-label={
+                      theme === "light"
+                        ? t("theme.switchToDark", "Switch to dark mode")
+                        : t("theme.switchToLight", "Switch to light mode")
+                    }
                   >
                     <AnimatePresence mode="wait">
                       {theme === "light" ? (
@@ -481,7 +466,7 @@ export function Header({
               <div className="lg:hidden flex items-center gap-2">
                 <Sheet>
                   <SheetTrigger asChild>
-                    <button>
+                    <button aria-label="Open menu">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"

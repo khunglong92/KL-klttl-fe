@@ -1,15 +1,12 @@
-import { cn } from "@/lib/utils";
+import "@/styles/floating-buttons.css";
+import { Phone } from "lucide-react";
 
-import { AppThumbnailImage } from "./app-thumbnail-image";
 import zaloImage from "@/images/contacts/zalo.svg";
-import phoneImage from "@/images/contacts/phone.svg";
 
-// Lấy số điện thoại từ biến môi trường, có fallback
 const ZALO_PHONE_NUMBER =
   import.meta.env["VITE_ZALO_PHONE_NUMBER"] || "0967853833";
 const PHONE_NUMBER = import.meta.env["VITE_PHONE_NUMBER"] || "0967853833";
 
-// Helper to format phone number
 const formatPhoneNumber = (phone: string) => {
   const cleaned = phone.replace(/\D/g, "");
   if (cleaned.length === 10) {
@@ -22,62 +19,58 @@ export function FloatingContactButtons() {
   const formattedPhone = formatPhoneNumber(PHONE_NUMBER);
 
   return (
-    <div className="flex flex-col bottom-8 fixed left-4 gap-y-6 z-50">
-      {/* Zalo Button */}
-      <a
-        href={`https://zalo.me/${ZALO_PHONE_NUMBER}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={cn(
-          "rounded-full flex items-center justify-center",
-          "w-10 h-10 md:w-12 md:h-12" // Force square shape for circular glow
-        )}
-        aria-label="Chat with us on Zalo"
-        style={{ animation: "glow-pulse 2s infinite" }}
-      >
-        <AppThumbnailImage
-          src={zaloImage}
-          alt="Zalo Icon"
-          className="w-8 h-8 md:w-11 md:h-11 object-contain"
-        />
-      </a>
-
-      {/* Phone Button */}
-      <a
-        href={`tel:${PHONE_NUMBER}`}
-        className={cn(
-          "relative flex items-center left-2 bg-green-500 rounded-full text-white font-semibold shadow-lg"
-        )}
-        aria-label="Call us"
-        style={{ animation: "glow-pulse-green 2s infinite" }}
-      >
-        {/* Absolutely positioned icon container */}
-        <div
-          className="absolute top-1/2 -translate-y-1/2 left-[-5px] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
-          style={{ animation: "ring-only 2s ease-in-out infinite" }}
-        >
-          <AppThumbnailImage
-            src={phoneImage}
-            alt="Phone Icon"
-            className="w-full h-full object-contain"
-          />
-        </div>
-        {/* Animated Phone number text with padding to avoid overlap */}
-        <div className="pl-12 pr-4 py-1 flex items-center shadow-2xl">
-          {formattedPhone.split("").map((char: string, index: number) => (
-            <span
-              key={index}
-              className="inline-block"
-              style={{
-                animation: `scale-and-glow-text 3s infinite`,
-                animationDelay: `${index * 0.2}s`,
-              }}
+    <div className="fixed -bottom-4 -left-4 md:bottom-4 md:left-4 z-50 flex flex-col-reverse gap-0 pointer-events-none">
+      {/* Phone Button (Red Style) */}
+      <div className="hotline-phone-ring-wrap pointer-events-auto relative">
+        <div className="hotline-phone-ring">
+          <div className="hotline-phone-ring-circle"></div>
+          <div className="hotline-phone-ring-circle-fill"></div>
+          <div className="hotline-phone-ring-img-circle">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              className="pps-btn-img flex items-center justify-center w-full h-full"
             >
-              {char}
-            </span>
-          ))}
+              <Phone className="text-white w-5 h-5 animate-tada" />
+            </a>
+          </div>
         </div>
-      </a>
+        <div className="hotline-bar">
+          <a href={`tel:${PHONE_NUMBER}`}>
+            <span className="text-hotline">{formattedPhone}</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Zalo Button (Blue Style) */}
+      <div className="hotline-zalo-ring-wrap pointer-events-auto relative">
+        <div className="hotline-zalo-ring">
+          <div className="hotline-zalo-ring-circle"></div>
+          <div className="hotline-zalo-ring-circle-fill"></div>
+          <div className="hotline-zalo-ring-img-circle">
+            <a
+              href={`https://zalo.me/${ZALO_PHONE_NUMBER}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pps-btn-img flex items-center justify-center w-full h-full"
+            >
+              <img
+                src={zaloImage}
+                alt="Chat Zalo"
+                className="w-5 h-5 object-contain"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="hotline-bar-zalo">
+          <a
+            href={`https://zalo.me/${ZALO_PHONE_NUMBER}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-hotline">Chat Zalo</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

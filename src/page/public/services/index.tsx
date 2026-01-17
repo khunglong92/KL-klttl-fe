@@ -49,6 +49,8 @@ export default function ServicesListPage() {
       seo={{
         title: t("nav.services"),
         description: t("servicesPage.hero.subtitle"),
+        keywords:
+          "dịch vụ gia công kim loại, cắt laser CNC, chấn CNC, đột CNC, sơn tĩnh điện, hàn kim loại, Thiên Lộc",
       }}
       breadcrumbs={
         <>

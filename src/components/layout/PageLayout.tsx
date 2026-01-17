@@ -12,6 +12,9 @@ interface PageLayoutProps {
   seo?: {
     title: string;
     description: string;
+    keywords?: string;
+    ogImage?: string;
+    ogType?: "website" | "article" | "product";
   };
   breadcrumbs: ReactNode;
   sidebar: ReactNode;
@@ -34,7 +37,15 @@ export function PageLayout({
         theme === "dark" ? "bg-navy-950" : "bg-[#f8f9fa]"
       )}
     >
-      {seo && <SEO title={seo.title} description={seo.description} />}
+      {seo && (
+        <SEO
+          title={seo.title}
+          description={seo.description}
+          keywords={seo.keywords}
+          ogImage={seo.ogImage}
+          ogType={seo.ogType}
+        />
+      )}
 
       {/* Breadcrumbs */}
       <div

@@ -128,19 +128,33 @@ export function Footer() {
                   {companyAddress || t("location.addressValue")}
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-amber-500" />
+              <div className="flex items-center gap-x-4">
+                <div className="flex items-center gap-2 text-sm">
+                  <Phone className="h-4 w-4 text-amber-500" />
+                  <a
+                    href={`tel:${companyPhone}`}
+                    aria-label={`Call ${companyPhone}`}
+                    className={`${theme === "dark" ? "text-white/80" : "text-gray-700"} hover:text-amber-500 dark:hover:text-amber-400 transition-colors`}
+                  >
+                    {formatPhoneNumber(companyPhone)}
+                  </a>
+                </div>
                 <a
-                  href={`tel:${companyPhone}`}
-                  className={`${theme === "dark" ? "text-white/80" : "text-gray-700"} hover:text-amber-500 dark:hover:text-amber-400 transition-colors`}
+                  href={`tel:${"0372622161"}`}
+                  aria-label={`Call ${"0372622161"}`}
+                  className={`${theme === "dark" ? "text-white/80" : "text-gray-700"} hover:text-amber-500 dark:hover:text-amber-400 transition-colors space-x-2`}
                 >
-                  {formatPhoneNumber(companyPhone)}
+                  <span className="text-sm font-bold">SALE: </span>
+                  <span className="text-sm font-bold">
+                    {formatPhoneNumber("0372622161")}
+                  </span>
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-amber-500" />
                 <a
                   href={`mailto:${companyEmail}`}
+                  aria-label={`Email ${companyEmail}`}
                   className={`${theme === "dark" ? "text-white/80" : "text-gray-700"} hover:text-amber-500 dark:hover:text-amber-400 transition-colors`}
                 >
                   {companyEmail}

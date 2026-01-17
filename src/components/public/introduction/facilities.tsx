@@ -1,7 +1,6 @@
 import IntroPageLayout from "@/page/public/introduction/intro-page-layout";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/hooks/useTheme";
-import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import Ultils from "@/utils";
 import { useGetContactInfo } from "@/services/hooks/useContactInfo";
@@ -28,29 +27,6 @@ export const Facilities = () => {
     companyInfo?.email ||
     import.meta.env["VITE_EMAIL_CONTACT"] ||
     "kimloaitamthienloc@gmail.com";
-
-  const waveVisible = {
-    animate: {
-      scale: [1, 1.45],
-      opacity: [0.35, 0],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeOut",
-    },
-  };
-
-  const iconPulse = {
-    animate: {
-      scale: [1, 1.12, 1],
-    },
-    transition: {
-      duration: 0.7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
 
   // Helper to check if HTML has actual content (not just empty tags)
   const hasContent = (html: string | undefined | null): boolean => {
@@ -194,25 +170,18 @@ export const Facilities = () => {
               </div>
               <div className="flex gap-x-4 justify-center items-center">
                 <a href={`tel:${companyPhone}`}>
-                  <div className="relative flex items-center justify-center">
-                    {/* Wave */}
-                    <motion.span
-                      {...waveVisible}
-                      className="absolute inset-0 rounded-full bg-green-300"
-                    />
-
-                    {/* Icon */}
-                    <motion.span
-                      {...iconPulse}
-                      className="relative z-10 p-2.5 rounded-full text-green-600"
-                    >
-                      <Phone className="h-8 w-8" />
-                    </motion.span>
+                  {/* Mini Ring Effect - Red */}
+                  <div className="hotline-mini-ring-wrap">
+                    <div className="hotline-mini-ring-circle"></div>
+                    <div className="hotline-mini-ring-circle-fill"></div>
+                    <div className="hotline-mini-ring-img-circle">
+                      <Phone className="h-5 w-5 text-white" />
+                    </div>
                   </div>
                 </a>
                 <a
                   href="tel:0967853833"
-                  className="text-xl font-black text-blue-600 dark:text-blue-400 hover:text-blue-700 transition-colors"
+                  className="text-xl font-black text-red-600 dark:text-red-500 hover:text-red-700 transition-colors"
                 >
                   {Ultils.formatPhoneNumber(companyPhone)}
                 </a>

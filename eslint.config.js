@@ -75,7 +75,9 @@ export default [
     ignores: [
       "dist/**",
       "node_modules/**",
+      "build/**",
       "routeTree.gen.ts",
+      "vite-env.d.ts",
       "*.config.js",
       "*.config.ts",
     ],

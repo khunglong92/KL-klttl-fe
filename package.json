@@ -1,7 +1,8 @@
 {
-  "name": "website-ban-do-gia-dung",
+  "name": "kim-loai-tam-thien-loc",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@mantine/carousel": "^8.3.7",
@@ -106,16 +107,19 @@
     "@typescript-eslint/parser": "^8.47.0",
     "@vitejs/plugin-react-swc": "^3.10.2",
     "autoprefixer": "^10.4.22",
+    "baseline-browser-mapping": "^2.9.14",
     "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-unused-imports": "^4.3.0",
     "globals": "^16.5.0",
     "postcss": "^8.5.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.1.17",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "vite": "6.3.5"
+    "vite": "6.3.5",
+    "vite-plugin-image-optimizer": "^2.0.3"
   },
   "scripts": {
     "generate-routes": "tsr generate",
@@ -130,5 +134,8 @@
     "check": "npm run lint && npm run type-check",
     "check-tsc": "npx --package=typescript tsc --noEmit 2>&1 | head -50"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "resolutions": {
+    "baseline-browser-mapping": "2.9.14"
+  }
 }

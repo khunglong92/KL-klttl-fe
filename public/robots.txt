@@ -1,0 +1,16 @@
+# Robots.txt for Thiên Lộc Metal Processing
+# https://kimloaitamthienloc.vn
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://kimloaitamthienloc.vn/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

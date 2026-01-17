@@ -95,14 +95,24 @@ export default function IntroductionPage() {
   return (
     <IntroPageLayout titleKey="introduction_pages.general.hero-title">
       <div className="space-y-12">
-        <AboutSection aboutUs={companyInfo?.aboutUs} />
+        <AboutSection aboutUs={companyInfo?.aboutUs || undefined} />
         <MissionVisionSection
-          mission={companyInfo?.mission}
-          vision={companyInfo?.vision}
+          mission={companyInfo?.mission || undefined}
+          vision={companyInfo?.vision || undefined}
         />
-        <CoreValuesSection coreValues={coreValues} />
-        <ServicesSection services={services} />
-        <CommitmentSection />
+        <CoreValuesSection
+          coreValues={coreValues}
+          customItems={companyInfo?.coreValuesItems || undefined}
+          customDescription={companyInfo?.coreValuesDescription || undefined}
+        />
+        <ServicesSection
+          services={services}
+          customItems={companyInfo?.servicesItems || undefined}
+          customDescription={companyInfo?.servicesDescription || undefined}
+        />
+        <CommitmentSection
+          customContent={companyInfo?.commitmentIntro || undefined}
+        />
       </div>
     </IntroPageLayout>
   );

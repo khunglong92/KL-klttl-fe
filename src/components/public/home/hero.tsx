@@ -138,6 +138,9 @@ export function Hero() {
           <AppThumbnailImage
             src={currentSlideData.url}
             alt="Hero Background"
+            width="1920"
+            height="1080"
+            loading="eager"
             className="w-full h-full object-cover"
           />
           {/* Enhanced Overlay: gradient darker on left for text readability */}

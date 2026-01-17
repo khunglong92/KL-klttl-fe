@@ -37,6 +37,10 @@ export function SimpleProductCard({ product }: { product: Product }) {
           <AppThumbnailImage
             src={product.images?.[0]}
             alt={product.name}
+            width="400"
+            height="300"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
 

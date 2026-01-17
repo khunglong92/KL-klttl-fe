@@ -2,7 +2,19 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/hooks/useTheme";
 
-export const CommitmentSection = () => {
+interface CommitmentSectionProps {
+  customContent?: string;
+}
+
+const hasContent = (html?: string) => {
+  if (!html) return false;
+  const stripped = html.replace(/<[^>]*>/g, "").trim();
+  return stripped.length > 0;
+};
+
+export const CommitmentSection = ({
+  customContent,
+}: CommitmentSectionProps) => {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -23,27 +35,36 @@ export const CommitmentSection = () => {
             >
               {t("introduction.commitmentLabel")}
             </h2>
-            <p
-              className={`text-xl leading-relaxed mb-8 ${theme === "dark" ? "text-gray-200" : "text-black"}`}
-            >
-              {t("introduction.commitmentDescription")}
-            </p>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="inline-block"
-            >
-              <div className="text-3xl md:text-4xl text-accent-red mb-4 font-bold">
-                {t("introduction.commitment.companyName")}
-              </div>
+            {hasContent(customContent) ? (
               <div
-                className={`text-xl ${theme === "dark" ? "text-gray-200" : "text-black"}`}
-              >
-                {t("introduction.commitment.slogan")}
-              </div>
-            </motion.div>
+                className={`ql-snow ql-editor text-xl leading-relaxed mb-8 ${theme === "dark" ? "text-gray-200" : "text-black"}`}
+                dangerouslySetInnerHTML={{ __html: customContent! }}
+              />
+            ) : (
+              <>
+                <p
+                  className={`text-xl leading-relaxed mb-8 ${theme === "dark" ? "text-gray-200" : "text-black"}`}
+                >
+                  {t("introduction.commitmentDescription")}
+                </p>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="inline-block"
+                >
+                  <div className="text-3xl md:text-4xl text-accent-red mb-4 font-bold">
+                    {t("introduction.commitment.companyName")}
+                  </div>
+                  <div
+                    className={`text-xl ${theme === "dark" ? "text-gray-200" : "text-black"}`}
+                  >
+                    {t("introduction.commitment.slogan")}
+                  </div>
+                </motion.div>
+              </>
+            )}
           </motion.div>
         </div>
       </div>

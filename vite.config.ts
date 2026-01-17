@@ -4,9 +4,29 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+
 export default defineConfig({
   base: "/",
-  plugins: [react(), TanStackRouterVite(), tailwindcss()],
+  plugins: [
+    react(),
+    TanStackRouterVite(),
+    tailwindcss(),
+    ViteImageOptimizer({
+      png: {
+        quality: 75,
+      },
+      jpeg: {
+        quality: 75,
+      },
+      jpg: {
+        quality: 75,
+      },
+      webp: {
+        lossless: true,
+      },
+    }),
+  ],
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
     alias: {
@@ -17,9 +37,17 @@ export default defineConfig({
   build: {
     target: "esnext",
     outDir: "dist",
-    chunkSizeWarningLimit: 4000, // Adjusted chunk size warning limit
+    // chunk size warning limit adjustment not needed if we split correctly, but keeping it high to avoid noise for now
+    chunkSizeWarningLimit: 1000,
     // Fail build on critical errors
     rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+          mantine: ["@mantine/core", "@mantine/hooks", "@mantine/form"],
+          tanstack: ["@tanstack/react-query", "@tanstack/react-router"],
+        },
+      },
       onwarn(warning, warn) {
         // Ignore circular dependencies from node_modules (library issues)
         if (

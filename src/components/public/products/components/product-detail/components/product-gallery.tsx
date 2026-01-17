@@ -64,108 +64,112 @@ export function ProductGallery({ images }: ProductGalleryProps) {
   return (
     <>
       {/* Main Gallery */}
-      <Stack gap="xs">
-        {/* Main Image - Compact size */}
-        <Paper
-          className="relative aspect-video max-h-[280px] overflow-hidden cursor-pointer group"
-          radius="md"
-          shadow="sm"
-          onClick={openLightbox}
-          style={{
-            backgroundColor: isDark
-              ? "rgba(255, 255, 255, 0.05)"
-              : "rgba(0, 0, 0, 0.02)",
-          }}
-        >
-          <Carousel
-            withIndicators={false}
-            withControls={images.length > 1}
-            getEmblaApi={setEmbla}
-            onSlideChange={setCurrentImage}
-            classNames={{
-              root: "h-full",
-              viewport: "h-full",
-              container: "h-full",
-              slide: "h-full",
-              control: "border-0",
-            }}
-            styles={{
-              control: {
-                backgroundColor: isDark
-                  ? "rgba(0, 0, 0, 0.5)"
-                  : "rgba(255, 255, 255, 0.9)",
-                backdropFilter: "blur(4px)",
-                border: "none",
-                color: isDark ? "white" : "black",
-                width: 32,
-                height: 32,
-                "&[data-inactive]": {
-                  opacity: 0,
-                  cursor: "default",
-                },
-              },
+      <div className="w-full min-w-0">
+        <Stack gap="xs">
+          {/* Main Image - Compact size */}
+          <Paper
+            className="relative aspect-video max-h-[280px] overflow-hidden cursor-pointer group"
+            radius="md"
+            shadow="sm"
+            onClick={openLightbox}
+            style={{
+              backgroundColor: isDark
+                ? "rgba(255, 255, 255, 0.05)"
+                : "rgba(0, 0, 0, 0.02)",
             }}
           >
-            {images.map((image, index) => (
-              <Carousel.Slide key={index}>
-                <AppThumbnailImage
-                  src={image}
-                  alt={`Product ${index + 1}`}
-                  className="h-full w-full object-cover"
-                />
-              </Carousel.Slide>
-            ))}
-          </Carousel>
-
-          {/* Image Counter Badge */}
-          {images.length > 1 && (
-            <Box
-              className="absolute left-3 top-3 px-2 py-1 rounded-md text-xs font-medium"
-              style={{
-                backgroundColor: isDark
-                  ? "rgba(0, 0, 0, 0.6)"
-                  : "rgba(255, 255, 255, 0.9)",
-                color: isDark ? "white" : "black",
+            <Carousel
+              withIndicators={false}
+              withControls={images.length > 1}
+              getEmblaApi={setEmbla}
+              onSlideChange={setCurrentImage}
+              classNames={{
+                root: "h-full",
+                viewport: "h-full",
+                container: "h-full",
+                slide: "h-full",
+                control: "border-0",
+              }}
+              styles={{
+                control: {
+                  backgroundColor: isDark
+                    ? "rgba(0, 0, 0, 0.5)"
+                    : "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(4px)",
+                  border: "none",
+                  color: isDark ? "white" : "black",
+                  width: 32,
+                  height: 32,
+                  "&[data-inactive]": {
+                    opacity: 0,
+                    cursor: "default",
+                  },
+                },
               }}
             >
-              {currentImage + 1} / {images.length}
-            </Box>
-          )}
+              {images.map((image, index) => (
+                <Carousel.Slide key={index}>
+                  <AppThumbnailImage
+                    src={image}
+                    alt={`Product ${index + 1}`}
+                    width="800"
+                    height="600"
+                    className="h-full w-full object-cover"
+                  />
+                </Carousel.Slide>
+              ))}
+            </Carousel>
 
-          {/* Zoom Icon Overlay */}
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center pointer-events-none">
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 rounded-full p-3">
-              <IconZoomIn size={24} color="white" />
-            </div>
-          </div>
-        </Paper>
-
-        {/* Thumbnails Row */}
-        {images.length > 1 && (
-          <div className="flex gap-2 overflow-x-auto pb-1">
-            {images.map((image, index) => (
-              <div
-                key={index}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setCurrentImage(index);
+            {/* Image Counter Badge */}
+            {images.length > 1 && (
+              <Box
+                className="absolute left-3 top-3 px-2 py-1 rounded-md text-xs font-medium"
+                style={{
+                  backgroundColor: isDark
+                    ? "rgba(0, 0, 0, 0.6)"
+                    : "rgba(255, 255, 255, 0.9)",
+                  color: isDark ? "white" : "black",
                 }}
-                className={`shrink-0 w-16 h-12 rounded overflow-hidden cursor-pointer transition-all border-2 ${
-                  currentImage === index
-                    ? "border-amber-500 opacity-100"
-                    : "border-transparent opacity-60 hover:opacity-100"
-                }`}
               >
-                <ImageWithFallback
-                  src={image}
-                  alt={`Thumbnail ${index + 1}`}
-                  className="h-full w-full object-cover"
-                />
+                {currentImage + 1} / {images.length}
+              </Box>
+            )}
+
+            {/* Zoom Icon Overlay */}
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center pointer-events-none">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 rounded-full p-3">
+                <IconZoomIn size={24} color="white" />
               </div>
-            ))}
-          </div>
-        )}
-      </Stack>
+            </div>
+          </Paper>
+
+          {/* Thumbnails Row */}
+          {images.length > 1 && (
+            <div className="flex gap-2 overflow-x-auto pb-1">
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentImage(index);
+                  }}
+                  className={`shrink-0 w-16 h-12 rounded overflow-hidden cursor-pointer transition-all border-2 ${
+                    currentImage === index
+                      ? "border-amber-500 opacity-100"
+                      : "border-transparent opacity-60 hover:opacity-100"
+                  }`}
+                >
+                  <ImageWithFallback
+                    src={image}
+                    alt={`Thumbnail ${index + 1}`}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+        </Stack>
+      </div>
 
       {/* Lightbox Modal */}
       <Modal
