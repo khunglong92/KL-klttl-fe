@@ -56,7 +56,7 @@ export function FeaturedProjects() {
       id="featured-projects"
       className={cn(
         "py-16 md:py-24",
-        theme === "dark" ? "bg-navy-950/50" : "bg-gray-50/50"
+        theme === "dark" ? "bg-navy-950/50" : "bg-gray-50/50",
       )}
     >
       <div className="w-full px-4">
@@ -80,7 +80,7 @@ export function FeaturedProjects() {
               "absolute -left-6 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95",
               theme === "dark"
                 ? "bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20"
-                : "bg-white border border-gray-100 text-accent-red"
+                : "bg-white border border-gray-100 text-accent-red",
             )}
             aria-label="Previous projects"
           >
@@ -93,7 +93,7 @@ export function FeaturedProjects() {
               "absolute -right-6 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95",
               theme === "dark"
                 ? "bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20"
-                : "bg-white border border-gray-100 text-accent-red"
+                : "bg-white border border-gray-100 text-accent-red",
             )}
             aria-label="Next projects"
           >
@@ -115,6 +115,7 @@ export function FeaturedProjects() {
                 project={project}
                 index={index}
                 className="w-[85%] md:w-full min-w-[280px] md:min-w-[calc(33.333%-22px)] max-w-[400px] snap-center shrink-0"
+                overlayVariant="sky"
               />
             ))}
           </div>
