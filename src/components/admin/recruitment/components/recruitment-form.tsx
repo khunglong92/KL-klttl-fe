@@ -221,7 +221,7 @@ export default function RecruitmentForm({
                 </Group>
                 <div className="space-y-4">
                   <div>
-                    <Label>
+                    <Label className="mb-2 block">
                       {t(
                         "recruitmentAdmin.form.sections.sectionTitle",
                         "Tiêu đề section"
@@ -274,6 +274,7 @@ export default function RecruitmentForm({
           label={t("recruitmentAdmin.form.buttons.save", "Lưu tin tuyển dụng")}
           loading={isLoading}
           disabled={isLoading}
+          htmlType="submit"
         />
       </div>
     </form>
