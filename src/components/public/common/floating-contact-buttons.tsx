@@ -36,7 +36,9 @@ export function FloatingContactButtons() {
         </div>
         <div className="hotline-bar">
           <a href={`tel:${PHONE_NUMBER}`}>
-            <span className="text-hotline">{formattedPhone}</span>
+            <span className="text-hotline font-[900] text-lg tracking-wider [text-shadow:0.5px_0_0_currentColor]">
+              {formattedPhone}
+            </span>
           </a>
         </div>
       </div>
