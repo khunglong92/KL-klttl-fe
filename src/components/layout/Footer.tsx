@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "@tanstack/react-router";
 import companyLogo from "@/images/common/company-logo.png";
@@ -11,14 +11,7 @@ import { useTheme } from "@/hooks/useTheme";
 import { useEffect } from "react";
 import { useGetContactInfo } from "@/services/hooks/useContactInfo";
 import { useContactInfoStore } from "@/stores/contactInfoStore";
-
-// Custom Zalo Icon Component
-const ZaloIcon = () => (
-  <AppThumbnailImage className="w-8 h-8" src={zaloImage} alt="Zalo Icon" />
-);
-const PhoneIcon = () => (
-  <AppThumbnailImage className="w-8 h-8" src={phoneImage} alt="Phone Icon" />
-);
+import { PremiumContactButton } from "@/components/public/common/premium-contact-button";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -66,18 +59,27 @@ export function Footer() {
   const contactMethods = [
     {
       name: "Zalo",
-      icon: ZaloIcon,
+      imageSrc: zaloImage,
       href: `https://zalo.me/${companyPhone}`,
+      color: "#0068ff",
     },
     {
-      name: "Phone",
-      icon: PhoneIcon,
+      name: "Hotline",
+      imageSrc: phoneImage,
       href: `tel:${companyPhone}`,
+      color: "#e60808",
+    },
+    {
+      name: "Facebook",
+      icon: Facebook,
+      href: "https://www.facebook.com/profile.php?id=61587042855232",
+      color: "#1877f2",
     },
     {
       name: "Email",
       icon: Mail,
       href: `mailto:${companyEmail}`,
+      color: "#ea4335",
     },
   ];
 
@@ -209,27 +211,17 @@ export function Footer() {
             >
               {t("footer.contactDescription")}
             </p>
-            <div className="flex items-center gap-4 pt-2">
-              {contactMethods.map((method) => {
-                const Icon = method.icon;
-                const isLucideIcon = method.name === "Email";
-                return (
-                  <Link
-                    key={method.name}
-                    to={method.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`group p-3 rounded-full ${theme === "dark" ? "bg-white/10 hover:bg-white/20" : "bg-gray-200 hover:bg-gray-300"} transition-all duration-300`}
-                    aria-label={method.name}
-                  >
-                    {isLucideIcon ? (
-                      <Icon className="h-8 w-8 text-gray-700 dark:text-white group-hover:scale-110 transition-transform" />
-                    ) : (
-                      <Icon />
-                    )}
-                  </Link>
-                );
-              })}
+            <div className="flex items-center gap-3 pt-3">
+              {contactMethods.map((method) => (
+                <PremiumContactButton
+                  key={method.name}
+                  Icon={method.icon}
+                  imageSrc={method.imageSrc}
+                  color={method.color}
+                  href={method.href}
+                  title={method.name}
+                />
+              ))}
             </div>
           </motion.div>
         </div>

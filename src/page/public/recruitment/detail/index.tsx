@@ -36,7 +36,7 @@ export default function RecruitmentDetailPage() {
     queryKey: ["recruitment-detail", recruitmentId],
     queryFn: async () => {
       const response = await apiClient.get<RecruitmentDetail>(
-        `/recruitment/${recruitmentId}`
+        `/recruitment/${recruitmentId}`,
       );
       return response;
     },
@@ -125,7 +125,7 @@ export default function RecruitmentDetailPage() {
           "inline-flex items-center gap-2 mb-6 text-sm font-medium transition-colors",
           theme === "dark"
             ? "text-gray-400 hover:text-cyan-500"
-            : "text-gray-600 hover:text-cyan-500"
+            : "text-gray-600 hover:text-cyan-500",
         )}
       >
         <ArrowLeft className="w-4 h-4" />
@@ -138,7 +138,7 @@ export default function RecruitmentDetailPage() {
           <h1
             className={cn(
               "text-2xl md:text-3xl font-bold mb-4",
-              theme === "dark" ? "text-white" : "text-gray-900"
+              theme === "dark" ? "text-white" : "text-gray-900",
             )}
           >
             {recruitment.title}
@@ -147,7 +147,7 @@ export default function RecruitmentDetailPage() {
             <p
               className={cn(
                 "text-lg mb-4 italic",
-                theme === "dark" ? "text-gray-400" : "text-gray-600"
+                theme === "dark" ? "text-gray-400" : "text-gray-600",
               )}
             >
               {recruitment.subtitle}
@@ -167,7 +167,7 @@ export default function RecruitmentDetailPage() {
             <img
               src={recruitment.image}
               alt={recruitment.title}
-              className="w-full h-auto object-cover max-h-[500px]"
+              className="w-full h-auto rounded-lg shadow-sm"
             />
           </div>
         )}
@@ -180,7 +180,7 @@ export default function RecruitmentDetailPage() {
                 "p-4 rounded-xl border mb-8",
                 theme === "dark"
                   ? "bg-[#1f2937] border-[#374151]"
-                  : "bg-gray-50 border-gray-200"
+                  : "bg-gray-50 border-gray-200",
               )}
             >
               <h3
@@ -188,7 +188,7 @@ export default function RecruitmentDetailPage() {
                   "font-bold mb-3 pb-2 border-b",
                   theme === "dark"
                     ? "text-white border-gray-700"
-                    : "text-gray-900 border-gray-200"
+                    : "text-gray-900 border-gray-200",
                 )}
               >
                 {t("news.tableOfContents", "Nội dung bài viết")}
@@ -200,7 +200,7 @@ export default function RecruitmentDetailPage() {
                       onClick={() => scrollToSection(index)}
                       className={cn(
                         "text-left w-full hover:text-cyan-500 transition-colors",
-                        theme === "dark" ? "text-gray-400" : "text-gray-600"
+                        theme === "dark" ? "text-gray-400" : "text-gray-600",
                       )}
                     >
                       {section.title}
@@ -225,7 +225,7 @@ export default function RecruitmentDetailPage() {
                     <h2
                       className={cn(
                         "text-xl md:text-2xl font-bold mb-4",
-                        theme === "dark" ? "text-white" : "text-gray-900"
+                        theme === "dark" ? "text-white" : "text-gray-900",
                       )}
                     >
                       {section.title}
@@ -235,7 +235,7 @@ export default function RecruitmentDetailPage() {
                   <div
                     className={cn(
                       "prose max-w-none mb-6",
-                      theme === "dark" ? "prose-invert" : ""
+                      theme === "dark" ? "prose-invert" : "",
                     )}
                   >
                     <RecruitmentSectionContent
@@ -251,7 +251,7 @@ export default function RecruitmentDetailPage() {
         <hr
           className={cn(
             "my-10",
-            theme === "dark" ? "border-gray-800" : "border-gray-200"
+            theme === "dark" ? "border-gray-800" : "border-gray-200",
           )}
         />
 

@@ -63,7 +63,9 @@
   cursor: pointer;
   z-index: 11;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   transition: visibility 0.5s;
   left: 0;
   bottom: 0;
@@ -79,7 +81,9 @@
   cursor: pointer;
   z-index: 11;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   transition: visibility 0.5s;
   left: 0;
   bottom: 0;
@@ -160,8 +164,8 @@
   padding: 0 10px;
   background-size: 100%;
   cursor: pointer;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
+  /* transition: all 0.8s;
+  -webkit-transition: all 0.8s; */
   z-index: 9;
   box-shadow:
     0 14px 28px rgba(0, 0, 0, 0.25),
@@ -201,7 +205,9 @@
   cursor: pointer;
   z-index: 11;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   transition: visibility 0.5s;
   left: 0;
   bottom: 0;
@@ -217,7 +223,9 @@
   cursor: pointer;
   z-index: 11;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   transition: visibility 0.5s;
   left: 0;
   bottom: 0;
@@ -294,8 +302,8 @@
   padding: 0 10px;
   background-size: 100%;
   cursor: pointer;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
+  /* transition: all 0.8s;
+  -webkit-transition: all 0.8s; */
   z-index: 9;
   box-shadow:
     0 14px 28px rgba(0, 0, 0, 0.25),
@@ -333,7 +341,9 @@
   cursor: pointer;
   z-index: 11;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   transition: visibility 0.5s;
   left: 0;
   bottom: -35px; /* Pull down closer to phone button */

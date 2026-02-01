@@ -45,6 +45,13 @@ export const useAuthStore = create<AuthState>()(
     {
       name: "auth-storage",
       version: 2,
+      migrate: (persistedState: any, version: number) => {
+        if (version === 1) {
+          // If the old version was 1, we can just return it or reset it
+          return persistedState;
+        }
+        return persistedState;
+      },
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         user: state.user,
@@ -52,8 +59,8 @@ export const useAuthStore = create<AuthState>()(
         refreshToken: state.refreshToken,
         isAuthenticated: state.isAuthenticated,
       }),
-    }
-  )
+    },
+  ),
 );
 
 // Convenience selectors to prevent unnecessary re-renders.
