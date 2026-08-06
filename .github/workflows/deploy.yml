@@ -5,9 +5,18 @@ on:
     branches:
       - master
 
+# Nếu push liên tiếp, hủy các lần chạy cũ đang chờ/đang chạy để tránh
+# nhiều deploy tranh nhau container/network trên VPS cùng lúc.
+concurrency:
+  group: deploy-fe-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Chặn trường hợp một step bị treo (SSH/pull mạng chậm) ăn hết nhiều giờ
+    # mà không ai biết — sau 20 phút coi như fail để dễ phát hiện & retry.
+    timeout-minutes: 20
 
     steps:
       # =========================
@@ -60,14 +69,12 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
+          command_timeout: 15m
           script: |
             set -e
 
             echo "🔐 Login GHCR"
             docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.GHCR_TOKEN }}
-
-            echo "🧹 Remove old image"
-            docker rmi ghcr.io/${{ github.repository_owner }}/fe-app:latest || true
 
             echo "⬇️ Pull new image"
             docker pull ghcr.io/${{ github.repository_owner }}/fe-app:latest
@@ -84,5 +91,15 @@ jobs:
               --restart unless-stopped \
               ghcr.io/${{ github.repository_owner }}/fe-app:latest
 
+            echo "🩺 Health check: đợi container thật sự chạy ổn định"
+            sleep 3
+            if [ "$(docker inspect -f '{{.State.Running}}' fe-app)" != "true" ]; then
+              echo "❌ Container fe-app không chạy sau khi start. Logs:"
+              docker logs --tail 100 fe-app
+              exit 1
+            fi
             echo "✅ FE container status"
             docker ps | grep fe-app
+
+            echo "🧹 Dọn image cũ (giữ image đang dùng, xoá image không còn container nào tham chiếu)"
+            docker image prune -f

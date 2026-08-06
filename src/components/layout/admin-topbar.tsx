@@ -1,7 +1,7 @@
 import { Menu, Avatar, Text, UnstyledButton } from "@mantine/core";
-import { LogOut } from "lucide-react";
+import { LogOut, Home } from "lucide-react";
 import { useAuthStore } from "@/stores/authStore";
-import { useNavigate } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
 function getInitials(name?: string) {
@@ -26,7 +26,15 @@ export function AdminTopbar() {
   };
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-end border-b border-border bg-card px-6">
+    <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-border bg-card px-6">
+      <Link
+        to="/"
+        className="flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-semibold text-muted-foreground transition-all hover:bg-navy-50 hover:text-navy-600 dark:hover:bg-navy-950/40"
+      >
+        <Home className="h-4 w-4 text-navy-600" />
+        <span>{t("admin.sidebar.backToPublic", "Về trang chủ")}</span>
+      </Link>
+
       <Menu shadow="md" width={240} position="bottom-end">
         <Menu.Target>
           <UnstyledButton className="flex items-center gap-3 rounded-lg p-1.5 transition-colors hover:bg-navy-50 dark:hover:bg-navy-950/40">

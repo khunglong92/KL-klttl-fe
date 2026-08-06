@@ -37,8 +37,10 @@ function RootLayout() {
 
   return (
     <>
-      {/* Header và Footer hiển thị cho tất cả */}
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      {/* Chỉ hiển thị Header công cộng nếu không phải là trang admin */}
+      {!pathname.startsWith("/admin") && (
+        <Header theme={theme} toggleTheme={toggleTheme} />
+      )}
 
       <main className="min-h-screen">
         <ScrollToTop />
@@ -46,7 +48,9 @@ function RootLayout() {
       </main>
       {!pathname.startsWith("/admin") && <LocationMap />}
       {!pathname.startsWith("/admin") && <AiChatWidget />}
-      <Footer />
+      
+      {/* Chỉ hiển thị Footer công cộng nếu không phải là trang admin */}
+      {!pathname.startsWith("/admin") && <Footer />}
 
       {/* Ẩn FloatingContactButtons nếu là admin */}
       {!pathname.startsWith("/admin") && <FloatingContactButtons />}
