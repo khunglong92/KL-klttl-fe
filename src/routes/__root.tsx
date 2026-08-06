@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { ScrollToTop } from "@/components/atoms/scroll-to-top";
 import { LocationMap } from "@/components/public/home/location-map";
 import { FloatingContactButtons } from "@/components/public/common/floating-contact-buttons";
+import { AiChatWidget } from "@/components/public/common/ai-chat-widget";
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -44,10 +45,11 @@ function RootLayout() {
         <Outlet />
       </main>
       {!pathname.startsWith("/admin") && <LocationMap />}
+      {!pathname.startsWith("/admin") && <AiChatWidget />}
       <Footer />
 
       {/* Ẩn FloatingContactButtons nếu là admin */}
-      <FloatingContactButtons />
+      {!pathname.startsWith("/admin") && <FloatingContactButtons />}
 
       {/* {import.meta.env.DEV && <TanStackRouterDevtools />} */}
     </>

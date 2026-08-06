@@ -49,6 +49,18 @@ export const QUERY_KEYS = {
     byId: (id: string) => ["news", id] as const,
     featured: ["news", "featured"] as const,
   },
+  aiChat: {
+    publicStatus: ["aiChat", "publicStatus"] as const,
+    settings: ["aiChat", "settings"] as const,
+    providers: {
+      root: "aiChatProviders" as const,
+      byId: (id: string) => ["aiChatProviders", id] as const,
+    },
+    logs: {
+      paginated: (page: number, pageSize: number) =>
+        ["aiChatLogs", page, pageSize] as const,
+    },
+  },
 } as const;
 
 export type QueryKey = ReadonlyArray<unknown>;

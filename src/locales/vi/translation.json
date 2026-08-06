@@ -1,4 +1,15 @@
 {
+  "aiChat": {
+    "widget": {
+      "title": "Trợ Lý AI",
+      "subtitle": "Hỏi nhanh về sản phẩm & dịch vụ",
+      "placeholder": "Nhập câu hỏi của bạn...",
+      "greeting": "Xin chào! Tôi có thể giúp gì cho bạn về sản phẩm, dịch vụ hoặc thông tin công ty Kim Loại Tấm Thiên Lộc?",
+      "genericError": "Đã có lỗi xảy ra, vui lòng thử lại sau.",
+      "toggleAriaLabel": "Mở khung chat",
+      "closeAriaLabel": "Đóng khung chat"
+    }
+  },
   "common": {
     "viewDetails": "Xem chi tiết",
     "close": "Đóng",
@@ -781,7 +792,19 @@
       "quotes": "Quản lý báo giá",
       "users": "Quản lý người dùng",
       "statistics": "Thống kê",
-      "companyIntros": "Hình ảnh giới thiệu"
+      "companyIntros": "Hình ảnh giới thiệu",
+      "reviews": "Nhận xét",
+      "priceQuotes": "Báo giá",
+      "groups": {
+        "content": "Nội dung Website",
+        "business": "Khách hàng & Kinh doanh",
+        "system": "Người dùng & Hệ thống",
+        "ai": "Cấu hình AI"
+      },
+      "aiSettings": "Cấu hình Chatbot",
+      "aiProviders": "Quản lý API Keys",
+      "aiLogs": "Nhật ký hội thoại",
+      "backToPublic": "Về trang chủ"
     },
     "dashboard": {
       "title": "Bảng điều khiển",

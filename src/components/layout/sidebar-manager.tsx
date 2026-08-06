@@ -1,12 +1,11 @@
-import { motion } from "framer-motion";
 import {
   LayoutDashboard,
   Package,
+  Tags,
   Briefcase,
   FolderKanban,
   Users,
   BarChart3,
-  ChevronLeft,
   Mail,
   Contact,
   ImageIcon,
@@ -14,181 +13,296 @@ import {
   UserPlus,
   ScrollText,
   MessageSquare,
+  Layers,
+  Contact2,
+  ShieldCheck,
+  Bot,
+  Sparkles,
+  KeyRound,
+  MessagesSquare,
+  ChevronRight,
+  Home,
 } from "lucide-react";
 import { cn } from "@/components/ui/utils";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useRouterState } from "@tanstack/react-router";
-import { useTheme } from "@/hooks/useTheme";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
-import { Divider } from "@mantine/core";
+import companyLogo from "@/images/common/company-logo.png";
+
+interface NavLeaf {
+  id: string;
+  route: string;
+  label: string;
+  icon: typeof LayoutDashboard;
+}
+
+interface NavGroup {
+  id: string;
+  label: string;
+  icon: typeof LayoutDashboard;
+  items: NavLeaf[];
+}
 
 export function AdminSidebar() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const routerState = useRouterState();
-  const { theme } = useTheme();
-  const [isCollapsed, setIsCollapsed] = useState(true);
-
-  // Xác định trang hiện tại từ route path
   const currentPath = routerState.location.pathname || "";
-  const currentPage = currentPath.split("/").pop() || "dashboard";
 
-  const menuItems = [
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({
+    content: true,
+    business: true,
+    system: true,
+    ai: true,
+  });
+
+  const toggleGroup = (id: string) =>
+    setOpenGroups((prev) => ({ ...prev, [id]: !prev[id] }));
+
+  const groups: NavGroup[] = [
     {
-      id: "dashboard",
-      route: "/admin/dashboard",
-      name: t("admin.sidebar.dashboard"),
-      icon: LayoutDashboard,
-      color: "from-blue-500 to-cyan-500",
+      id: "content",
+      label: t("admin.sidebar.groups.content"),
+      icon: Layers,
+      items: [
+        {
+          id: "company-intros",
+          route: "/admin/company-intros",
+          label: t("admin.sidebar.companyIntros"),
+          icon: ImageIcon,
+        },
+        {
+          id: "products",
+          route: "/admin/products",
+          label: t("admin.sidebar.products"),
+          icon: Package,
+        },
+        {
+          id: "categories",
+          route: "/admin/categories",
+          label: t("admin.sidebar.categories"),
+          icon: Tags,
+        },
+        {
+          id: "services",
+          route: "/admin/services",
+          label: t("admin.sidebar.services"),
+          icon: Briefcase,
+        },
+        {
+          id: "projects",
+          route: "/admin/projects",
+          label: t("admin.sidebar.projects"),
+          icon: FolderKanban,
+        },
+        {
+          id: "news",
+          route: "/admin/news",
+          label: t("admin.sidebar.news"),
+          icon: Newspaper,
+        },
+        {
+          id: "reviews",
+          route: "/admin/reviews",
+          label: t("admin.sidebar.reviews", "Nhận xét"),
+          icon: MessageSquare,
+        },
+      ],
     },
     {
-      id: "company-intros",
-      route: "/admin/company-intros",
-      name: t("admin.sidebar.companyIntros"),
-      icon: ImageIcon,
-      color: "from-orange-500 to-orange-700",
+      id: "business",
+      label: t("admin.sidebar.groups.business"),
+      icon: Contact2,
+      items: [
+        {
+          id: "recruitment",
+          route: "/admin/recruitment",
+          label: t("admin.sidebar.recruitment"),
+          icon: UserPlus,
+        },
+        {
+          id: "contact",
+          route: "/admin/contact",
+          label: t("admin.sidebar.contact"),
+          icon: Mail,
+        },
+        {
+          id: "contact-us",
+          route: "/admin/contact-us",
+          label: t("admin.sidebar.contactUsManager"),
+          icon: Contact,
+        },
+        {
+          id: "quotes",
+          route: "/admin/quotes",
+          label: t("admin.sidebar.priceQuotes", "Báo giá"),
+          icon: ScrollText,
+        },
+      ],
     },
     {
-      id: "products",
-      route: "/admin/products",
-      name: t("admin.sidebar.products"),
-      icon: Package,
-      color: "from-green-500 to-emerald-600",
+      id: "system",
+      label: t("admin.sidebar.groups.system"),
+      icon: ShieldCheck,
+      items: [
+        {
+          id: "users",
+          route: "/admin/users",
+          label: t("admin.sidebar.users"),
+          icon: Users,
+        },
+        {
+          id: "statistics",
+          route: "/admin/statistics",
+          label: t("admin.sidebar.statistics"),
+          icon: BarChart3,
+        },
+      ],
     },
     {
-      id: "categories",
-      route: "/admin/categories",
-      name: t("admin.sidebar.categories"),
-      icon: Package,
-      color: "from-teal-500 to-emerald-600",
-    },
-    {
-      id: "services",
-      route: "/admin/services",
-      name: t("admin.sidebar.services"),
-      icon: Briefcase,
-      color: "from-purple-500 to-pink-500",
-    },
-    {
-      id: "projects",
-      route: "/admin/projects",
-      name: t("admin.sidebar.projects"),
-      icon: FolderKanban,
-      color: "from-orange-500 to-red-500",
-    },
-    {
-      id: "news",
-      route: "/admin/news",
-      name: t("admin.sidebar.news"),
-      icon: Newspaper,
-      color: "from-indigo-500 to-blue-600",
-    },
-    {
-      id: "recruitment",
-      route: "/admin/recruitment",
-      name: t("admin.sidebar.recruitment"),
-      icon: UserPlus,
-      color: "from-cyan-500 to-blue-500",
-    },
-    {
-      id: "contact",
-      route: "/admin/contact",
-      name: t("admin.sidebar.contact"),
-      icon: Mail,
-      color: "from-orange-500 to-red-500",
-    },
-    {
-      id: "contact-us",
-      route: "/admin/contact-us",
-      name: t("admin.sidebar.contactUsManager"),
-      icon: Contact,
-      color: "from-orange-600 to-red-800",
-    },
-    {
-      id: "quotes",
-      route: "/admin/quotes",
-      name: t("admin.sidebar.priceQuotes", "Báo giá"),
-      icon: ScrollText,
-      color: "from-cyan-500 to-blue-600",
-    },
-    {
-      id: "users",
-      route: "/admin/users",
-      name: t("admin.sidebar.users"),
-      icon: Users,
-      color: "from-indigo-500 to-purple-500",
-    },
-    {
-      id: "reviews",
-      route: "/admin/reviews",
-      name: t("admin.sidebar.reviews", "Nhận xét"),
-      icon: MessageSquare,
-      color: "from-rose-500 to-pink-600",
-    },
-    {
-      id: "statistics",
-      route: "/admin/statistics",
-      name: t("admin.sidebar.statistics"),
-      icon: BarChart3,
-      color: "from-amber-500 to-orange-600",
+      id: "ai",
+      label: t("admin.sidebar.groups.ai"),
+      icon: Bot,
+      items: [
+        {
+          id: "ai-settings",
+          route: "/admin/ai-settings",
+          label: t("admin.sidebar.aiSettings"),
+          icon: Sparkles,
+        },
+        {
+          id: "ai-providers",
+          route: "/admin/ai-providers",
+          label: t("admin.sidebar.aiProviders"),
+          icon: KeyRound,
+        },
+        {
+          id: "ai-logs",
+          route: "/admin/ai-logs",
+          label: t("admin.sidebar.aiLogs"),
+          icon: MessagesSquare,
+        },
+      ],
     },
   ];
 
-  const handleNavigate = (route: string) => {
-    navigate({ to: route as any });
-  };
+  const isDashboardActive = currentPath === "/admin/dashboard";
 
   return (
-    <aside
-      className={cn(
-        "relative flex flex-col border-r bg-card min-h-screen transition-all duration-300 ease-in-out",
-        isCollapsed ? "w-20" : "w-72",
-        theme === "dark" ? "bg-white text-black" : "bg-[#2a2931] text-white"
-      )}
-    >
-      <button
-        onClick={() => setIsCollapsed(!isCollapsed)}
-        className={`absolute rounded-full ${theme === "dark" ? "bg-white/10" : "bg-black/60"} backdrop-blur-sm hover:bg-opacity-50 cursor-pointer top-2 -right-12 shadow-2xl duration-1000 shadow-indigo-300 z-10 h-10 w-10 bg-card text-card-foreground flex items-center justify-center hover:bg-accent transition-colors`}
-      >
-        <ChevronLeft
-          className={cn(
-            "h-6 w-6 transition-discrete text-white duration-300 ease-in-out",
-            isCollapsed && "rotate-180"
-          )}
+    <aside className="fixed inset-y-0 left-0 z-40 flex h-screen w-64 flex-col border-r border-border bg-card">
+      {/* Brand header */}
+      <div className="flex items-center gap-3 border-b border-border px-4 py-4">
+        <img
+          src={companyLogo}
+          className="h-10 w-10 rounded-lg object-contain shadow-sm"
+          alt=""
         />
-      </button>
+        <div>
+          <h1 className="text-lg font-bold leading-tight text-navy-600">
+            {t("nav.companyName", "THIÊN LỘC")}
+          </h1>
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+            Admin Panel
+          </p>
+        </div>
+      </div>
 
-      <nav className="p-4 space-y-2 flex-1 overflow-y-auto">
-        {menuItems.map((item, index) => {
-          const Icon = item.icon;
-          const isActive = currentPage === item.id;
+      {/* Nav */}
+      <nav className="flex-1 space-y-1 overflow-y-auto px-3 py-4">
+        <Link
+          to="/admin/dashboard"
+          className={cn(
+            "flex items-center gap-3 rounded-lg p-3 text-sm font-semibold transition-colors",
+            isDashboardActive
+              ? "bg-navy-600 font-bold text-white shadow-sm"
+              : "text-foreground hover:bg-navy-50 hover:text-navy-600 dark:hover:bg-navy-950/40"
+          )}
+        >
+          <LayoutDashboard className="h-5 w-5 shrink-0" />
+          <span>{t("admin.sidebar.dashboard")}</span>
+        </Link>
+
+        {groups.map((group, groupIndex) => {
+          const GroupIcon = group.icon;
+          const isGroupActive = group.items.some(
+            (i) => currentPath === i.route
+          );
+          const isOpen = openGroups[group.id];
 
           return (
-            <div key={item.id} className="hover:opacity-50">
-              <motion.button
-                title={isCollapsed ? item.name : ""}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.05 }}
-                onClick={() => handleNavigate(item.route)}
+            <div key={group.id}>
+              <div
                 className={cn(
-                  "w-full flex items-center cursor-pointer hover:opacity-50 gap-3 px-4 py-3 rounded-lg transition-all duration-200",
-                  isActive
-                    ? "bg-linear-to-r " + item.color + " text-white shadow-lg"
-                    : "hover:bg-accent",
-                  isCollapsed && "justify-center"
+                  "px-3 pb-2 pt-6",
+                  groupIndex === 0 && "pt-2"
                 )}
               >
-                <Icon className="h-5 w-5 shrink-0" />
-                {!isCollapsed && (
-                  <span className="text-sm font-bold!">{item.name}</span>
+                <p className="text-[11px] font-extrabold uppercase tracking-widest text-muted-foreground/70">
+                  {group.label}
+                </p>
+              </div>
+              <details open={isOpen}>
+                <summary
+                  onClick={(e) => {
+                    e.preventDefault();
+                    toggleGroup(group.id);
+                  }}
+                  className={cn(
+                    "flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg p-3 text-sm transition-colors",
+                    isGroupActive
+                      ? "bg-navy-600/10 font-bold text-navy-600"
+                      : "font-semibold text-foreground hover:bg-navy-50 hover:text-navy-600 dark:hover:bg-navy-950/40"
+                  )}
+                >
+                  <div className="flex items-center gap-3">
+                    <GroupIcon className="h-5 w-5 shrink-0" />
+                    <span>{group.label}</span>
+                  </div>
+                  <ChevronRight
+                    className={cn(
+                      "h-4 w-4 shrink-0 transition-transform duration-200",
+                      isOpen && "rotate-90"
+                    )}
+                  />
+                </summary>
+                {isOpen && (
+                  <div className="ml-5 mt-1 space-y-1 border-l-2 border-border pl-2">
+                    {group.items.map((item) => {
+                      const Icon = item.icon;
+                      const isActive = currentPath === item.route;
+                      return (
+                        <Link
+                          key={item.id}
+                          to={item.route}
+                          className={cn(
+                            "flex items-center gap-2.5 whitespace-nowrap rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-all",
+                            isActive
+                              ? "bg-navy-600 font-bold text-white shadow-xs"
+                              : "text-foreground hover:bg-navy-50 hover:text-navy-600 dark:hover:bg-navy-950/40"
+                          )}
+                        >
+                          <Icon className="h-[18px] w-[18px] shrink-0" />
+                          <span>{item.label}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 )}
-              </motion.button>
-              {!isActive && <Divider />}
+              </details>
             </div>
           );
         })}
       </nav>
+
+      {/* Footer */}
+      <div className="border-t border-border p-3">
+        <Link
+          to="/"
+          className="flex w-full items-center justify-center gap-2 rounded-lg border border-border bg-muted/40 px-3 py-2.5 text-xs font-semibold text-foreground transition-all hover:bg-navy-50 hover:text-navy-600"
+        >
+          <Home className="h-4 w-4 text-navy-600" />
+          <span>{t("admin.sidebar.backToPublic", "Về trang chủ")}</span>
+        </Link>
+      </div>
     </aside>
   );
 }

@@ -1,4 +1,5 @@
 import { AdminSidebar } from "@/components/layout/sidebar-manager";
+import { AdminTopbar } from "@/components/layout/admin-topbar";
 import { useAuthStore } from "@/stores/authStore";
 import { Outlet, createFileRoute, Navigate } from "@tanstack/react-router";
 
@@ -18,10 +19,13 @@ function AdminLayout() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="flex">
-        <AdminSidebar />
+      <AdminSidebar />
+      <div className="ml-64 flex min-h-screen flex-col">
+        <AdminTopbar />
         <main className="flex-1 p-6">
-          <Outlet />
+          <div className="mx-auto w-full max-w-7xl">
+            <Outlet />
+          </div>
         </main>
       </div>
     </div>

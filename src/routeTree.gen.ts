@@ -56,6 +56,9 @@ import { Route as AdminLayoutContactUsRouteImport } from './routes/admin/_layout
 import { Route as AdminLayoutContactRouteImport } from './routes/admin/_layout/contact'
 import { Route as AdminLayoutCompanyIntrosRouteImport } from './routes/admin/_layout/company-intros'
 import { Route as AdminLayoutCategoriesRouteImport } from './routes/admin/_layout/categories'
+import { Route as AdminLayoutAiSettingsRouteImport } from './routes/admin/_layout/ai-settings'
+import { Route as AdminLayoutAiProvidersRouteImport } from './routes/admin/_layout/ai-providers'
+import { Route as AdminLayoutAiLogsRouteImport } from './routes/admin/_layout/ai-logs'
 
 const ServicesRouteImport = createFileRoute('/services')()
 const QuoteRouteImport = createFileRoute('/quote')()
@@ -322,6 +325,21 @@ const AdminLayoutCategoriesRoute = AdminLayoutCategoriesRouteImport.update({
   path: '/categories',
   getParentRoute: () => AdminLayoutRoute,
 } as any)
+const AdminLayoutAiSettingsRoute = AdminLayoutAiSettingsRouteImport.update({
+  id: '/ai-settings',
+  path: '/ai-settings',
+  getParentRoute: () => AdminLayoutRoute,
+} as any)
+const AdminLayoutAiProvidersRoute = AdminLayoutAiProvidersRouteImport.update({
+  id: '/ai-providers',
+  path: '/ai-providers',
+  getParentRoute: () => AdminLayoutRoute,
+} as any)
+const AdminLayoutAiLogsRoute = AdminLayoutAiLogsRouteImport.update({
+  id: '/ai-logs',
+  path: '/ai-logs',
+  getParentRoute: () => AdminLayoutRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -355,6 +373,9 @@ export interface FileRoutesByFullPath {
   '/quote/': typeof QuoteIndexRoute
   '/recruitment': typeof RecruitmentIndexRoute
   '/services/': typeof ServicesIndexRoute
+  '/admin/ai-logs': typeof AdminLayoutAiLogsRoute
+  '/admin/ai-providers': typeof AdminLayoutAiProvidersRoute
+  '/admin/ai-settings': typeof AdminLayoutAiSettingsRoute
   '/admin/categories': typeof AdminLayoutCategoriesRoute
   '/admin/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/contact': typeof AdminLayoutContactRoute
@@ -396,6 +417,9 @@ export interface FileRoutesByTo {
   '/introduction': typeof IntroductionIndexRoute
   '/news': typeof NewsIndexRoute
   '/recruitment': typeof RecruitmentIndexRoute
+  '/admin/ai-logs': typeof AdminLayoutAiLogsRoute
+  '/admin/ai-providers': typeof AdminLayoutAiProvidersRoute
+  '/admin/ai-settings': typeof AdminLayoutAiSettingsRoute
   '/admin/categories': typeof AdminLayoutCategoriesRoute
   '/admin/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/contact': typeof AdminLayoutContactRoute
@@ -451,6 +475,9 @@ export interface FileRoutesById {
   '/quote/': typeof QuoteIndexRoute
   '/recruitment/': typeof RecruitmentIndexRoute
   '/services/': typeof ServicesIndexRoute
+  '/admin/_layout/ai-logs': typeof AdminLayoutAiLogsRoute
+  '/admin/_layout/ai-providers': typeof AdminLayoutAiProvidersRoute
+  '/admin/_layout/ai-settings': typeof AdminLayoutAiSettingsRoute
   '/admin/_layout/categories': typeof AdminLayoutCategoriesRoute
   '/admin/_layout/company-intros': typeof AdminLayoutCompanyIntrosRoute
   '/admin/_layout/contact': typeof AdminLayoutContactRoute
@@ -500,6 +527,9 @@ export interface FileRouteTypes {
     | '/quote/'
     | '/recruitment'
     | '/services/'
+    | '/admin/ai-logs'
+    | '/admin/ai-providers'
+    | '/admin/ai-settings'
     | '/admin/categories'
     | '/admin/company-intros'
     | '/admin/contact'
@@ -541,6 +571,9 @@ export interface FileRouteTypes {
     | '/introduction'
     | '/news'
     | '/recruitment'
+    | '/admin/ai-logs'
+    | '/admin/ai-providers'
+    | '/admin/ai-settings'
     | '/admin/categories'
     | '/admin/company-intros'
     | '/admin/contact'
@@ -595,6 +628,9 @@ export interface FileRouteTypes {
     | '/quote/'
     | '/recruitment/'
     | '/services/'
+    | '/admin/_layout/ai-logs'
+    | '/admin/_layout/ai-providers'
+    | '/admin/_layout/ai-settings'
     | '/admin/_layout/categories'
     | '/admin/_layout/company-intros'
     | '/admin/_layout/contact'
@@ -1002,10 +1038,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminLayoutCategoriesRouteImport
       parentRoute: typeof AdminLayoutRoute
     }
+    '/admin/_layout/ai-settings': {
+      id: '/admin/_layout/ai-settings'
+      path: '/ai-settings'
+      fullPath: '/admin/ai-settings'
+      preLoaderRoute: typeof AdminLayoutAiSettingsRouteImport
+      parentRoute: typeof AdminLayoutRoute
+    }
+    '/admin/_layout/ai-providers': {
+      id: '/admin/_layout/ai-providers'
+      path: '/ai-providers'
+      fullPath: '/admin/ai-providers'
+      preLoaderRoute: typeof AdminLayoutAiProvidersRouteImport
+      parentRoute: typeof AdminLayoutRoute
+    }
+    '/admin/_layout/ai-logs': {
+      id: '/admin/_layout/ai-logs'
+      path: '/ai-logs'
+      fullPath: '/admin/ai-logs'
+      preLoaderRoute: typeof AdminLayoutAiLogsRouteImport
+      parentRoute: typeof AdminLayoutRoute
+    }
   }
 }
 
 interface AdminLayoutRouteChildren {
+  AdminLayoutAiLogsRoute: typeof AdminLayoutAiLogsRoute
+  AdminLayoutAiProvidersRoute: typeof AdminLayoutAiProvidersRoute
+  AdminLayoutAiSettingsRoute: typeof AdminLayoutAiSettingsRoute
   AdminLayoutCategoriesRoute: typeof AdminLayoutCategoriesRoute
   AdminLayoutCompanyIntrosRoute: typeof AdminLayoutCompanyIntrosRoute
   AdminLayoutContactRoute: typeof AdminLayoutContactRoute
@@ -1023,6 +1083,9 @@ interface AdminLayoutRouteChildren {
 }
 
 const AdminLayoutRouteChildren: AdminLayoutRouteChildren = {
+  AdminLayoutAiLogsRoute: AdminLayoutAiLogsRoute,
+  AdminLayoutAiProvidersRoute: AdminLayoutAiProvidersRoute,
+  AdminLayoutAiSettingsRoute: AdminLayoutAiSettingsRoute,
   AdminLayoutCategoriesRoute: AdminLayoutCategoriesRoute,
   AdminLayoutCompanyIntrosRoute: AdminLayoutCompanyIntrosRoute,
   AdminLayoutContactRoute: AdminLayoutContactRoute,

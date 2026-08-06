@@ -1,4 +1,15 @@
 {
+  "aiChat": {
+    "widget": {
+      "title": "AI Assistant",
+      "subtitle": "Quick questions about products & services",
+      "placeholder": "Type your question...",
+      "greeting": "Hi! How can I help you with Kim Loai Tam Thien Loc's products, services or company info?",
+      "genericError": "Something went wrong, please try again later.",
+      "toggleAriaLabel": "Open chat",
+      "closeAriaLabel": "Close chat"
+    }
+  },
   "common": {
     "viewDetails": "View Details",
     "close": "Close",
@@ -781,7 +792,19 @@
       "quotes": "Quote Management",
       "users": "User Management",
       "statistics": "Statistics",
-      "companyIntros": "Introduction Images"
+      "companyIntros": "Introduction Images",
+      "reviews": "Reviews",
+      "priceQuotes": "Quotes",
+      "groups": {
+        "content": "Website Content",
+        "business": "Customers & Business",
+        "system": "Users & System",
+        "ai": "AI Configuration"
+      },
+      "aiSettings": "Chatbot Settings",
+      "aiProviders": "API Key Management",
+      "aiLogs": "Chat Logs",
+      "backToPublic": "Back to Public Site"
     },
     "dashboard": {
       "title": "Dashboard",
