@@ -1,7 +1,7 @@
 # =========================
 # Stage 1: Builder
 # =========================
-FROM node:20-alpine AS builder
+FROM node:20 AS builder
 
 WORKDIR /app
 
@@ -27,7 +27,7 @@ RUN yarn install --frozen-lockfile
 
 # -------- BUILD --------
 COPY . .
-RUN yarn build
+RUN yarn build:only
 
 # =========================
 # Stage 2: Production
