@@ -135,7 +135,7 @@ export function AiChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-24 right-4 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-28 right-4 z-[999] flex flex-col items-end gap-3">
       {isOpen && (
         <div className="flex h-[32rem] max-h-[calc(100vh-8rem)] w-[22rem] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
           <div className="flex shrink-0 items-center gap-3 bg-navy-600 px-4 py-3 text-white">
