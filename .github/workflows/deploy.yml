@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  # Cho phép chạy tay từ tab Actions trên GitHub khi cần deploy lại
+  # mà không có thay đổi code mới (ví dụ chỉ đổi secret build-arg).
+  workflow_dispatch:
 
 # Nếu push liên tiếp, hủy các lần chạy cũ đang chờ/đang chạy để tránh
 # nhiều deploy tranh nhau container/network trên VPS cùng lúc.
@@ -12,22 +15,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  # =========================
+  # Job 1: Build & push image
+  # =========================
+  build:
+    name: Build & push image
     runs-on: ubuntu-latest
-    # Chặn trường hợp một step bị treo (SSH/pull mạng chậm) ăn hết nhiều giờ
-    # mà không ai biết — sau 20 phút coi như fail để dễ phát hiện & retry.
     timeout-minutes: 20
+    outputs:
+      tag: ${{ steps.meta.outputs.tag }}
 
     steps:
-      # =========================
-      # Checkout source
-      # =========================
       - name: Checkout source
         uses: actions/checkout@v4
 
-      # =========================
-      # Login GHCR
-      # =========================
+      # Tag theo git SHA để VPS chạy đúng chính xác bản vừa build (rollback được
+      # bằng cách deploy lại 1 SHA cũ), không chỉ phụ thuộc vào "latest" mơ hồ.
+      - name: Set image tag
+        id: meta
+        run: echo "tag=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
@@ -35,21 +42,17 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_TOKEN }}
 
-      # =========================
-      # Set up Docker Buildx (for caching)
-      # =========================
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      # =========================
-      # Build & push FE image with GHA Cache
-      # =========================
       - name: Build & push FE image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/fe-app:latest
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/fe-app:latest
+            ghcr.io/${{ github.repository_owner }}/fe-app:${{ steps.meta.outputs.tag }}
           build-args: |
             VITE_API_URL=${{ secrets.VITE_API_URL }}
             VITE_PHONE_NUMBER=${{ secrets.VITE_PHONE_NUMBER }}
@@ -60,9 +63,18 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      # =========================
-      # Deploy to VPS
-      # =========================
+  # =========================
+  # Job 2: Deploy to VPS
+  # (job riêng — nếu chỉ bước SSH/deploy lỗi, có thể "Re-run failed jobs"
+  # để chạy lại đúng job này, không cần build lại image từ đầu)
+  # =========================
+  deploy:
+    name: Deploy to server
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
       - name: Deploy to VPS via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -76,8 +88,9 @@ jobs:
             echo "🔐 Login GHCR"
             docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.GHCR_TOKEN }}
 
-            echo "⬇️ Pull new image"
-            docker pull ghcr.io/${{ github.repository_owner }}/fe-app:latest
+            echo "⬇️ Pull image (tag: ${{ needs.build.outputs.tag }})"
+            docker pull ghcr.io/${{ github.repository_owner }}/fe-app:${{ needs.build.outputs.tag }}
+            docker tag ghcr.io/${{ github.repository_owner }}/fe-app:${{ needs.build.outputs.tag }} ghcr.io/${{ github.repository_owner }}/fe-app:latest
 
             echo "🛑 Stop old container"
             docker stop fe-app || true
@@ -89,7 +102,7 @@ jobs:
               --network thienloc-net \
               -p 3000:80 \
               --restart unless-stopped \
-              ghcr.io/${{ github.repository_owner }}/fe-app:latest
+              ghcr.io/${{ github.repository_owner }}/fe-app:${{ needs.build.outputs.tag }}
 
             echo "🩺 Health check: đợi container thật sự chạy ổn định"
             sleep 3
