@@ -144,7 +144,7 @@ export function AiChatWidget() {
   return (
     <div className="fixed bottom-[70px] right-4 z-[999] flex flex-col items-end gap-3">
       {isOpen && (
-        <div className="flex h-[32rem] max-h-[calc(100vh-8rem)] w-[22rem] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
+        <div className="flex h-[32rem] max-h-[calc(100vh-8rem)] w-[22rem] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-2xl dark:bg-slate-900">
           <div className="flex shrink-0 items-center gap-3 bg-navy-600 px-4 py-3 text-white">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20">
               <Bot className="h-5 w-5" />
@@ -165,8 +165,8 @@ export function AiChatWidget() {
             </button>
           </div>
 
-          <div className="flex flex-1 flex-col justify-end gap-3 overflow-y-auto bg-muted/30 p-4">
-            <div className="max-w-[80%] rounded-xl rounded-tl-sm border border-border bg-card px-3 py-2 text-xs font-medium text-foreground">
+          <div className="flex flex-1 flex-col justify-end gap-3 overflow-y-auto bg-slate-50 p-4 dark:bg-slate-800">
+            <div className="max-w-[80%] rounded-2xl rounded-tl-md bg-white px-3.5 py-2.5 text-xs font-medium text-foreground shadow-sm dark:bg-slate-700">
               {t("aiChat.widget.greeting")}
             </div>
 
@@ -177,7 +177,7 @@ export function AiChatWidget() {
                     key={question}
                     onClick={() => handleSend(question)}
                     disabled={isStreaming}
-                    className="max-w-[90%] rounded-xl border border-navy-200 bg-navy-50 px-3 py-1.5 text-left text-xs font-medium text-navy-700 transition-colors hover:bg-navy-100 disabled:opacity-40 dark:border-navy-800 dark:bg-navy-950/40 dark:text-navy-300"
+                    className="max-w-[90%] rounded-xl border border-navy-200 bg-navy-50 px-3 py-1.5 text-left text-xs font-medium text-navy-700 transition-colors hover:bg-navy-100 disabled:opacity-40 dark:border-navy-800 dark:bg-navy-950 dark:text-navy-300"
                   >
                     {question}
                   </button>
@@ -195,12 +195,12 @@ export function AiChatWidget() {
               >
                 <div
                   className={cn(
-                    "max-w-[80%] rounded-xl px-3 py-2 text-xs font-medium whitespace-pre-wrap",
+                    "max-w-[80%] rounded-2xl px-3.5 py-2.5 text-xs font-medium whitespace-pre-wrap",
                     m.isError
-                      ? "rounded-tl-sm border border-accent-red-200 bg-accent-red-50 text-accent-red-700"
+                      ? "rounded-tl-md border border-accent-red-200 bg-accent-red-50 text-accent-red-700"
                       : m.role === "user"
-                        ? "rounded-tr-sm bg-navy-600 text-white"
-                        : "rounded-tl-sm border border-border bg-card text-foreground"
+                        ? "rounded-tr-md bg-navy-600 text-white shadow-sm"
+                        : "rounded-tl-md bg-white text-foreground shadow-sm dark:bg-slate-700"
                   )}
                 >
                   {m.role === "assistant" && m.content === "" && isStreaming ? (
@@ -218,7 +218,7 @@ export function AiChatWidget() {
             <div ref={messagesEndRef} />
           </div>
 
-          <div className="flex shrink-0 items-center gap-2 border-t border-border bg-card p-3">
+          <div className="flex shrink-0 items-center gap-2 border-t border-border bg-white p-3 dark:bg-slate-900">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -229,7 +229,7 @@ export function AiChatWidget() {
                 }
               }}
               placeholder={t("aiChat.widget.placeholder")}
-              className="flex-1 rounded-xl border border-border bg-muted/40 px-3.5 py-2.5 text-xs font-medium focus:bg-card focus:outline-none focus:ring-2 focus:ring-navy-500"
+              className="flex-1 rounded-xl border border-border bg-slate-100 px-3.5 py-2.5 text-xs font-medium focus:bg-white focus:outline-none focus:ring-2 focus:ring-navy-500 dark:bg-slate-800 dark:focus:bg-slate-900"
             />
             <button
               onClick={() => handleSend()}
