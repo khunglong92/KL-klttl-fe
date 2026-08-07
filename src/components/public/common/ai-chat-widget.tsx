@@ -165,7 +165,7 @@ export function AiChatWidget() {
             </button>
           </div>
 
-          <div className="flex flex-1 flex-col justify-end gap-3 overflow-y-auto overscroll-contain bg-slate-50 p-4 dark:bg-slate-800">
+          <div className="flex min-h-0 flex-1 flex-col justify-end gap-3 overflow-y-auto overscroll-contain bg-slate-50 p-4 dark:bg-slate-800">
             <div className="max-w-[80%] rounded-2xl rounded-tl-md bg-white px-3.5 py-2.5 text-xs font-medium text-foreground shadow-sm dark:bg-slate-700">
               {t("aiChat.widget.greeting")}
             </div>
