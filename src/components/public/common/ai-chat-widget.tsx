@@ -92,8 +92,10 @@ export function AiChatWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    if (isOpen) {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages, isOpen]);
 
   if (!status?.isEnabled) return null;
 
@@ -165,7 +167,12 @@ export function AiChatWidget() {
             </button>
           </div>
 
-          <div className="flex min-h-0 flex-1 flex-col justify-end gap-3 overflow-y-auto overscroll-contain bg-slate-50 p-4 dark:bg-slate-800">
+          <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain bg-slate-50 p-4 dark:bg-slate-800">
+            {/* Spacer: đẩy nội dung xuống đáy khi ít tin nhắn, tự co về 0 khi
+                tin nhắn tràn khung — tránh dùng justify-content: flex-end vì
+                kết hợp với overflow từng có lỗi vùng cuộn không tính đúng ở
+                một số bản Chromium (cần cuộn được ổn định trên mọi browser). */}
+            <div className="flex-1" />
             <div className="max-w-[80%] rounded-2xl rounded-tl-md bg-white px-3.5 py-2.5 text-xs font-medium text-foreground shadow-sm dark:bg-slate-700">
               {t("aiChat.widget.greeting")}
             </div>
