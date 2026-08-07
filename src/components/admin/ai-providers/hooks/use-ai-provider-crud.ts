@@ -6,7 +6,7 @@ import {
   useCreateAiProvider,
   useUpdateAiProvider,
   useDeleteAiProvider,
-  useActivateAiProvider,
+  useSetAiProviderActive,
   useTestAiProvider,
   useTestDraftAiProvider,
 } from "@/services/hooks/useAiChat";
@@ -28,7 +28,7 @@ export function useAiProviderCrud() {
   const createMutation = useCreateAiProvider();
   const updateMutation = useUpdateAiProvider();
   const deleteMutation = useDeleteAiProvider();
-  const activateMutation = useActivateAiProvider();
+  const setActiveMutation = useSetAiProviderActive();
   const testSavedMutation = useTestAiProvider();
   const testDraftMutation = useTestDraftAiProvider();
 
@@ -85,10 +85,10 @@ export function useAiProviderCrud() {
     });
   };
 
-  const activate = async (id: string) => {
+  const toggleActive = async (id: string, isActive: boolean) => {
     try {
-      await activateMutation.mutateAsync(id);
-      toast.success("Đã kích hoạt cấu hình này!");
+      await setActiveMutation.mutateAsync({ id, isActive });
+      toast.success(isActive ? "Đã bật provider này!" : "Đã tắt provider này!");
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Có lỗi xảy ra");
     }
@@ -128,7 +128,7 @@ export function useAiProviderCrud() {
     closeForm,
     onSubmit,
     remove,
-    activate,
+    toggleActive,
     testSaved,
     testDraft,
     isSaving: createMutation.isPending || updateMutation.isPending,

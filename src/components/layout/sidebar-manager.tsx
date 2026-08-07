@@ -19,7 +19,7 @@ import {
   Bot,
   Sparkles,
   KeyRound,
-  MessagesSquare,
+  ShieldAlert,
   ChevronRight,
   Home,
 } from "lucide-react";
@@ -179,7 +179,7 @@ export function AdminSidebar() {
           id: "ai-logs",
           route: "/admin/ai-logs",
           label: t("admin.sidebar.aiLogs"),
-          icon: MessagesSquare,
+          icon: ShieldAlert,
         },
       ],
     },

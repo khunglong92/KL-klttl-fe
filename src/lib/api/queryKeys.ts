@@ -56,9 +56,9 @@ export const QUERY_KEYS = {
       root: "aiChatProviders" as const,
       byId: (id: string) => ["aiChatProviders", id] as const,
     },
-    logs: {
+    errorLogs: {
       paginated: (page: number, pageSize: number) =>
-        ["aiChatLogs", page, pageSize] as const,
+        ["aiChatErrorLogs", page, pageSize] as const,
     },
   },
 } as const;

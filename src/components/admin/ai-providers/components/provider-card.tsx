@@ -1,5 +1,5 @@
-import { Card, Badge, Text, Group, ActionIcon, Alert } from "@mantine/core";
-import { Pencil, Trash2, Zap, PlugZap } from "lucide-react";
+import { Card, Badge, Text, Group, ActionIcon, Alert, Switch } from "@mantine/core";
+import { Pencil, Trash2, PlugZap } from "lucide-react";
 import { cn } from "@/components/ui/utils";
 import type {
   ProviderProfile,
@@ -11,7 +11,7 @@ interface ProviderCardProps {
   testResult?: TestConnectionResult;
   onEdit: () => void;
   onDelete: () => void;
-  onActivate: () => void;
+  onToggleActive: (isActive: boolean) => void;
   onTest: () => void;
 }
 
@@ -20,7 +20,7 @@ export function ProviderCard({
   testResult,
   onEdit,
   onDelete,
-  onActivate,
+  onToggleActive,
   onTest,
 }: ProviderCardProps) {
   return (
@@ -36,16 +36,16 @@ export function ProviderCard({
           <Text fw={700}>{provider.name}</Text>
           {provider.isActive && (
             <Badge color="blue" variant="light">
-              Đang dùng
+              Đang bật · fallback #{provider.priority}
             </Badge>
           )}
         </Group>
         <Group gap="xs">
-          {!provider.isActive && (
-            <ActionIcon variant="light" color="blue" onClick={onActivate} title="Kích hoạt">
-              <Zap className="h-4 w-4" />
-            </ActionIcon>
-          )}
+          <Switch
+            checked={provider.isActive}
+            onChange={(e) => onToggleActive(e.currentTarget.checked)}
+            label="Bật"
+          />
           <ActionIcon variant="light" onClick={onTest} title="Thử kết nối">
             <PlugZap className="h-4 w-4" />
           </ActionIcon>

@@ -17,7 +17,7 @@ export default function AiProvidersManager() {
     closeForm,
     onSubmit,
     remove,
-    activate,
+    toggleActive,
     testSaved,
     testDraft,
     isSaving,
@@ -29,7 +29,9 @@ export default function AiProvidersManager() {
         <div>
           <h2 className="text-2xl font-bold">Quản lý API Keys</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Cấu hình các nhà cung cấp AI (OpenAI, NVIDIA, OpenRouter, Groq, tuỳ chỉnh).
+            Cấu hình các nhà cung cấp AI (OpenAI, Gemini, NVIDIA, OpenRouter, Groq, tuỳ chỉnh).
+            Có thể bật nhiều provider cùng lúc — hệ thống tự chuyển sang provider kế tiếp
+            (theo thứ tự fallback) nếu provider đang dùng bị lỗi.
           </p>
         </div>
         {mode === "list" && (
@@ -71,7 +73,7 @@ export default function AiProvidersManager() {
               testResult={testResults[provider.id]}
               onEdit={() => openEdit(provider)}
               onDelete={() => remove(provider.id)}
-              onActivate={() => activate(provider.id)}
+              onToggleActive={(isActive) => toggleActive(provider.id, isActive)}
               onTest={() => testSaved(provider.id)}
             />
           ))}

@@ -21,11 +21,14 @@ function generateId(): string {
     : `id_${Date.now()}_${Math.random().toString(36).slice(2)}`;
 }
 
+// Dùng sessionStorage (không phải localStorage) để mỗi lần mở lại trình
+// duyệt (đóng hẳn rồi mở lại) sẽ là 1 phiên chat mới; trong lúc vẫn mở
+// trình duyệt, tải lại trang/chuyển trang vẫn giữ đúng phiên đang chat.
 function getOrCreateSessionId(): string {
-  let id = localStorage.getItem(SESSION_KEY);
+  let id = sessionStorage.getItem(SESSION_KEY);
   if (!id) {
     id = generateId();
-    localStorage.setItem(SESSION_KEY, id);
+    sessionStorage.setItem(SESSION_KEY, id);
   }
   return id;
 }
@@ -94,8 +97,12 @@ export function AiChatWidget() {
 
   if (!status?.isEnabled) return null;
 
-  const handleSend = async () => {
-    const trimmed = input.trim();
+  const suggestedQuestions = t("aiChat.widget.suggestedQuestions", {
+    returnObjects: true,
+  }) as string[];
+
+  const handleSend = async (overrideText?: string) => {
+    const trimmed = (overrideText ?? input).trim();
     if (!trimmed || isStreaming) return;
 
     const userMsg: ChatMessage = {
@@ -135,7 +142,7 @@ export function AiChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-28 right-4 z-[999] flex flex-col items-end gap-3">
+    <div className="fixed bottom-[70px] right-4 z-[999] flex flex-col items-end gap-3">
       {isOpen && (
         <div className="flex h-[32rem] max-h-[calc(100vh-8rem)] w-[22rem] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
           <div className="flex shrink-0 items-center gap-3 bg-navy-600 px-4 py-3 text-white">
@@ -158,10 +165,25 @@ export function AiChatWidget() {
             </button>
           </div>
 
-          <div className="flex-1 space-y-3 overflow-y-auto bg-muted/30 p-4">
+          <div className="flex flex-1 flex-col justify-end gap-3 overflow-y-auto bg-muted/30 p-4">
             <div className="max-w-[80%] rounded-xl rounded-tl-sm border border-border bg-card px-3 py-2 text-xs font-medium text-foreground">
               {t("aiChat.widget.greeting")}
             </div>
+
+            {messages.length === 0 && suggestedQuestions.length > 0 && (
+              <div className="flex flex-col items-start gap-1.5">
+                {suggestedQuestions.map((question) => (
+                  <button
+                    key={question}
+                    onClick={() => handleSend(question)}
+                    disabled={isStreaming}
+                    className="max-w-[90%] rounded-xl border border-navy-200 bg-navy-50 px-3 py-1.5 text-left text-xs font-medium text-navy-700 transition-colors hover:bg-navy-100 disabled:opacity-40 dark:border-navy-800 dark:bg-navy-950/40 dark:text-navy-300"
+                  >
+                    {question}
+                  </button>
+                ))}
+              </div>
+            )}
 
             {messages.map((m) => (
               <div
@@ -210,7 +232,7 @@ export function AiChatWidget() {
               className="flex-1 rounded-xl border border-border bg-muted/40 px-3.5 py-2.5 text-xs font-medium focus:bg-card focus:outline-none focus:ring-2 focus:ring-navy-500"
             />
             <button
-              onClick={handleSend}
+              onClick={() => handleSend()}
               disabled={isStreaming || !input.trim()}
               className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-600 text-white transition-all hover:bg-navy-700 disabled:opacity-40"
             >
@@ -229,12 +251,12 @@ export function AiChatWidget() {
         aria-label={
           isOpen ? t("aiChat.widget.closeAriaLabel") : t("aiChat.widget.toggleAriaLabel")
         }
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-navy-600 text-white shadow-xl transition-all hover:scale-105 hover:bg-navy-700 active:scale-95"
+        className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-600 text-white shadow-xl transition-all hover:scale-105 hover:bg-navy-700 active:scale-95"
       >
         {isOpen ? (
-          <X className="h-6 w-6" />
+          <X className="h-5 w-5" />
         ) : (
-          <MessageCircle className="h-6 w-6" />
+          <MessageCircle className="h-5 w-5" />
         )}
       </button>
     </div>

@@ -7,7 +7,13 @@
       "greeting": "Xin chào! Tôi có thể giúp gì cho bạn về sản phẩm, dịch vụ hoặc thông tin công ty Kim Loại Tấm Thiên Lộc?",
       "genericError": "Đã có lỗi xảy ra, vui lòng thử lại sau.",
       "toggleAriaLabel": "Mở khung chat",
-      "closeAriaLabel": "Đóng khung chat"
+      "closeAriaLabel": "Đóng khung chat",
+      "suggestedQuestions": [
+        "Công ty có sản phẩm gì nổi bật?",
+        "Dịch vụ gia công kim loại tấm gồm những gì?",
+        "Thông tin liên hệ của công ty?",
+        "Công ty có đang tuyển dụng không?"
+      ]
     }
   },
   "common": {
@@ -803,7 +809,7 @@
       },
       "aiSettings": "Cấu hình Chatbot",
       "aiProviders": "Quản lý API Keys",
-      "aiLogs": "Nhật ký hội thoại",
+      "aiLogs": "Audit lỗi AI",
       "backToPublic": "Về trang chủ"
     },
     "dashboard": {

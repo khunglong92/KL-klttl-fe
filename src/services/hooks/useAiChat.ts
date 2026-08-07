@@ -72,10 +72,11 @@ export const useDeleteAiProvider = () => {
   });
 };
 
-export const useActivateAiProvider = () => {
+export const useSetAiProviderActive = () => {
   const qc = useQueryClient();
   return useMutation({
-    mutationFn: (id: string) => aiChatService.activateProvider(id),
+    mutationFn: ({ id, isActive }: { id: string; isActive: boolean }) =>
+      aiChatService.setProviderActive(id, isActive),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: [QUERY_KEYS.aiChat.providers.root] });
     },
@@ -93,11 +94,14 @@ export const useTestDraftAiProvider = () =>
       aiChatService.testDraft(body),
   });
 
-export const useAiChatLogs = (params: { page?: number; pageSize?: number }) => {
+export const useAiChatErrorLogs = (params: {
+  page?: number;
+  pageSize?: number;
+}) => {
   const { page = 1, pageSize = 20 } = params;
   return useQuery({
-    queryKey: QUERY_KEYS.aiChat.logs.paginated(page, pageSize),
-    queryFn: () => aiChatService.getLogs({ page, pageSize }),
+    queryKey: QUERY_KEYS.aiChat.errorLogs.paginated(page, pageSize),
+    queryFn: () => aiChatService.getErrorLogs({ page, pageSize }),
     placeholderData: keepPreviousData,
   });
 };

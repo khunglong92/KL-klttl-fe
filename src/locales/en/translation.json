@@ -7,7 +7,13 @@
       "greeting": "Hi! How can I help you with Kim Loai Tam Thien Loc's products, services or company info?",
       "genericError": "Something went wrong, please try again later.",
       "toggleAriaLabel": "Open chat",
-      "closeAriaLabel": "Close chat"
+      "closeAriaLabel": "Close chat",
+      "suggestedQuestions": [
+        "What are your featured products?",
+        "What metal sheet processing services do you offer?",
+        "What's your contact information?",
+        "Are you currently hiring?"
+      ]
     }
   },
   "common": {
@@ -803,7 +809,7 @@
       },
       "aiSettings": "Chatbot Settings",
       "aiProviders": "API Key Management",
-      "aiLogs": "Chat Logs",
+      "aiLogs": "AI Error Audit",
       "backToPublic": "Back to Public Site"
     },
     "dashboard": {

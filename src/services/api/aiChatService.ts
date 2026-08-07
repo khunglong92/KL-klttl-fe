@@ -22,6 +22,7 @@ export interface ProviderProfile {
   hasApiKey: boolean;
   model: string;
   isActive: boolean;
+  priority: number;
   createdAt: string;
   updatedAt: string;
   updatedBy: string | null;
@@ -33,6 +34,7 @@ export interface UpsertProviderDto {
   baseUrl: string;
   apiKey?: string;
   model: string;
+  priority?: number;
 }
 
 export interface TestConnectionResult {
@@ -40,28 +42,19 @@ export interface TestConnectionResult {
   message: string;
 }
 
-export type ChatRole = "USER" | "ASSISTANT";
-
-export interface ChatLogMessage {
+export interface AiChatErrorLog {
   id: string;
-  sessionId: string;
-  role: ChatRole;
-  content: string;
+  sessionId: string | null;
+  providerName: string | null;
+  errorMessage: string;
   createdAt: string;
 }
 
-export interface ChatLogSession {
-  sessionId: string;
-  messageCount: number;
-  lastMessageAt: string | null;
-  messages: ChatLogMessage[];
-}
-
-export interface PaginatedChatLogsResponse {
+export interface PaginatedErrorLogsResponse {
   page: number;
   pageSize: number;
-  totalSessions: number;
-  sessions: ChatLogSession[];
+  total: number;
+  logs: AiChatErrorLog[];
 }
 
 export const aiChatService = {
@@ -84,8 +77,10 @@ export const aiChatService = {
   deleteProvider: (id: string) =>
     apiClient.delete<void>(`/ai-chat/providers/${id}`),
 
-  activateProvider: (id: string) =>
-    apiClient.post<ProviderProfile>(`/ai-chat/providers/${id}/activate`),
+  setProviderActive: (id: string, isActive: boolean) =>
+    apiClient.put<ProviderProfile>(`/ai-chat/providers/${id}/active`, {
+      isActive,
+    }),
 
   testProvider: (id: string) =>
     apiClient.post<TestConnectionResult>(`/ai-chat/providers/${id}/test`),
@@ -93,12 +88,12 @@ export const aiChatService = {
   testDraft: (body: { baseUrl: string; apiKey?: string; model: string }) =>
     apiClient.post<TestConnectionResult>("/ai-chat/test", body),
 
-  getLogs: (params: { page?: number; pageSize?: number }) => {
+  getErrorLogs: (params: { page?: number; pageSize?: number }) => {
     const sp = new URLSearchParams();
     if (params.page) sp.append("page", String(params.page));
     if (params.pageSize) sp.append("pageSize", String(params.pageSize));
-    return apiClient.get<PaginatedChatLogsResponse>(
-      `/ai-chat/logs?${sp.toString()}`
+    return apiClient.get<PaginatedErrorLogsResponse>(
+      `/ai-chat/error-logs?${sp.toString()}`
     );
   },
 };
